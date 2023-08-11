@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState, SyntheticEvent } from "react";
+import { Space, ListSpacesGqlValues} from "./types";
+import { useQuery } from '@apollo/client'
+import { LIST_SPACES } from './utils/queries'
+import SelectSpaces from "./components/SelectSpaces";
 
 function App() {
+
+  // const [spacesList, setSpacesList] = useState<Space[]>([])
+
+  const submitGqlQuery = (values: ListSpacesGqlValues): void => {
+    try {
+      const list = useQuery(LIST_SPACES, {
+        variables: { values }
+      });
+      console.log(list)
+      // setSpacesList(spacesList.concat([list]));
+    } catch (e: unknown) {
+        console.error("Unknown error", e);
+      }
+    }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <SelectSpaces onSubmit={submitGqlQuery}/>
     </div>
   );
 }
