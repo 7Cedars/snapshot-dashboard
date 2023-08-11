@@ -1,58 +1,33 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { apiDemoUrl } from "./constants";
+import { LIST_SPACES } from './utils/queries'
 
 import { ApolloClient, 
   InMemoryCache, 
   ApolloProvider, 
-  createHttpLink
 } from '@apollo/client'
-import { setContext } from '@apollo/client/link/context'
-
-const httpLink = createHttpLink({
-  uri: 'apiDemoUrl',
-})
-
-const authLink = setContext((_, { headers }) => {
-  const token = localStorage.getItem('phonenumbers-user-token')
-  console.log("Token from localStorage: ", token)
-  return {
-    headers: {
-      ...headers,
-      authorization: token ? `Bearer ${token}` : null,
-    }
-  }
-})
 
 const client = new ApolloClient({
-  link: authLink.concat(httpLink),
+  uri: apiDemoUrl,
   cache: new InMemoryCache(),
 })
-
-// const query = gql`
-//   query  {
-//     spaces(
-//       first: 1000,
-//       skip: 0,
-//       orderBy: "created",
-//       orderDirection: asc
-//     ) {
-//       id
-//       votesCount
-//       categories
-//     }
-//   }`
-
-// client.query({ query })
-//   .then((response) => {
-//     console.log(response.data)
-//   })
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+// const result = client.readQuery({
+//   query: LIST_SPACES,
+//   variables: {
+//     first: 500,
+//     skip: 0
+//   },
+// });
+
+// console.log("DATA: ", result)
+
 root.render(
   <ApolloProvider client={client}>
     <App />

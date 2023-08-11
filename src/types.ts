@@ -1,5 +1,5 @@
 export interface Space {
-  id: number;
+  id: string;
   votesCount: number;
   categories: string[]
 }

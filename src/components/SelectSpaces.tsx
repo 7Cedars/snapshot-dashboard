@@ -1,27 +1,61 @@
-import { useState, SyntheticEvent } from "react";
-import { ListSpacesGqlValues} from "../types";
-// import spacesService from "../../services/spaces";
+import { SyntheticEvent, useState } from "react";
+import { useLazyQuery } from '@apollo/client'
+import { LIST_SPACES } from '../utils/queries'
+import { ListSpacesGqlValues, Space} from "../types";
+import { toSpaceEntry } from "../utils/parsers";
 
-interface Props {
-  onSubmit: (values: ListSpacesGqlValues) => void;
-}
-
-const SelectSpaces = ({ onSubmit }: Props) => {
+const SelectSpaces = () => {
 
   const [first, setFirst] = useState<number>(1000)
   const [skip, setSkip] = useState<number>(0)
+  const [spacesList, setSpacesList] = useState<Space[]>()
 
-  const doGqLQuery = (event: SyntheticEvent) => {
-    event.preventDefault();
-    onSubmit({
-      first,
-      skip
-    });
-  };
-  
-  return (
+  const [listSpacesQuery, {loading, error, data, called} ] = useLazyQuery(LIST_SPACES)
+
+
+  const submitQuery = async (event: SyntheticEvent) => {
+      event.preventDefault()
+      const { data } = await listSpacesQuery({variables: { first, skip } })
+      console.log(data)
+
+      if (loading) {
+        return <div>loading</div>
+      }
     
-    <form onSubmit={doGqLQuery} >
+      if (error) {
+        console.error(error);
+      }
+    
+      if (data.spaces) {
+        console.log(data.spaces)
+
+        const parsedData = data.spaces.map((space: Space): Space =>
+          toSpaceEntry(space)
+        )
+
+        console.log("parsedData, :", parsedData)
+        setSpacesList(parsedData)
+      }
+
+      console.log("spacesList, :", spacesList)
+  };
+
+//   const saveData =  (event: SyntheticEvent) => {
+//     event.preventDefault()
+    
+//     const dataToSave =  JSON.stringify(spacesList)
+//     fs.writeFile('TESTSpacesSAVE.json', dataToSave, (error) => {
+//       if (error) {
+//         console.error(error);
+    
+//         throw error;
+//       }
+//     });
+//     console.log("spacesList, :", spacesList)
+// };
+
+  return (   
+    <form  >
       GraphQL List Spaces Query: 
       <div>
         First: 
@@ -36,19 +70,35 @@ const SelectSpaces = ({ onSubmit }: Props) => {
       <div>
         Skip: 
         <input
+          type="number"
+          placeholder="skip"
           value={skip}
-          placeholder="Skip"
           id="skip"
           onChange={({ target }) => setSkip(parseInt(target.value))}
         />
       </div>
       <button
         type="submit"
-        id="login-button"
+        id="submit-button"
         className="font-medium text-white/[.8] px-5 hover:text-white sm:py-6"
+        onClick={submitQuery}
       >
         Query
       </button>
+      <div>
+
+        RESULTS
+
+        <div>
+          {spacesList?.map(space => (
+            <div key = {space.id}>
+              <div> {space.id} </div>
+              <div> {space.votesCount} </div>
+            </div>
+            ))
+          }
+        </div>
+      </div>
     </form>
   );
 }
