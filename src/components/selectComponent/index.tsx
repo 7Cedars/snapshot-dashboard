@@ -1,5 +1,6 @@
 import { SyntheticEvent, useState } from "react";
 import SelectSpacesForm from "./SelectSpacesForm"
+import SelectedSpaces from "./SelectedSpaces";
 // import { LIST_SPACES } from '../utils/queries'
 // import { ListSpacesGqlValues, Space} from "../types";
 // import { toSpaceEntry } from "../utils/parsers";
@@ -52,6 +53,7 @@ const SelectComponent = () => {
 
   return (
     <div> 
+      < SelectedSpaces /> 
 
     {selectWindowOpen === false ? 
       <button 

@@ -2,7 +2,8 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { apiDemoUrl } from "./constants";
-import { LIST_SPACES } from './utils/queries'
+import store from './reducers/store'
+import { Provider } from 'react-redux'
 
 import { ApolloClient, 
   InMemoryCache, 
@@ -18,20 +19,14 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-// const result = client.readQuery({
-//   query: LIST_SPACES,
-//   variables: {
-//     first: 500,
-//     skip: 0
-//   },
-// });
-
-// console.log("DATA: ", result)
+console.log("store: ", store.getState())
 
 root.render(
-  <ApolloProvider client={client}>
-    <App />
-  </ApolloProvider>
+  <Provider store={store}>
+    <ApolloProvider client={client}>
+      <App />
+    </ApolloProvider>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function

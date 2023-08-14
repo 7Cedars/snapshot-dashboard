@@ -1,4 +1,4 @@
-import FetchSpaces from "./components/FetchSpaces";
+// import FetchSpaces from "./components/FetchSpaces";
 import SelectComponent from "./components/selectComponent";
 
 const App = () => {

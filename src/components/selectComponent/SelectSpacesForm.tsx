@@ -1,10 +1,7 @@
 import spaces from "../../data/spacesList"
 import {Space} from "../../types" 
-
-// const selectionList = () => {
-
-//   const list = spaces.map() 
-// }
+import { useAppSelector, useAppDispatch } from '../../reducers/hooks'
+import { addSpace} from '../../reducers/selectedSpacesReducer'
 
 interface Props {
   key: string, 
@@ -12,6 +9,8 @@ interface Props {
 }
 
 const SelectionButton = ({key, space}: Props) => {
+  // const addingSpace = useAppSelector(state => state.selectedSpaces) (do not need initial state)
+  const dispatch = useAppDispatch()
 
   return (
     <div>
@@ -19,9 +18,9 @@ const SelectionButton = ({key, space}: Props) => {
         <button 
           type="submit"
           id={key}
-          value={space.id}
+          // value={space.id}
           className="font-medium text-white/[.8] px-5 hover:text-white sm:py-6"
-          // onClick={(() => setSelectWindowOpen(true))}
+          onClick={(() => dispatch(addSpace(space)))}
           >
             Add
         </button> 
@@ -29,17 +28,15 @@ const SelectionButton = ({key, space}: Props) => {
   )
 }
 
-const compareVotes = (a: Space, b: Space) => {
-  return b.votesCount - a.votesCount
-}
 
 
-const SelectSpacesForm = () => {
+export const SelectSpacesForm = () => {
+  const compareVotes = (a: Space, b: Space) => {
+    return b.votesCount - a.votesCount
+  }
 
   let selectionList = spaces.sort(compareVotes)
   selectionList = selectionList.slice(0, 10)
-
-  console.log(selectionList)
 
   return (
     <div> 
