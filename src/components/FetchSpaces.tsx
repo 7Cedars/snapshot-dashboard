@@ -4,7 +4,7 @@ import { LIST_SPACES } from '../utils/queries'
 import { ListSpacesGqlValues, Space} from "../types";
 import { toSpaceEntry } from "../utils/parsers";
 
-const SelectSpaces = () => {
+const FetchSpaces = () => {
 
   const [first, setFirst] = useState<number>(1000)
   const [skip, setSkip] = useState<number>(0)
@@ -103,4 +103,4 @@ const SelectSpaces = () => {
   );
 }
 
-export default SelectSpaces;
+export default FetchSpaces;

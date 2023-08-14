@@ -1,12 +1,13 @@
-import SelectSpaces from "./components/SelectSpaces";
+import FetchSpaces from "./components/FetchSpaces";
+import SelectComponent from "./components/selectComponent";
 
 const App = () => {
 
-  
-
   return (
     <div>
-      <SelectSpaces />
+      Hello world from App 
+      <SelectComponent/>
+      {/* <FetchSpaces /> */}
     </div>
   );
 }

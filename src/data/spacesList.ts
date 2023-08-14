@@ -1,4 +1,9 @@
-[
+// These are 1670 spaces. It is not a complete list. (API proved iffy..)
+// build up further later on.  
+
+import { Space } from "../types" ;
+
+const spaces: Space[] = [
   {
       "id": "blockchain974.eth",
       "votesCount": 2,
@@ -8355,3 +8360,5 @@
       "categories": []
   }
 ]
+
+export default spaces;
