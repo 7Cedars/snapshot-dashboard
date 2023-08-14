@@ -1,8364 +1,10420 @@
-// These are 1670 spaces. It is not a complete list. (API proved iffy..)
+// These are the first 1998 spaces list (ascending by creation date).
 // build up further later on.  
 
 import { Space } from "../types" ;
 
-const spaces: Space[] = [
-  {
-      "id": "blockchain974.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "fabien.eth",
-      "votesCount": 210,
-      "categories": []
-  },
-  {
-      "id": "rillafi.eth",
-      "votesCount": 102,
-      "categories": []
-  },
-  {
-      "id": "neftydao.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "karate-combat-test.eth",
-      "votesCount": 210,
-      "categories": []
-  },
-  {
-      "id": "havruta.eth",
-      "votesCount": 34,
-      "categories": []
-  },
-  {
-      "id": "drsgme.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "fiatdao-goerli.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "cookie2test.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "kolya.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "yakurutojirou.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "hachimitsutaro2.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "hogeneko3.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "asdfkjaksdfj.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dhirajbirthdao.eth",
-      "votesCount": 62,
-      "categories": []
-  },
-  {
-      "id": "accubits.eth",
-      "votesCount": 26,
-      "categories": []
-  },
-  {
-      "id": "metrox.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "rajeshmillion.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testmarcin.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "builder12.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "alliance.eth",
-      "votesCount": 10,
-      "categories": []
-  },
-  {
-      "id": "creatorpool.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "creatorfund.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "devtime.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "1x1cd041d663c28b42fd60cf8ba1163917897504f4.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "sdfsdf.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "cnfd.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "connectfinancial.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "lvl99wzrd.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "rajesh123.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "cora.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "muskandao2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "planetx.eth",
-      "votesCount": 18,
-      "categories": []
-  },
-  {
-      "id": "rajesh112.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ryoshidao.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "metatierr.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "pruebameta.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "alley.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "assassin.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "berserkers.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "lvl69wzrd.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "julioa.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "pmint.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "jioswap.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "testdaolvr.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "peachjetskilanyard.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "skeb.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hakutotest2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hakutotestnet.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "alpaca-dao-new.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mydao.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "firstgoerlicollection.szns.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "snap-test.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "satoru.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "tamarintec.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "görli.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "melkdao.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "reefdemo1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "pleague.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "dcapers.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "bricklayer.eth",
-      "votesCount": 43,
-      "categories": []
-  },
-  {
-      "id": "prbtarelieffund.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "blockchainparapuertorico.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "snapshot.daohaus.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "gitpancake.eth",
-      "votesCount": 15,
-      "categories": []
-  },
-  {
-      "id": "cicada3301.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "test.trai.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "pylon.eth",
-      "votesCount": 13,
-      "categories": []
-  },
-  {
-      "id": "test326.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "universalhatemarks.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "n8haus.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "rrttdao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "anfield.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "yasuyasu.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "ekostevich.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "nunu.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "garlic.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "bestreamdev.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "sygnum.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "cgdao.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "alexdvdaotest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "432423532464535344321.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "hanzel.test",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "chadchadchad.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ipv4dao.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "guqi.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "0xtesst2022.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "testinglove.eth",
-      "votesCount": 10,
-      "categories": []
-  },
-  {
-      "id": "testbro.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testooor.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "goerliswirly.szns.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "cocreate.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "hanzelgoerli.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "woyao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mkostevich.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "yyyy7246.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "piglit.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "inf.szns.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "primata.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "bldev.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "mendokusai.szns.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "rptest3.szns.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "rptest4.szns.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "rptest5.szns.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "safezeninsured.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testasy.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "test1123.eth",
-      "votesCount": 22,
-      "categories": []
-  },
-  {
-      "id": "workspace1123.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "udz.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "adiig7.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testzhukov.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "dftest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "teściorro.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hrz-test.eth",
-      "votesCount": 13,
-      "categories": []
-  },
-  {
-      "id": "system32.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "damakadam.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "alexdvtest.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "tell-the.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "xelloxtest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "kzar.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "blumatech.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "ths.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "terring.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "bmvote.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "trijay.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "rptest6.szns.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "intr3pid.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "rptest7.szns.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "rptest8.szns.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "rptest9.szns.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "rptest10.szns.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "rptest12.szns.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sonnguyen.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ardmoneydao.eth",
-      "votesCount": 13,
-      "categories": []
-  },
-  {
-      "id": "erkhes001207.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "blockmonkey.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "testminpal.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "05oct2022.szns.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "rptest17.szns.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "vale.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "r3ndy.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "h2odata.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "daotest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ymlaa.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "rrd.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "decentralised-university.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "testcraft.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "kittenyang.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "family-dao-dev-1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "phi.lideru.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "de365.test",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "laffin.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "aditya.test",
-      "votesCount": 16,
-      "categories": []
-  },
-  {
-      "id": "snaptest.test",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "moob.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "boom.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testingdao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "alexguo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "rptest19.szns.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "nemezizzz.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "innova.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "haifeng86.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "xvtest.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "🦴🦴🦴🦴🦴🦴🦴🦴🦴🦴.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "🍉🍉🍉.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "faztestdao.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "grassotest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "orca012.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "rrd2.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "ufotest.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "rrd3.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "rrd-ac6.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "test.nicohalpe.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "test.metrox.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "carlosrozo.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "tracyspace.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "testerino.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "zerti.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "edsongomezc.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "testingtesting123.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "edsongomez.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "mayans.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "airdropalertdaily.eth",
-      "votesCount": 30,
-      "categories": []
-  },
-  {
-      "id": "mayan.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "travelback.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "invok3rguy.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "salvajedao.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "drstest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "teamsecretdao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "auspire.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ethalert.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "keedaridao.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "maddr.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "invoker.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "mkt.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "tutellusday-sc.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "nekonation.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "thisbsneverworks.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "rametest.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "mtc2045.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dev-topcorn.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "nova.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "snaptest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hashemnik.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ethyrs.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "earnftnetwork.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dev-example.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "siegi-dao.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "20oct2022.szns.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "peaktest.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "rptest20.szns.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "rptest21.szns.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "terratester.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "kozy.eth",
-      "votesCount": 29,
-      "categories": []
-  },
-  {
-      "id": "dev-topcorn-example.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "hashemnik2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "randomdsdsdsadasdsad.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "xzczxczxc.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "rocks333dao.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "canadavote.eth",
-      "votesCount": 41,
-      "categories": []
-  },
-  {
-      "id": "mavtest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "nakkan.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mnkhod.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "gitshock-finance.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "bevoter.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ok999.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ninxa.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "tslmk.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "romanticdao9.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "dito.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "0xmatt.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "flavff.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "1emu.eth",
-      "votesCount": 41,
-      "categories": []
-  },
-  {
-      "id": "305.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "test-governance-space.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "wiziin.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "halfgod.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "acinmavi2.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "decapinator.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "coopdao.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "testtapioca.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "tsully.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "zitong.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "wayne2.eth",
-      "votesCount": 77,
-      "categories": []
-  },
-  {
-      "id": "abc.wiziin.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "evc.wiziin.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "yamamotodao.eth",
-      "votesCount": 62,
-      "categories": []
-  },
-  {
-      "id": "melomance9.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "hashemnik37.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "lksdhgoweinv.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "earthsoldiers.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "harshtest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "kaifinance.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "0xtuytuy.eth",
-      "votesCount": 26,
-      "categories": []
-  },
-  {
-      "id": "asdfasd.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "low.cgdao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "buntopia.cgdao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "aviroxi.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ringoteto.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "test-topcorn.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "hoangson.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testdao256.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dgcrown.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "justtesting.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "wireshape.org",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "catalyst.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "starseeds.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "ensgoerli.eth",
-      "votesCount": 286,
-      "categories": []
-  },
-  {
-      "id": "skydao.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "nikotest123.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "motedao.eth",
-      "votesCount": 12,
-      "categories": []
-  },
-  {
-      "id": "caiten.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "win.wiziin.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "keson.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "bsgdao.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "morgantest.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "carlomigueldy.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dam0.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "tracyspacy.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "rudolfhin.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "claudioprueba.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "lfy.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "impossibledao.eth",
-      "votesCount": 21,
-      "categories": []
-  },
-  {
-      "id": "vallegrande.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "vallegrandec.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "xiangdev.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "qtcon.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hector.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "one.wiziin.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "loremipsum-test7.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "orangepool.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "erc20votestest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "votetest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testfornacho.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ignacio.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "erc20testtest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ifreedev.eth",
-      "votesCount": 11,
-      "categories": []
-  },
-  {
-      "id": "gocryptomedev.eth",
-      "votesCount": 17,
-      "categories": []
-  },
-  {
-      "id": "mvccbsc.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "bitcones.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "decapinator1.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "wagmicrypto07.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "valin-test.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "zibborocks.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ethglobal-dao-tool.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "argallery.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "etheratom.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testing001.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mortadelo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "errcsool-pub-1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "carvalho.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "airdroprdp.eth",
-      "votesCount": 14,
-      "categories": []
-  },
-  {
-      "id": "test2.metrox.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "bryan-test.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "web3labtest01.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "dvteamtest.eth",
-      "votesCount": 105,
-      "categories": []
-  },
-  {
-      "id": "tokenization999.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "n1test.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "fsddfdsf3.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "amansehrawat.eth",
-      "votesCount": 91,
-      "categories": []
-  },
-  {
-      "id": "spengrah.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "internsdao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "5-mol-dmt.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "jervis-test.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "jervis--test.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "shippableintermediaries.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "votetesttest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "geeku.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "nftchef.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "cbgo.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "holder20300.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "web3lab-nft-01.eth",
-      "votesCount": 14,
-      "categories": []
-  },
-  {
-      "id": "checkeredflagdao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "rep3.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "riccardo.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "realitygoerli.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "chupamelagoerli.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testdona.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "bmcc.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "vote.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "ixda-van.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "testquad.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "istpvallegrande.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "newsetuptestgoerli.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "bdtest4.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testdao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "test5.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "aurivos.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "4ktestnet.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "blockfold.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "asterdao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "fuckcovid19.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ironlu233.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "phantom1006.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "jiodex.eth",
-      "votesCount": 34,
-      "categories": []
-  },
-  {
-      "id": "ckt1qzda0cr08m85hc8.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "lexcio.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "paul2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "daovg.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "fructotest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "daovalle.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "mondaylunchdao.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "vallegrande-proyecto.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "vallegrande-charlas-tecnicas.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "gaditanorum.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ftest.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "valleg.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "vallegrand.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "wish.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "labakerytestnet.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "familydao-dev-8.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "familydao-dev-9.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ftest1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ginoct.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "halsktest.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "familydao-dev-10.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "familydao-dev-11.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "1411test.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "dao.blockborn.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "nandogoerli.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ftestdao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "teaproject.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "redbadger.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "cursocopec.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "hackathon-vg.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "kmori.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "test1234-420.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "swapjio.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "goerlitestdao.eth",
-      "votesCount": 11,
-      "categories": []
-  },
-  {
-      "id": "bull.eth",
-      "votesCount": 60,
-      "categories": []
-  },
-  {
-      "id": "cpool-wintermute.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "testsnapfordao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "vktester.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "blaze.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "borkdao-test.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "familydao-dev-12.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "familydao-dev-13.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "drsyourgme.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "airdropclaimers.eth",
-      "votesCount": 105,
-      "categories": []
-  },
-  {
-      "id": "joetai.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "bb-hge-test.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sanihal.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testprop123.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "familydao-dev-14.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "aperture-dev.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "cookiep71.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "anthonyrekt.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "philemonfox.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "familydao-dev-3.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "familydao-dev-7.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "familydao-775823.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "familydao-hello-world.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "familydao-hello-world-2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "zion.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "asdadasdsadada.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "sntest.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "familydao-0xb98f4f9e4bfac97deafcccf5ed82e051f051b0b6.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "outcome.eth",
-      "votesCount": 101,
-      "categories": []
-  },
-  {
-      "id": "5000e12.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "baroqueworksdao.eth",
-      "votesCount": 11,
-      "categories": []
-  },
-  {
-      "id": "blackace.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "limdoge.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "boredgorilla.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "james7.earthfund-test-2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "savinghistory.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "greenweeddao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "anomous.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "lbl.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "santiago.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "anthonyrekt3.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "creaco.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "james10.earthfund-test-2.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "james9.earthfund-test-2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "skalenetwork.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "julio-test.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "gnosis-guild.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "zaydanft.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "yesters.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "skalenetwotk.eth",
-      "votesCount": 33,
-      "categories": []
-  },
-  {
-      "id": "iemarjay.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "luttest.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "anthonyrekt2.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "zodiac-goerli.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mikoronjoo.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "mannatest.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "james16-earthfund-test-2.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "labrystester.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "labrys.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "saving-history.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "terra0xxx.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "usdaodemo.eth",
-      "votesCount": 26,
-      "categories": []
-  },
-  {
-      "id": "soboltest.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "letsgoonnnn.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "james18.earthfund-test-2.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "james19.earthfund-test-2.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "minimals.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "updateddao.eth",
-      "votesCount": 12,
-      "categories": []
-  },
-  {
-      "id": "acinmavi4.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sobeyy.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sobeyyy.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "chloeeey.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "gnosis-gg.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "july.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "doly.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "sobol-dev.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "bsdao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "stakedotlink.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ferxxo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "demobos.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ctest001.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "james20.earthfund-test-2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "synbionet.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "suzu-test.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "wiziin1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "jpa.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "eyinnovationrealized.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "anuelaa.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "pooh.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "outcomefin.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "james21.earthfund-test-2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "james22.earthfund-test-2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "james23.earthfund-test-2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "snapshot.wiziin.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "wewon.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "karate-combat-local.eth",
-      "votesCount": 22,
-      "categories": []
-  },
-  {
-      "id": "slimkawasaki.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "indoex.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "224dao.eth",
-      "votesCount": 92,
-      "categories": []
-  },
-  {
-      "id": "testeske.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "tyottomateyo.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "pbm.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mieres.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "mrdgtest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "astrodao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "astrosdaos.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "lombi.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "badbunny.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "bruno.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "kkaabb.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "dao1.wiziin.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "bccloud.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "gov-dao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "dao2.wiziin.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "james28.earthfund-test-2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "web3lab-dao-02.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "dao3.wiziin.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "liberthive.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "brickslayermumbai.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testpecchio.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "kizunamyx.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "dao4.wiziin.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "labrystester.earthfund-test-2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dao5.wiziin.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dao6.wiziin.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dao7.wiziin.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "bionet.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testkizunamyt.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "frontlinefoundation.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "aperture-dev-2.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "baaadggeeeeeeerrrrrrr.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "synbionet-dao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "karate-combat-stage.eth",
-      "votesCount": 138,
-      "categories": []
-  },
-  {
-      "id": "dreigtesttest.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "joshsdao.earthfund-test-2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "jayw3.earthfund-test-2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dao1.wiziin2.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "valhallanetwork.eth",
-      "votesCount": 16,
-      "categories": []
-  },
-  {
-      "id": "testdaoone.earthfund-test-2.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "mopn.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "decone.earthfund-test-2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sm1.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "wow.earthfund-test-2.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "testtheerc.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "familydao-0xe37670f8c186e763545a1e1d5efdae745127d0e4.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sm2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "innovationsandcryptoventures.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "pye.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dao2.wiziin2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "chench53.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "wizardly.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "vote.shinjiikari256.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "glockblaglock.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "parhi.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "familydao-0x991766dc30bd7bc3457935ceb50ecd70151769c6.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testcortexdao.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "kkdldldldl.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "alphape.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "chungpv.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "votingtest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "kokoko.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "warripeich.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "eldariondeployer.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "soldev.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "solize00demo.eth",
-      "votesCount": 22,
-      "categories": []
-  },
-  {
-      "id": "arch-testdao.eth",
-      "votesCount": 26,
-      "categories": []
-  },
-  {
-      "id": "universitasvizzeraitaliana.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "lyssaka.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "vctest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dizalty.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "thingtester.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testagain.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "karate-combat.eth",
-      "votesCount": 37,
-      "categories": []
-  },
-  {
-      "id": "thedao.earthfund-test-2.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "powershiftpropertiestesting.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "mygoerlitestdao.eth",
-      "votesCount": 12,
-      "categories": []
-  },
-  {
-      "id": "wiprotest.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "mvp.nerdprime.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "nerdprime.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testkryp.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "context.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "richunclemillionaireclubgoerli.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "aram-village-test.eth",
-      "votesCount": 11,
-      "categories": []
-  },
-  {
-      "id": "1.duyth.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "ntg111.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "wiprotestsentiment.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "radiant.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "test1.mmt-test.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "duckyoo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dftestdao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "bgldao.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "jpaf.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "communitytoken.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "korehatestdesu.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "uwu3.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "decnine.earthfund-test-2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "doemdoedoem.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sangbejo19.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "12345654321.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "z2m2020.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "paru.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "usdaogov.eth",
-      "votesCount": 43,
-      "categories": []
-  },
-  {
-      "id": "leadity.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "ris-fiti.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "jhonsmaith.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "voter-registrar.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "aabbccddee.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "cryptoteluguo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "chai.eth",
-      "votesCount": 48,
-      "categories": []
-  },
-  {
-      "id": "ch-1e0.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "playboyoil.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "dumbo.eth",
-      "votesCount": 51,
-      "categories": []
-  },
-  {
-      "id": "aiprotocolinstitute.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "obgdao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testtesttesttesttesttesttest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "babu.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "iim.eth",
-      "votesCount": 72,
-      "categories": []
-  },
-  {
-      "id": "ks-8d9-1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ch-1e0-4.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ch-1e0-2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "cvg-test.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "landsharetest.eth",
-      "votesCount": 70,
-      "categories": []
-  },
-  {
-      "id": "ramiltest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ogbobbyjohnson24.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ch-1e0-3.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "agiradao.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "agiratech.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "degen-defi.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ch-1e0-5.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ch-1e0-6.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "agiratest123.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "agira-test1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "agira123.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "agiratechdao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "iamjoypalmahato.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mozwell.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "goerli-the-degen-dao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "binarydao.eth",
-      "votesCount": 16,
-      "categories": []
-  },
-  {
-      "id": "frankendao.eth",
-      "votesCount": 12,
-      "categories": []
-  },
-  {
-      "id": "lkoti.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "dakshowtestnet.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "daointegration.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "hamachifinance.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "encodeorgtesting.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "shu.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "gemini06.eth",
-      "votesCount": 25,
-      "categories": []
-  },
-  {
-      "id": "mohitdomain.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "onlychan.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "randomname.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "cbkpeanuts.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "unrealfinance.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "benttest.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "experimentalspace.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "cvxtester123.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "homerunclub.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "kibofinance.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "observateur.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "testerter.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "asdas123d.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "demotest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testingground.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "anothertest.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "familydao-0xb316ed0518bce9cb1a441374c8d72eca1507b111.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "familydao-0x2656e24829f79d87b509c590fd215cf9bf3937d7.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "familydao-0x85bd2f1cb585203e8f72b51a0d5b922a901276b9.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "decipherdao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "artifact.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "zhape.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "oxorange.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "toad.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "nftinfernalsl.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testunreal.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "infernalsnft.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "snapzuz.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "paraspace-ape-delegation.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "localdaodev.eth",
-      "votesCount": 125,
-      "categories": []
-  },
-  {
-      "id": "rami.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "zind.eth",
-      "votesCount": 29,
-      "categories": []
-  },
-  {
-      "id": "phi901.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "atlantischain.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "bigbigorg.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "wtest.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "te1412st.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "testonly3.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "kuca.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "liyi.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "radiantcapital.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "gurindersingh.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "nitish22688.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "guest1.wtest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "gorev.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "daman.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "yellowcreative.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "kwiss.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "hellosampledao1234.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "devy.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "natefur12345399.eth",
-      "votesCount": 44,
-      "categories": []
-  },
-  {
-      "id": "workworkwork.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "stay1104.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "chieflens.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "toktok2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dererental1test.eth",
-      "votesCount": 10,
-      "categories": []
-  },
-  {
-      "id": "testproperty2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "daoveloptest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "wentest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hakuikoyori.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "beeland.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "psjourneystest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "kleros-zodiac-tutorial.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "zodiac-kleros-tutorial.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "uofmaepi.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "uofmdao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "decentralizedclimate.eth",
-      "votesCount": 15,
-      "categories": []
-  },
-  {
-      "id": "testnetlabs.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "meravellestest01.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "yojacobtest.eth",
-      "votesCount": 22,
-      "categories": []
-  },
-  {
-      "id": "jansvneen.earthfund-test-3.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "mosdev.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "apecoindao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "toktok.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "cazzarola.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ezether.eth",
-      "votesCount": 16,
-      "categories": []
-  },
-  {
-      "id": "arktechdev.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mosdevs.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "247letsgo.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "balancerintermediaries.eth",
-      "votesCount": 10,
-      "categories": []
-  },
-  {
-      "id": "mostest.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "vendeum.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "og-vegas.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ebisusbay.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "platinionvoting.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "spicedao.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "blazek123.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hoppy.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "teeeeeestqowieqowne.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "qweeeeeqewqeqwesdfdsf.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "ch-1e0-8.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "acc13-82f-1.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "hari.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "8bit0x01.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "meyasubox.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "kishan.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "efegghgfedw.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ari10governance.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "muchotest.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "simonsimon.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "wuxianfeng.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "diguacomole.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "delotto.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "iskdev.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "hakutotestnet0126.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hakutodaodao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "woowoo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testcommunity123.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sebpalluel.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "skagiya-test-space.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "alporo.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "gogopower.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mozgiii.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "developer-nuxify.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "wagmiway.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "familydao-0x0380c818948abe9c6270af63130b1260ffacf2e4.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "builders.ecollective.xyz",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "gobtest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "skipstestspace.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "muzammil.eth",
-      "votesCount": 12,
-      "categories": []
-  },
-  {
-      "id": "tothe🌖.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "trainingjan2023.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "dauphine.eth",
-      "votesCount": 27,
-      "categories": []
-  },
-  {
-      "id": "familydao-0xdaa022de89a3fe56269c3332b8427b830ae26da6.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "familydao-0x32dcce07bb68a9a8e847c581ef49c90e523a8330.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "familydao-0x9baff4d7f25dc448f95d010b03c8ea77254de3a4.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "irrevi.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "janthirty.earthfund-test-3.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "charternft-testnet.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "snoopfear.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "blockchainpei.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ross.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "bushidao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "nhtera.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "henceforthsolutions.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "yamanba.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "taughtsnetwork.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "chaklun.eth",
-      "votesCount": 14,
-      "categories": []
-  },
-  {
-      "id": "beets-test.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "syuzou.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "testsnapshot.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hammim.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "febone.earthfund-test-3.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "m.elvisa.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "treestyle.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "nemesisautomation.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "daotesis.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "irichupoor.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "stabledaogov.eth",
-      "votesCount": 28,
-      "categories": []
-  },
-  {
-      "id": "bcdeveloper.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "yamuyamu.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "rakuraku.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "zapprotocol.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "nicolaslaw.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "decubategov.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "insrttest.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "one.shardvault.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "familydao-0x4c398792eac2d7b06d2d75d2744572d631bba670.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testnetbtc1234.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "snapspace.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "snapsafe.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "hymair.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "guyxyz.eth",
-      "votesCount": 238,
-      "categories": []
-  },
-  {
-      "id": "sufyan1.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "sufyan2.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "familydao-0x82f0eb5aa28dae1b09a05f224e52142972d249a2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "metayobicoredaotest.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "babybao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "guidedao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sufyan3.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "helivote.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ailey.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "metayobicoredaotest1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "emanuele-testing.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "transferdomain.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "andrewwwwww.eth",
-      "votesCount": 17,
-      "categories": []
-  },
-  {
-      "id": "stackup.eth",
-      "votesCount": 1447,
-      "categories": []
-  },
-  {
-      "id": "abcdepafopcmac.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "metayobicoredao3.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "metayobisubdao3.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "motherboard.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "gorjs.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "testdoc.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "8791302144.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hypecarstest.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "jiang.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "metacoredaotest1.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "metacoredaotest2.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "pat.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "eco-snapshot.eth",
-      "votesCount": 22,
-      "categories": []
-  },
-  {
-      "id": "everaicouncil.eth",
-      "votesCount": 28,
-      "categories": []
-  },
-  {
-      "id": "thisistest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "wangyibo85.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "townstest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "a24e-snapshot-test.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "sbfkorea.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "linyus.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "karate-combat-dev.eth",
-      "votesCount": 94,
-      "categories": []
-  },
-  {
-      "id": "testimtiyaz.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "usdaodemo2.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "metayobi.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "imtsubtest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "test00r.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "smugbunny.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "yexiang.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "zhaoshiyuan.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "cheeky.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "lpcaries.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "blablou.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "yawnc.eth",
-      "votesCount": 12,
-      "categories": []
-  },
-  {
-      "id": "smitsekhadiaa.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "arsalanshiran.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "pawthereum.eth",
-      "votesCount": 75,
-      "categories": []
-  },
-  {
-      "id": "familydao-0x20ea2fa078970fd3dd8befdc0d5f493350ee0be5.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "cubiclearn.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "testbraq.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "wandertest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "lodatest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testwen1.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "test50.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "takoyaki82.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "domenacwiczebna.xyz",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "gmfam.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "venky.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "monacov1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "bimkon144.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "womanlifefreedomdao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "bias-protocol.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "test-777.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "babyboo.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "firotest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "kawakamikazuyoshi.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "6947013.eth",
-      "votesCount": 16,
-      "categories": []
-  },
-  {
-      "id": "gaiax23party.eth",
-      "votesCount": 63,
-      "categories": []
-  },
-  {
-      "id": "uagirl.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "girlua.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "girl.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sportx.test",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "doublet94.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "duyth2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "duovese.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "mytestingspacegogo.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "uwhdao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testingsnapshotdao.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "oriumtest.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "p3p3d3x.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "fibula.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "enjinstarterdao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "test-snapshot.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "test-my-ass.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dydx666.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "oayc.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "punklens.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "nachin-dev.eth",
-      "votesCount": 35,
-      "categories": []
-  },
-  {
-      "id": "longxia111.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "klerostest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "kumvote.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "soulboundnapa.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "gogotestingtwo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "malik.earthfund-test-3.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "iskradaotest.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "testph.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "yuanzai123.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dao-a-thon-dev.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "octest.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "anthilldao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "xfx.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "zkportaltest.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "multisigtask.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testexcercise.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mev95.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "acpsnapshottest.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "snowdev.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testingthis.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "subpad.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "retrox.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "gangs.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mirzausman.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ilg2e.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "validier.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "across-dao.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "yiqiao.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "osnap-demo.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "ilovebeadz.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "testttttt.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "forkafk.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "colins.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "cristian-palmera2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sweatsandbox.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "ukiyotest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "j0hnfl0w.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "democracydao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "subdemocracy.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "devtvote.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "fuzzywazziee.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "hackerone.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "cryptooceanbase.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "deltaland.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "ecosus.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "guest2.wtest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testsnapgoerli.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "1.snapspace.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "funkocook.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "threedrender.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "joinj.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "noteternal.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "daoguildcheck.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "shibwallet.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "socrates-local.eth",
-      "votesCount": 79,
-      "categories": []
-  },
-  {
-      "id": "socrates-dev-1.eth",
-      "votesCount": 16,
-      "categories": []
-  },
-  {
-      "id": "socrates-dev-2.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "testdaoguild.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "netsicollective.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "goerli.oriumtest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mumbai.oriumtest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "yuehui.eth",
-      "votesCount": 15,
-      "categories": []
-  },
-  {
-      "id": "testsnap.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "bz168.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "demospace.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "enpcoretest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "cryptostack.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "daoathontesttesttest123.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "cryptorob.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "death-wave.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "mystictreasure.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "misato.eth",
-      "votesCount": 11,
-      "categories": []
-  },
-  {
-      "id": "safe-gnosis-excercise.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ethspace.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "allimeta.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "codefinance.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "lthouse.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "unima.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "cooldogs.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "packtoken.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "this-is-my-address.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "test-governance.eth",
-      "votesCount": 12,
-      "categories": []
-  },
-  {
-      "id": "chocochip.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "testsahaja.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "safesnaptest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "siyadong.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "seedifyhodlerstest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "asamustak.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "fsaddaotest.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "demodayo.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "motestna.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "foster-test.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "multinate.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "foyertly.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "114leo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "bravearena.io",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "bossof.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "3stepvault.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "klerosexercise.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "owlstest.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "officialmemelordz.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "sreepriya-sreekumar.eth",
-      "votesCount": 23,
-      "categories": []
-  },
-  {
-      "id": "trietdinh.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "goerlimaneth.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "brokeboy3000.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "udachnick.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "steamgirl.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "nicolatest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "voltz-dev.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "khalifat.eth",
-      "votesCount": 28,
-      "categories": []
-  },
-  {
-      "id": "gzd.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "devved.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "meletest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "manhnguyen.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "whaleanalysis.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ndrew.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "locg.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "gorelimanfoo.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "goerlimanfooabc.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "goerlifoomansecond.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "goerliman.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "goerliethmandelegation.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ctest.eth",
-      "votesCount": 39,
-      "categories": []
-  },
-  {
-      "id": "elmariachi.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "newgoerliman.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "vitadao.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "nicolab.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "march.earthfund-test-3.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "mc01.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testinggnosissafezodiacreality.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "boldrino.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "test877.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "krubot.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "rvjason.eth",
-      "votesCount": 38,
-      "categories": []
-  },
-  {
-      "id": "yam.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "metavote.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "xmyzz.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hocdao.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "drino.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "drinello11.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testing3333.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "drino12.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "fairydust-dev.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "fengyun.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "jjjjjddddd.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "drinello1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "drinello2.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "drino3.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "roikyuu.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "soju.eth",
-      "votesCount": 14,
-      "categories": []
-  },
-  {
-      "id": "quorum1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "jianzhuo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "unicefbeta.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "seasaltcrush.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "drinello4.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "researchdao.eth",
-      "votesCount": 83,
-      "categories": []
-  },
-  {
-      "id": "watertest.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "yumpy.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "kinetex.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "markormega.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "credituniondao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testdao123.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "yasuyasu-vote-test.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "cryptomakersclub.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dummypbdao.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "fitoff.test",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "toolboxtoken.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "blockchain4all.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "cathayhello.eth",
-      "votesCount": 42,
-      "categories": []
-  },
-  {
-      "id": "daocat.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "platypusfinance.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "atayensatt.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "thousandfaces.eth",
-      "votesCount": 11,
-      "categories": []
-  },
-  {
-      "id": "thehapticdao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dawnton.eth",
-      "votesCount": 11,
-      "categories": []
-  },
-  {
-      "id": "testgolfin.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "temp.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "dewlabsio.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "criusseverus.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "nyksyanaidao.eth",
-      "votesCount": 73,
-      "categories": []
-  },
-  {
-      "id": "rgc.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "karate-combat-qa.eth",
-      "votesCount": 30,
-      "categories": []
-  },
-  {
-      "id": "cabbage.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "granadahillscharter.eth",
-      "votesCount": 17,
-      "categories": []
-  },
-  {
-      "id": "test-gensokishi-mod.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "nitro2000.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "bosagora.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "flavoroftheday.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "internal.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "clors.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "paggtest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "enpblocks.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ballondaor.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "klerosfinale.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "snapshotextension.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "mondayflavor.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "klerosfinal.eth",
-      "votesCount": 12,
-      "categories": []
-  },
-  {
-      "id": "shapeshift-osnap.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "newenptest.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "testdaosnapshot.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "snapnft.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "acgdev.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "浙a88888.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "daokmda.eth",
-      "votesCount": 10,
-      "categories": []
-  },
-  {
-      "id": "klerosnicola.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "kleroskleros.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "conf3gate.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "cubedao.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "racc0ons.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "takumi01.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "murai.eth",
-      "votesCount": 20,
-      "categories": []
-  },
-  {
-      "id": "klerosx.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "nicolaboldrini.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "enpthree.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "eth-global-tokyo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "akindotest.eth",
-      "votesCount": 37,
-      "categories": []
-  },
-  {
-      "id": "ethglobaltokyo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "antoineesti.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "meletest2.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "dao.werbyderk.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "tkmnt.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "werbyderk.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "bitdao-dev.eth",
-      "votesCount": 18,
-      "categories": []
-  },
-  {
-      "id": "memorysupply.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "ownyourpath.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "0.j0hnfl0w.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "1.j0hnfl0w.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "diatest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "nvp.test",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "nicolaxkleros.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "kensh.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "deltastable.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "marquee.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "lease.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testingtester.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "iammoney.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "10april.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "citywifi.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testme.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "chaonan.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dakai.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "legendtest.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "ad3.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "macbudkowski.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "etest1.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "mydaovote.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "milala.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "nadaa.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ensdomainenp.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "sample-loy.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "testenpdomain.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "elevatetest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "amidoingthisright.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "aniket.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "nftdao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testdemo.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "chelofitest.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "web3demo.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "plasmadao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "get-test.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mktest.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "boldrini.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "seedenp.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dao.murall.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "muralldao.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "libdefi.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "bitflyergovernance.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "fluidfunding.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "illshin.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "snicksick.eth",
-      "votesCount": 13,
-      "categories": []
-  },
-  {
-      "id": "degenzoo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "astrofibasevoting.eth",
-      "votesCount": 771,
-      "categories": []
-  },
-  {
-      "id": "solitest.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "drillchain.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "kallydao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "miyako1994.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "amqa.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "exqlnet888.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "kushoworld.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "miyakoqc.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "lynntest.eth",
-      "votesCount": 18,
-      "categories": []
-  },
-  {
-      "id": "subtestdemo.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "space1.web3demo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "space3.web3demo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "subtestdemo1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ghost1king.eth",
-      "votesCount": 11,
-      "categories": []
-  },
-  {
-      "id": "f1r3f4c3.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "stfx.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "porcospinodao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "karikumidao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "sorrena.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "duyentb.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "syndika.eth",
-      "votesCount": 10,
-      "categories": []
-  },
-  {
-      "id": "qewqrq.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "king.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "msnmsn.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "brolextest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "originalsdao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "biggreendao.eth",
-      "votesCount": 13,
-      "categories": []
-  },
-  {
-      "id": "daovelop.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "deretestproperty1.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "liudan.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "nesweb3.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "snapshot.testss.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "testcrp.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "muralltestdao.eth",
-      "votesCount": 32,
-      "categories": []
-  },
-  {
-      "id": "vcs1.testcrp.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "aidao.gpt4.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "acinmavi.eth",
-      "votesCount": 16,
-      "categories": []
-  },
-  {
-      "id": "davin.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "torattest.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "callback.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "dechains.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "torattest2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "space4.web3demo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "12345avp.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "subname-1.12345avp.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "shelllll.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "votingballondaor.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testingaureliano.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "envoy1084.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "oneglobal.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "MVF1.vcs1.testcrp.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "todmy.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "crpse.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "testss.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mnt.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "bgdcommittee.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "kilros.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "mij.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "polls.lenster.xyz",
-      "votesCount": 76,
-      "categories": []
-  },
-  {
-      "id": "vcs1.crpse.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "scammyigorcoin.eth",
-      "votesCount": 17,
-      "categories": []
-  },
-  {
-      "id": "saamplee.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hashlink.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "taylorwebb.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "wan-test.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "spxdt.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "asperinka.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sebthestickmen.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "talken.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "antho1404-test.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "paddycool.eth",
-      "votesCount": 10,
-      "categories": []
-  },
-  {
-      "id": "estevan.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "demo-horizon-dao.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "798465465.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testingnamecomp.eth",
-      "votesCount": 58,
-      "categories": []
-  },
-  {
-      "id": "jinji.eth",
-      "votesCount": 13,
-      "categories": []
-  },
-  {
-      "id": "test123abc.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "koketta.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "urataps-snapshot.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "vcssample1.vcs1.crpse.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "congli.eth",
-      "votesCount": 10,
-      "categories": []
-  },
-  {
-      "id": "vcssample2.vcs1.crpse.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "daocreator.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "yohan.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mintroad-stg.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "adam.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "vcssample3.vcs1.crpse.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "vcssample4.vcs1.crpse.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "vcssample5.vcs1.crpse.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "test1.vcs01.vcs1.crpse.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "test2.vcs01.vcs1.crpse.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "vida.eth",
-      "votesCount": 19,
-      "categories": []
-  },
-  {
-      "id": "test3.vcs01.vcs1.crpse.eth",
-      "votesCount": 71,
-      "categories": []
-  },
-  {
-      "id": "wizi.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ampleswap.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "kouncil.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ferrum-network.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "vannn917.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "zzirl.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sample-jooby.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sample-joobyv1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sample-jooby-v1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "s-jooby-v1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "s-jooby-v2.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "sj-v1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sj-v2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "thisisatest123.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "vcssample7.vcs1.crpse.eth",
-      "votesCount": 105,
-      "categories": []
-  },
-  {
-      "id": "yoyozemagic.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "xcsss.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "kesennumakenshuuyou.eth",
-      "votesCount": 11,
-      "categories": []
-  },
-  {
-      "id": "namth587.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "namthhd.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "holw.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "test677.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "kommunedao.eth",
-      "votesCount": 17,
-      "categories": []
-  },
-  {
-      "id": "goerlisub.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "airdao.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "payam.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dependeiro.eth",
-      "votesCount": 22,
-      "categories": []
-  },
-  {
-      "id": "llllllll.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "club1.dito99.eth",
-      "votesCount": 11,
-      "categories": []
-  },
-  {
-      "id": "ilv-test.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "marketing.ilv-test.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "test1.testsnap.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "imc.ilv-test.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "strategy.ilv-test.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "game.ilv-test.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "community.ilv-test.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "0xjokker.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "club2.dito99.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "8888.louisli.eth",
-      "votesCount": 31,
-      "categories": []
-  },
-  {
-      "id": "divedao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "test-baditu.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "gracy.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "galinec.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hackdao.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "asdasdasdasdasdasd.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testnetmoca.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "split-space.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "yb1ockcha1n.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "metisgoerlitest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "prjrt005.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "d7a76f10.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "adaogoerli.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "bhand.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "fran3.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "onyedikachi-david.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "alphakekai.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "edwardkcyu.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "armami.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "tzkjgcjs.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "0x3c.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "funblock.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ggggdao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "brainjammer.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "kizuna.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hoew.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "club6.dito99.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "successiondao.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "afqwfqvg.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "krnekej.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "piwoe.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "wbezza.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "archidaogoerli.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "simplestorage.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "whenambo.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "beagleswap.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "hahaha888.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "testeqb.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "erixeol.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "testmonster.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "kilros1.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "pgtest.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "lang3.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "hellotest123.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "neptunemutual.eth",
-      "votesCount": 33,
-      "categories": []
-  },
-  {
-      "id": "testingthingsonchain.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "shawn666.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "test-metalamp.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "club1.homerundev1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testy-mctesterson.eth",
-      "votesCount": 17,
-      "categories": []
-  },
-  {
-      "id": "dawnton2.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "test1233.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "haierbro.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testdao2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "alphav2.homerund.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "zhernosek12.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "abundancejames.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "yanyan.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "jack123456.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "sfcascsach.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "vcs1.vcs02.vcs1.crpse.eth",
-      "votesCount": 10,
-      "categories": []
-  },
-  {
-      "id": "test-space.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "bemtikru.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "issawi.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "restitutiondao.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "txbchaintest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sfcasdcsach.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "fongva.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "snapshot-demo.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "vcs1.vcs04.vcs1.crpse.eth",
-      "votesCount": 28,
-      "categories": []
-  },
-  {
-      "id": "tsotne.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "snapshottesting.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "celyi.com",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "testvcs.vcs03.vcs1.crpse.eth",
-      "votesCount": 23,
-      "categories": []
-  },
-  {
-      "id": "nishiogi-dao.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "vcs05.vcs1.crpse.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "formatzpolic.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "nekodao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "callmemrchamp.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "antran.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "pandao.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "ritchie.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "czar0.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mouzayan.eth",
-      "votesCount": 13,
-      "categories": []
-  },
-  {
-      "id": "eizz.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "butane.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "nedao.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "theplay.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "frog2ens.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "sigma-founder-dao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "goodtogreat.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "myplay.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "fvdaotestdaohaus2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "girrishguy.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "wagnerlofe123.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "lazy.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "everethtest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "nattest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "givememoneynow.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mantle-dev.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "lyfris.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "bilalmotiwala.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "readylayer.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "worldlandtest.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "layer3.ecollective.xyz",
-      "votesCount": 64,
-      "categories": []
-  },
-  {
-      "id": "jellyfish0926.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "youdacapt.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "hebe.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "kishio.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "mido.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "wannageld.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "vadilenaz.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "okxsnapshot.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "asdgqwere.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "wizz.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "daoproptech.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "eulertest.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "0x2d76.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ijidaotest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mydomainishere.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "aozgh98.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "qiqi0919.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dbdfbdf.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "tatarinbarin.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "chuchun2.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "aabbdddcd.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "baobaobao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ivsgaiax.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "vncnt.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "amirite.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hawkdove.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "ch20181818.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "20022.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "tieyouxia.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ivsdaogaiax.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "meimeisc.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "kjkisufiek.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "zktest.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "momento.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "amedlsddd.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "kshdfjkhs.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "xcbb.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "jerry1.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "rgrdfdf.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "toolkits.eth",
-      "votesCount": 21,
-      "categories": []
-  },
-  {
-      "id": "one.dannyclub.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "love1.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "test121.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "domingo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "aywah.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "rust1492.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "pistachioman.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "cyberpay.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "honely.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "jackey2023.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "reinis.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "randomnamee.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "acab.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "crps4uat.vcs1.crpse.eth",
-      "votesCount": 35,
-      "categories": []
-  },
-  {
-      "id": "pipposowlo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "008141.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "o43.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "mapletest.eth",
-      "votesCount": 7,
-      "categories": []
-  },
-  {
-      "id": "0x0o.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "admiraldao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "jacobhomanics.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "jakehomanics.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "multiplayer.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "recoverydao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "megadaobr.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "spool.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testnetens.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "glassdorpanel.earthfund-test-3.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hassanschoice.earthfund-test-3.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "lovewithmotherdao.earthfund-test-3.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "leptejebo.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "issachazle.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "fichitas.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "garycoin.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "rtest.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "xcwebq.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testdao169.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "remoteworkdao.earthfund-test-3.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "scrolldao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "dmdemotest.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "mythrust.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "creatorofswag.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "11.8888.louisli.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "hivemind.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "justcreatinganens.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "kreskian.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "story00.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "test1.vcssample7.vcs1.crpse.eth",
-      "votesCount": 10,
-      "categories": []
-  },
-  {
-      "id": "5onazi5.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "safespace.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "openmapdemospace.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "cedarmaple.eth",
-      "votesCount": 15,
-      "categories": []
-  },
-  {
-      "id": "red-panda.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "cavedao.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "laowu251914.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testsnapshot1.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "q-voting.eth",
-      "votesCount": 11,
-      "categories": []
-  },
-  {
-      "id": "govertest.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "airdropsniper.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "bepronetwork.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "test4m.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "qs-staging.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dd-test.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "kdiaspora.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "vcs1.testsnap.vcs1.crpse.eth",
-      "votesCount": 22,
-      "categories": []
-  },
-  {
-      "id": "cheedao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "vcs2.testsnap.vcs1.crpse.eth",
-      "votesCount": 25,
-      "categories": []
-  },
-  {
-      "id": "red-panda-2.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "vcs3.testsnap.vcs1.crpse.eth",
-      "votesCount": 15,
-      "categories": []
-  },
-  {
-      "id": "elysia-test.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "uniqus.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "dietcokeaddiction.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "unicetest.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "multibaas.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "testerdao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "aki134.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "goverlandmidao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "creedtest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ape-test.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "findora-test-space.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "tigergang.dependeiro.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "9oksana.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "deep3labs.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "concave-unofficial.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "awankaget.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "redtreestest.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "huachao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "aitang001.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "dartmalak.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "whogivesadamn123.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "vcs1.test1.vcssample7.vcs1.crpse.eth",
-      "votesCount": 11,
-      "categories": []
-  },
-  {
-      "id": "vcs2.test1.vcs01.vcs1.crpse.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "vcs3.test1.vcs01.vcs1.crpse.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "vcs1.test1.vcs01.vcs1.crpse.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "cdao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "utb.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "vcs1.usrguide.vcs1.crpse.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "takadao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "makaveli.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "daotest.dcl.eth",
-      "votesCount": 25,
-      "categories": []
-  },
-  {
-      "id": "stepandel.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "vcs3.usrguide.vcs1.crpse.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "vcs4.test1.vcs01.vcs1.crpse.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "dimonbali.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "jhonsmaith4.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "cadillacs.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "caglarusta.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ghibliartworks.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "radiusar.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "9rebel2.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "test69420.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "yucheng.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "jackson0820.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "vcs2.usrguide.vcs1.crpse.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "vcs2.testmultisnap.vcs1.crpse.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "vcs1.testmultisnap.vcs1.crpse.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "oompaloompa420.eth",
-      "votesCount": 6,
-      "categories": []
-  },
-  {
-      "id": "2023.bccc.eth",
-      "votesCount": 12,
-      "categories": []
-  },
-  {
-      "id": "atomixe.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "vcs1.vcs03.vcs1.crpse.eth",
-      "votesCount": 5,
-      "categories": []
-  },
-  {
-      "id": "spacerdao.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "clipp.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "governance.oompaloompa420.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "vcs4.testsnap.vcs1.crpse.eth",
-      "votesCount": 8,
-      "categories": []
-  },
-  {
-      "id": "zpc.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "great.percentage.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "defi-france.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "homerun.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ethglobalparis.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "adamboss.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "lineacoin.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ethglobalparis23.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "aistart.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "medad.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "boatdev.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "domtesttoken.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "gigachadclub.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "yodao.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "ethglobalparis2.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ethglobalparis3.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "ethglobalparis4.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ethglobalparis5.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ethglobalparis6.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ethglobalparis7.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "ethglobalparis8.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "demo-defi-protocol.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "lfg-dao.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "gm-dao.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "super-dao.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "airstack-dao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "lthememecoin.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "spacetestdao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hexdemo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "adafsfsfsf.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "vcs3.crps4uat.vcs1.crpse.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "okpool123.eth",
-      "votesCount": 18,
-      "categories": []
-  },
-  {
-      "id": "ducbk1992.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "wdtest2.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "vcs1.crps4uat.vcs1.crpse.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "thodapoet.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dawnpool.eth",
-      "votesCount": 25,
-      "categories": []
-  },
-  {
-      "id": "p-ivo.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "putao.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "youareasb.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "xiaosongfu.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "airswap.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "snapshotdemotest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "baliasset3.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "snapshottesting123.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "huajuan.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "aurther.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "gravitoo.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "tian2023.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "sikho.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "afraa.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "amitko.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "tatamisa.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "testertesterovici.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "barukimang.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "rickyyy.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "faboulous.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "giguufyug.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "swf.jervis.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "tatarin1goerli.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "zhouyun.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "dokimastikos.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "layer7.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "elonking007.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "maxlegend.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "dechain.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "navee.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "nvd.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "tuk.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "nnucal.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "godsai.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "vupd1005.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "rocky1245.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "concac.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "ratata.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "5ae.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "coolmamai.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "godsaitest.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "9saf9as.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "thodapoem.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "demokankeijinko.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "marsdaotest.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hyhyhy.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "akia.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "the-concept.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "govgoerli.eth",
-      "votesCount": 4,
-      "categories": []
-  },
-  {
-      "id": "admiralsdao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "demosnapshot2k23.eth",
-      "votesCount": 19,
-      "categories": []
-  },
-  {
-      "id": "itsfridayfridz.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "klanhuyan.eth",
-      "votesCount": 3,
-      "categories": []
-  },
-  {
-      "id": "slyracoon.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "zicodao.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "jiumi6.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "therealdeal.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "kingalex.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "superlativegallery.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "bobthebuilder.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "vietnammarketdragon.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "quangdh.eth",
-      "votesCount": 0,
-      "categories": []
-  },
-  {
-      "id": "hxdao.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "rasdani.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "karimhashem.eth",
-      "votesCount": 2,
-      "categories": []
-  },
-  {
-      "id": "tst.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "cryptobeacon.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "cuong200497.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "v1lost.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "uwaizumi.eth",
-      "votesCount": 1,
-      "categories": []
-  },
-  {
-      "id": "v1lost.eth",
-      "votesCount": 9,
-      "categories": []
-  },
-  {
-      "id": "uwaizumi.eth",
-      "votesCount": 1,
-      "categories": []
-  }
+const spaces: Space[] = 
+[
+    {
+        "id": "bonustrack.eth",
+        "votesCount": 52,
+        "categories": []
+    },
+    {
+        "id": "fabien.eth",
+        "votesCount": 4685,
+        "categories": [
+        "social",
+        "creator"
+        ]
+    },
+    {
+        "id": "ichi.eth",
+        "votesCount": 761,
+        "categories": []
+    },
+    {
+        "id": "loyalfinance.eth",
+        "votesCount": 14,
+        "categories": []
+    },
+    {
+        "id": "damflux.eth",
+        "votesCount": 11,
+        "categories": []
+    },
+    {
+        "id": "ufode.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "boringvote.eth",
+        "votesCount": 333,
+        "categories": []
+    },
+    {
+        "id": "relayernetwork.eth",
+        "votesCount": 38,
+        "categories": []
+    },
+    {
+        "id": "prophetfinance.eth",
+        "votesCount": 45,
+        "categories": []
+    },
+    {
+        "id": "liddao.eth",
+        "votesCount": 174,
+        "categories": []
+    },
+    {
+        "id": "idlefinance.eth",
+        "votesCount": 1315,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "scradclub.eth",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "pub-finance.eth",
+        "votesCount": 153,
+        "categories": []
+    },
+    {
+        "id": "saffronfinance.eth",
+        "votesCount": 210,
+        "categories": []
+    },
+    {
+        "id": "sovi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "monportefeuille.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "flowcommunity.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "tradersquare.eth",
+        "votesCount": 62,
+        "categories": []
+    },
+    {
+        "id": "xionetwork.eth",
+        "votesCount": 1891,
+        "categories": []
+    },
+    {
+        "id": "minkfinance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "mutualdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "esd.eth",
+        "votesCount": 475,
+        "categories": []
+    },
+    {
+        "id": "vote.southchain.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "flushlol.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "xethfinance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dodobird.eth",
+        "votesCount": 1658,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "archerdao.eth",
+        "votesCount": 62,
+        "categories": []
+    },
+    {
+        "id": "bbra.eth",
+        "votesCount": 57,
+        "categories": []
+    },
+    {
+        "id": "truegov.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "keep2r.eth",
+        "votesCount": 32,
+        "categories": []
+    },
+    {
+        "id": "meter-eth.eth",
+        "votesCount": 16,
+        "categories": []
+    },
+    {
+        "id": "meter-mainnet.eth",
+        "votesCount": 649,
+        "categories": []
+    },
+    {
+        "id": "communitytoken.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ceproject.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "dfking.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "swarmnetwork.eth",
+        "votesCount": 450,
+        "categories": []
+    },
+    {
+        "id": "gokai.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "midas-defi.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "btfinance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "0xEaDC218Ac4cB7895a5A56e6484646b48f841C45a.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "moltenfinance.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "decentralgames.eth",
+        "votesCount": 22765,
+        "categories": []
+    },
+    {
+        "id": "metapoolgov.eth",
+        "votesCount": 150,
+        "categories": []
+    },
+    {
+        "id": "nftgoddessart.eth",
+        "votesCount": 18,
+        "categories": []
+    },
+    {
+        "id": "coopnetwork.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "badgerdao.eth",
+        "votesCount": 71658,
+        "categories": []
+    },
+    {
+        "id": "yam.eth",
+        "votesCount": 20377,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "gov.cap.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "honeyfinance.eth",
+        "votesCount": 10,
+        "categories": []
+    },
+    {
+        "id": "aavegotchi.eth",
+        "votesCount": 323116,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "firestack.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "wse.eth",
+        "votesCount": 22,
+        "categories": []
+    },
+    {
+        "id": "baovotes.eth",
+        "votesCount": 6280,
+        "categories": []
+    },
+    {
+        "id": "yfdfi.eth",
+        "votesCount": 25,
+        "categories": []
+    },
+    {
+        "id": "unitprotocol.eth",
+        "votesCount": 115,
+        "categories": []
+    },
+    {
+        "id": "thescientificblock.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "unidexapp.eth",
+        "votesCount": 1104,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "ubxt.eth",
+        "votesCount": 27,
+        "categories": []
+    },
+    {
+        "id": "hollaex.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "noderunners.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "xdaistake.eth",
+        "votesCount": 10864,
+        "categories": []
+    },
+    {
+        "id": "compgov.eth",
+        "votesCount": 224,
+        "categories": []
+    },
+    {
+        "id": "earndeficoin.eth",
+        "votesCount": 1826,
+        "categories": []
+    },
+    {
+        "id": "multiplierfinance.eth",
+        "votesCount": 62,
+        "categories": []
+    },
+    {
+        "id": "wearedesign.eth",
+        "votesCount": 17,
+        "categories": []
+    },
+    {
+        "id": "tranche.eth",
+        "votesCount": 147,
+        "categories": [
+        "protocol",
+        "investment"
+        ]
+    },
+    {
+        "id": "trinityprotocol.eth",
+        "votesCount": 20,
+        "categories": []
+    },
+    {
+        "id": "yfi3money.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "keeperfi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "uniqueone.eth",
+        "votesCount": 477,
+        "categories": []
+    },
+    {
+        "id": "trism.eth",
+        "votesCount": 38,
+        "categories": [
+        "collector",
+        "creator"
+        ]
+    },
+    {
+        "id": "changbinhe.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "supersam.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "yup.eth",
+        "votesCount": 98,
+        "categories": [
+        "social",
+        "protocol"
+        ]
+    },
+    {
+        "id": "snapshot.puul.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "keyfi-app.eth",
+        "votesCount": 97,
+        "categories": []
+    },
+    {
+        "id": "basiscash.eth",
+        "votesCount": 1430,
+        "categories": []
+    },
+    {
+        "id": "bombtoken.eth",
+        "votesCount": 52,
+        "categories": []
+    },
+    {
+        "id": "vote.defi3dot0.eth",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "rbase.eth",
+        "votesCount": 60,
+        "categories": []
+    },
+    {
+        "id": "tacoswap.eth",
+        "votesCount": 4308,
+        "categories": []
+    },
+    {
+        "id": "wrappedhbar.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "defidolla.eth",
+        "votesCount": 153,
+        "categories": []
+    },
+    {
+        "id": "dappdigest.eth",
+        "votesCount": 10,
+        "categories": [
+        "media",
+        "social"
+        ]
+    },
+    {
+        "id": "adeptcamp.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "CryptoKaiju.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "basisdollar.eth",
+        "votesCount": 596,
+        "categories": []
+    },
+    {
+        "id": "2based.eth",
+        "votesCount": 66,
+        "categories": []
+    },
+    {
+        "id": "lrctoken.eth",
+        "votesCount": 44,
+        "categories": []
+    },
+    {
+        "id": "defisafedao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "gainswap.eth",
+        "votesCount": 68,
+        "categories": []
+    },
+    {
+        "id": "spider-dao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "amp.eth",
+        "votesCount": 1121,
+        "categories": []
+    },
+    {
+        "id": "truefigov.eth",
+        "votesCount": 946,
+        "categories": [
+        "investment",
+        "protocol"
+        ]
+    },
+    {
+        "id": "test.truefigov.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "dxd.eth",
+        "votesCount": 48,
+        "categories": []
+    },
+    {
+        "id": "frax.eth",
+        "votesCount": 10889,
+        "categories": []
+    },
+    {
+        "id": "streamix.eth",
+        "votesCount": 42,
+        "categories": []
+    },
+    {
+        "id": "dgovn.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "finnexus.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cryptokek.eth",
+        "votesCount": 121,
+        "categories": []
+    },
+    {
+        "id": "carrotswap.eth",
+        "votesCount": 207,
+        "categories": []
+    },
+    {
+        "id": "rifttoken.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "socks-gov.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "hypnotube.eth",
+        "votesCount": 55,
+        "categories": []
+    },
+    {
+        "id": "unfederalreserve.eth",
+        "votesCount": 1222,
+        "categories": []
+    },
+    {
+        "id": "latif.eth",
+        "votesCount": 12,
+        "categories": []
+    },
+    {
+        "id": "daostack-alchemy.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "vote.theborg.eth",
+        "votesCount": 80,
+        "categories": []
+    },
+    {
+        "id": "bdollar.eth",
+        "votesCount": 1226,
+        "categories": []
+    },
+    {
+        "id": "nftx.eth",
+        "votesCount": 1151,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "devcondemo.eth",
+        "votesCount": 40,
+        "categories": []
+    },
+    {
+        "id": "ndxfi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "votesfinance.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "cryptobond.eth",
+        "votesCount": 1192,
+        "categories": []
+    },
+    {
+        "id": "ndx.eth",
+        "votesCount": 2219,
+        "categories": []
+    },
+    {
+        "id": "gdao.eth",
+        "votesCount": 301,
+        "categories": []
+    },
+    {
+        "id": "bscex.eth",
+        "votesCount": 983,
+        "categories": []
+    },
+    {
+        "id": "aria.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "pollendefi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "kian.eth",
+        "votesCount": 131,
+        "categories": []
+    },
+    {
+        "id": "zaifinance.eth",
+        "votesCount": 368,
+        "categories": []
+    },
+    {
+        "id": "1sd.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "primitive.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "friendswithbenefits.eth",
+        "votesCount": 9199,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "mithcash.eth",
+        "votesCount": 290,
+        "categories": []
+    },
+    {
+        "id": "dsd.eth",
+        "votesCount": 36,
+        "categories": []
+    },
+    {
+        "id": "carvefinance.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "batdollar.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "mind.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bitcoinsov.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "friskdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "supernovacash.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "vote-perp.eth",
+        "votesCount": 3034,
+        "categories": []
+    },
+    {
+        "id": "dittomoney.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ironbankfi.eth",
+        "votesCount": 623,
+        "categories": []
+    },
+    {
+        "id": "coffeeswap.eth",
+        "votesCount": 25,
+        "categories": []
+    },
+    {
+        "id": "beastdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "spicedao.eth",
+        "votesCount": 199,
+        "categories": []
+    },
+    {
+        "id": "emptysetgold.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "yftether.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "barnbridge.eth",
+        "votesCount": 1291,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "derivadao.eth",
+        "votesCount": 1,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "lunacore.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "emptysetbitcoin.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "recovertoken.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "marsproject.eth",
+        "votesCount": 59,
+        "categories": []
+    },
+    {
+        "id": "velotoken.eth",
+        "votesCount": 42,
+        "categories": []
+    },
+    {
+        "id": "fyooztesting.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "matev.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "benchmarkprotocol.eth",
+        "votesCount": 78,
+        "categories": []
+    },
+    {
+        "id": "maha.eth",
+        "votesCount": 417,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "cream-finance.eth",
+        "votesCount": 7263,
+        "categories": []
+    },
+    {
+        "id": "evoland.eth",
+        "votesCount": 54,
+        "categories": []
+    },
+    {
+        "id": "revelationdao.eth",
+        "votesCount": 350,
+        "categories": []
+    },
+    {
+        "id": "hoedao.eth",
+        "votesCount": 178,
+        "categories": []
+    },
+    {
+        "id": "shabushabufi.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "wise-token.eth",
+        "votesCount": 63,
+        "categories": [
+        "service"
+        ]
+    },
+    {
+        "id": "keepstakers.eth",
+        "votesCount": 170,
+        "categories": []
+    },
+    {
+        "id": "santiment.eth",
+        "votesCount": 35,
+        "categories": []
+    },
+    {
+        "id": "sportx.eth",
+        "votesCount": 567,
+        "categories": [
+        "service"
+        ]
+    },
+    {
+        "id": "protekt.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "as2network.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "squirrelcash.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dexg.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "yfdaifinance.eth",
+        "votesCount": 596,
+        "categories": []
+    },
+    {
+        "id": "grantcomp.eth",
+        "votesCount": 15,
+        "categories": []
+    },
+    {
+        "id": "edao.eth",
+        "votesCount": 75,
+        "categories": []
+    },
+    {
+        "id": "pegscash.eth",
+        "votesCount": 20,
+        "categories": []
+    },
+    {
+        "id": "pegs.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "gel.dexg.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "routerprotocol.eth",
+        "votesCount": 139,
+        "categories": [
+        "protocol",
+        "service"
+        ]
+    },
+    {
+        "id": "omg.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "neverlose.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "flexusd.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "universalcash.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "prosperso.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "stakedao.eth",
+        "votesCount": 3165,
+        "categories": []
+    },
+    {
+        "id": "bangrocks.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "basisgold.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "typhoon-cash.eth",
+        "votesCount": 49,
+        "categories": []
+    },
+    {
+        "id": "pkgtoken.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "mstabledao.eth",
+        "votesCount": 243,
+        "categories": []
+    },
+    {
+        "id": "okcashlab.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dextfprotocol.eth",
+        "votesCount": 277,
+        "categories": [
+        "protocol",
+        "investment"
+        ]
+    },
+    {
+        "id": "clapfinance.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "vicnaum.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "armorgov.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "pandayield.eth",
+        "votesCount": 395,
+        "categories": []
+    },
+    {
+        "id": "earndefi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bzx.eth",
+        "votesCount": 186,
+        "categories": []
+    },
+    {
+        "id": "testmytoken.eth",
+        "votesCount": 27,
+        "categories": []
+    },
+    {
+        "id": "defigeek.eth",
+        "votesCount": 1787,
+        "categories": []
+    },
+    {
+        "id": "stablexfinance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "fyoozapp.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "snapshottest.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "mushroomsfi.eth",
+        "votesCount": 125,
+        "categories": []
+    },
+    {
+        "id": "community.nexusmutual.eth",
+        "votesCount": 758,
+        "categories": []
+    },
+    {
+        "id": "vote.airswap.eth",
+        "votesCount": 15868,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "vote-rinkeby.airswap.eth",
+        "votesCount": 96,
+        "categories": []
+    },
+    {
+        "id": "aventus.eth",
+        "votesCount": 185,
+        "categories": []
+    },
+    {
+        "id": "metafactory.eth",
+        "votesCount": 723,
+        "categories": [
+        "service",
+        "creator"
+        ]
+    },
+    {
+        "id": "kebabfinance.eth",
+        "votesCount": 49,
+        "categories": []
+    },
+    {
+        "id": "lido-snapshot.eth",
+        "votesCount": 60899,
+        "categories": []
+    },
+    {
+        "id": "1btc.eth",
+        "votesCount": 4073,
+        "categories": []
+    },
+    {
+        "id": "monsterslayer.eth",
+        "votesCount": 625,
+        "categories": []
+    },
+    {
+        "id": "epik.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "stabilize-governance.eth",
+        "votesCount": 331,
+        "categories": []
+    },
+    {
+        "id": "signal.yam.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "gamestopfinance.eth",
+        "votesCount": 20,
+        "categories": []
+    },
+    {
+        "id": "basisusd.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "opiumprotocol.eth",
+        "votesCount": 611,
+        "categories": []
+    },
+    {
+        "id": "gov.dhedge.eth",
+        "votesCount": 1374,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "kuko.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "memefarm.eth",
+        "votesCount": 29,
+        "categories": []
+    },
+    {
+        "id": "requestgovernance.eth",
+        "votesCount": 58,
+        "categories": []
+    },
+    {
+        "id": "dalmatians.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "diadao.eth",
+        "votesCount": 1349,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "crtfinance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "thegraphnetwork.eth",
+        "votesCount": 94,
+        "categories": []
+    },
+    {
+        "id": "kif-gov.eth",
+        "votesCount": 68,
+        "categories": []
+    },
+    {
+        "id": "AngelDAO.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "employmentcommons.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "ilv.eth",
+        "votesCount": 5669,
+        "categories": []
+    },
+    {
+        "id": "curefarm.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "inversefinance.eth",
+        "votesCount": 1591,
+        "categories": []
+    },
+    {
+        "id": "mbcore.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "tw33t.eth",
+        "votesCount": 10,
+        "categories": []
+    },
+    {
+        "id": "marginswap.eth",
+        "votesCount": 264,
+        "categories": []
+    },
+    {
+        "id": "gentlemensbank.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "stblfund.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "migbusiness.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "yzydao.eth",
+        "votesCount": 152,
+        "categories": []
+    },
+    {
+        "id": "wallstreetbetstoken.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "genesis-dao.hopr.eth",
+        "votesCount": 9176,
+        "categories": []
+    },
+    {
+        "id": "bonfi.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "premia.eth",
+        "votesCount": 1265,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "perlinx.eth",
+        "votesCount": 13,
+        "categories": []
+    },
+    {
+        "id": "thefamoustoken.eth",
+        "votesCount": 13,
+        "categories": []
+    },
+    {
+        "id": "julswap.eth",
+        "votesCount": 8532,
+        "categories": []
+    },
+    {
+        "id": "hogefoundation.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "alchemistcoin.eth",
+        "votesCount": 2887,
+        "categories": []
+    },
+    {
+        "id": "optyfi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "spongefinance.eth",
+        "votesCount": 121,
+        "categories": []
+    },
+    {
+        "id": "sharedstake.eth",
+        "votesCount": 2546,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "cafeswapfinance.eth",
+        "votesCount": 398,
+        "categories": []
+    },
+    {
+        "id": "stakingcapital.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "saltdao.eth",
+        "votesCount": 26,
+        "categories": []
+    },
+    {
+        "id": "fraxfinancegovernance.eth",
+        "votesCount": 9,
+        "categories": []
+    },
+    {
+        "id": "mstableprotocoldao.eth",
+        "votesCount": 208,
+        "categories": []
+    },
+    {
+        "id": "snapshot.floatprotocol.eth",
+        "votesCount": 7527,
+        "categories": []
+    },
+    {
+        "id": "xmon.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "klondike.eth",
+        "votesCount": 268,
+        "categories": []
+    },
+    {
+        "id": "arrayfinance.eth",
+        "votesCount": 80,
+        "categories": []
+    },
+    {
+        "id": "snxambassador.eth",
+        "votesCount": 2531,
+        "categories": []
+    },
+    {
+        "id": "eublas.xyz",
+        "votesCount": 13,
+        "categories": []
+    },
+    {
+        "id": "thedaotoken.eth",
+        "votesCount": 15,
+        "categories": []
+    },
+    {
+        "id": "fundamenta.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ccbig.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "blakeburrito.eth",
+        "votesCount": 12,
+        "categories": []
+    },
+    {
+        "id": "vsp.eth",
+        "votesCount": 1341,
+        "categories": []
+    },
+    {
+        "id": "config.airswap.eth",
+        "votesCount": 100,
+        "categories": []
+    },
+    {
+        "id": "pancakebunny.eth",
+        "votesCount": 5167,
+        "categories": []
+    },
+    {
+        "id": "mcl-multiplierfinance.eth",
+        "votesCount": 87,
+        "categories": []
+    },
+    {
+        "id": "libertypie.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "gnosis.eth",
+        "votesCount": 41227,
+        "categories": []
+    },
+    {
+        "id": "tastefinance.eth",
+        "votesCount": 27,
+        "categories": []
+    },
+    {
+        "id": "shemalefinance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "riseprotocol.eth",
+        "votesCount": 18,
+        "categories": []
+    },
+    {
+        "id": "candyfinance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "easybake.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "harvestfi.eth",
+        "votesCount": 1446,
+        "categories": []
+    },
+    {
+        "id": "degentokenfinance.eth",
+        "votesCount": 45,
+        "categories": []
+    },
+    {
+        "id": "alpacafinance.eth",
+        "votesCount": 10448,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "snapshot.paraswap-io.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "tokenlon.eth",
+        "votesCount": 3056,
+        "categories": []
+    },
+    {
+        "id": "visor.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "gov.radicle.eth",
+        "votesCount": 629,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "magicbalancer.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "goatcoin.eth",
+        "votesCount": 28,
+        "categories": []
+    },
+    {
+        "id": "uni.meme0xb1.eth",
+        "votesCount": 185,
+        "categories": []
+    },
+    {
+        "id": "oracles.opiumprotocol.eth",
+        "votesCount": 54,
+        "categories": []
+    },
+    {
+        "id": "zfogg.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "alchemixstakers.eth",
+        "votesCount": 13071,
+        "categories": []
+    },
+    {
+        "id": "tadpolefinance.eth",
+        "votesCount": 143,
+        "categories": []
+    },
+    {
+        "id": "bamboodefi.eth",
+        "votesCount": 408,
+        "categories": []
+    },
+    {
+        "id": "graphprotocol.eth",
+        "votesCount": 1195,
+        "categories": []
+    },
+    {
+        "id": "badger.meme0xb1.eth",
+        "votesCount": 66,
+        "categories": []
+    },
+    {
+        "id": "alpha.meme0xb1.eth",
+        "votesCount": 54,
+        "categories": []
+    },
+    {
+        "id": "rook.meme0xb1.eth",
+        "votesCount": 41,
+        "categories": []
+    },
+    {
+        "id": "yax.meme0xb1.eth",
+        "votesCount": 29,
+        "categories": []
+    },
+    {
+        "id": "yfl.meme0xb1.eth",
+        "votesCount": 23,
+        "categories": []
+    },
+    {
+        "id": "frami.eth",
+        "votesCount": 240,
+        "categories": []
+    },
+    {
+        "id": "snowfork.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "tracer.eth",
+        "votesCount": 904,
+        "categories": []
+    },
+    {
+        "id": "jasonliu.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "beatsdao.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "ensuser.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "spartancouncil.eth",
+        "votesCount": 3578,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "snxgov.eth",
+        "votesCount": 3984,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "snxgrants.eth",
+        "votesCount": 2665,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "ramenswap.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "diamondhandsfinance.eth",
+        "votesCount": 0,
+        "categories": [
+        "service",
+        "collector"
+        ]
+    },
+    {
+        "id": "emarket.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "virtualbacon.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "wasabiswap.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "pcdai.pooltogether.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "daiquilibrium.eth",
+        "votesCount": 38,
+        "categories": []
+    },
+    {
+        "id": "fbear.eth",
+        "votesCount": 39,
+        "categories": []
+    },
+    {
+        "id": "apoyield.eth",
+        "votesCount": 48,
+        "categories": []
+    },
+    {
+        "id": "xcomb.eth",
+        "votesCount": 20,
+        "categories": []
+    },
+    {
+        "id": "everframe.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "GamyFi.eth",
+        "votesCount": 17,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "thanku.eth",
+        "votesCount": 298,
+        "categories": []
+    },
+    {
+        "id": "niubiswap.eth",
+        "votesCount": 111,
+        "categories": []
+    },
+    {
+        "id": "insuretoken.eth",
+        "votesCount": 187,
+        "categories": [
+        "social",
+        "protocol"
+        ]
+    },
+    {
+        "id": "midasgold.eth",
+        "votesCount": 367,
+        "categories": []
+    },
+    {
+        "id": "ethereum4.eth",
+        "votesCount": 18,
+        "categories": []
+    },
+    {
+        "id": "somegreenguy.eth",
+        "votesCount": 10,
+        "categories": []
+    },
+    {
+        "id": "rulerprotocol.eth",
+        "votesCount": 2502,
+        "categories": []
+    },
+    {
+        "id": "biopset.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "shoppingio.eth",
+        "votesCount": 513,
+        "categories": []
+    },
+    {
+        "id": "tsukidao.eth",
+        "votesCount": 63,
+        "categories": []
+    },
+    {
+        "id": "pootogetherbsc.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "quickvote.eth",
+        "votesCount": 5405,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "aqualair.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "itam.eth",
+        "votesCount": 1274,
+        "categories": []
+    },
+    {
+        "id": "impossiblefinance.eth",
+        "votesCount": 1064,
+        "categories": []
+    },
+    {
+        "id": "universalweb.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "mimo.eth",
+        "votesCount": 1010,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "irl.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "kovan.mimo.eth",
+        "votesCount": 15,
+        "categories": []
+    },
+    {
+        "id": "kangal.eth",
+        "votesCount": 79,
+        "categories": []
+    },
+    {
+        "id": "bsnapshot.eth",
+        "votesCount": 82,
+        "categories": []
+    },
+    {
+        "id": "defiville.eth",
+        "votesCount": 84,
+        "categories": []
+    },
+    {
+        "id": "laserswap.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "gvvalue.eth",
+        "votesCount": 291,
+        "categories": []
+    },
+    {
+        "id": "kangal-bsc.eth",
+        "votesCount": 134,
+        "categories": []
+    },
+    {
+        "id": "pangolindex.eth",
+        "votesCount": 1855,
+        "categories": []
+    },
+    {
+        "id": "pooltogether.eth",
+        "votesCount": 3178,
+        "categories": []
+    },
+    {
+        "id": "poolpool.pooltogether.eth",
+        "votesCount": 3327,
+        "categories": []
+    },
+    {
+        "id": "lok.yieldguild.eth",
+        "votesCount": 34,
+        "categories": []
+    },
+    {
+        "id": "stimmyio.eth",
+        "votesCount": 147,
+        "categories": []
+    },
+    {
+        "id": "bnfyfinance.eth",
+        "votesCount": 16,
+        "categories": []
+    },
+    {
+        "id": "realcycloneprotocol.eth",
+        "votesCount": 856,
+        "categories": []
+    },
+    {
+        "id": "dozerz.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bingocash.eth",
+        "votesCount": 134,
+        "categories": []
+    },
+    {
+        "id": "12580.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "midasdollar.eth",
+        "votesCount": 148,
+        "categories": []
+    },
+    {
+        "id": "starthaus.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "awsbcommunity.eth",
+        "votesCount": 5938,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "koios.eth",
+        "votesCount": 214,
+        "categories": []
+    },
+    {
+        "id": "ballena.eth",
+        "votesCount": 292,
+        "categories": []
+    },
+    {
+        "id": "unfi.eth",
+        "votesCount": 1251,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "cryptfi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "latticegov.eth",
+        "votesCount": 1596,
+        "categories": [
+        "service"
+        ]
+    },
+    {
+        "id": "pasta.eth",
+        "votesCount": 129,
+        "categories": []
+    },
+    {
+        "id": "🍯dao.eth",
+        "votesCount": 11,
+        "categories": [
+        "grant"
+        ]
+    },
+    {
+        "id": "forcedao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "snapshot.rupaya.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "bancornetwork.eth",
+        "votesCount": 31250,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "cyberficommunity.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bval20.bvalosek.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bvalosek.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "xfarmer.eth",
+        "votesCount": 244,
+        "categories": []
+    },
+    {
+        "id": "elasticdao.eth",
+        "votesCount": 2925,
+        "categories": []
+    },
+    {
+        "id": "synthereum.eth",
+        "votesCount": 4037,
+        "categories": []
+    },
+    {
+        "id": "legodao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "iwan.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "haykerdao.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "cryptokombat.eth",
+        "votesCount": 42,
+        "categories": []
+    },
+    {
+        "id": "cover-protocol.eth",
+        "votesCount": 1024,
+        "categories": []
+    },
+    {
+        "id": "officialoceandao.eth",
+        "votesCount": 4420,
+        "categories": []
+    },
+    {
+        "id": "aladdindao.eth",
+        "votesCount": 4055,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "snapshot.nucypherdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "88mph.eth",
+        "votesCount": 369,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "resistanceio.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "test.alirun.eth",
+        "votesCount": 132,
+        "categories": []
+    },
+    {
+        "id": "kimchidao.eth",
+        "votesCount": 38,
+        "categories": []
+    },
+    {
+        "id": "poh.eth",
+        "votesCount": 18498,
+        "categories": []
+    },
+    {
+        "id": "nudao.eth",
+        "votesCount": 586,
+        "categories": []
+    },
+    {
+        "id": "apefinance.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "haze.eth",
+        "votesCount": 19,
+        "categories": []
+    },
+    {
+        "id": "unslashed.eth",
+        "votesCount": 804,
+        "categories": []
+    },
+    {
+        "id": "anshiny.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "pythostoken.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "ilvgov.eth",
+        "votesCount": 165,
+        "categories": []
+    },
+    {
+        "id": "ren-project.eth",
+        "votesCount": 1926,
+        "categories": []
+    },
+    {
+        "id": "stix.eth",
+        "votesCount": 9,
+        "categories": []
+    },
+    {
+        "id": "boardroomfi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "comp-vote.eth",
+        "votesCount": 2193,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "curiovoters.eth",
+        "votesCount": 92,
+        "categories": []
+    },
+    {
+        "id": "ybaby.eth",
+        "votesCount": 8638,
+        "categories": []
+    },
+    {
+        "id": "arcx.eth",
+        "votesCount": 441,
+        "categories": []
+    },
+    {
+        "id": "forkenomics.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "beetsdao.eth",
+        "votesCount": 1717,
+        "categories": []
+    },
+    {
+        "id": "council.graphprotocol.eth",
+        "votesCount": 183,
+        "categories": []
+    },
+    {
+        "id": "tuskerfinance.eth",
+        "votesCount": 20,
+        "categories": []
+    },
+    {
+        "id": "squiggledao.eth",
+        "votesCount": 1015,
+        "categories": []
+    },
+    {
+        "id": "matthewnolan.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "stonkbase.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "maskedofpower.eth",
+        "votesCount": 166,
+        "categories": []
+    },
+    {
+        "id": "morphose.eth",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "defilabsfoundation.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "macaronswap.eth",
+        "votesCount": 1082,
+        "categories": []
+    },
+    {
+        "id": "levinswap.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "suni.eth",
+        "votesCount": 34,
+        "categories": []
+    },
+    {
+        "id": "wallabyfinance.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "berezka.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "rootkitfinance.eth",
+        "votesCount": 88,
+        "categories": []
+    },
+    {
+        "id": "covalenthq.eth",
+        "votesCount": 416,
+        "categories": []
+    },
+    {
+        "id": "resdx.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "usebraintrustropsten.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "chanyshev.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "sishi.eth",
+        "votesCount": 20,
+        "categories": []
+    },
+    {
+        "id": "methodfinance.eth",
+        "votesCount": 60,
+        "categories": []
+    },
+    {
+        "id": "pepedontdump.eth",
+        "votesCount": 128,
+        "categories": [
+        "collector"
+        ]
+    },
+    {
+        "id": "ethlocal.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "kika2021.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "shinedao.eth",
+        "votesCount": 216,
+        "categories": [
+        "creator",
+        "investment"
+        ]
+    },
+    {
+        "id": "compoundgrants.eth",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "crypto-corgis.eth",
+        "votesCount": 507,
+        "categories": []
+    },
+    {
+        "id": "hash.pob.eth",
+        "votesCount": 38,
+        "categories": []
+    },
+    {
+        "id": "recess.eth",
+        "votesCount": 65,
+        "categories": []
+    },
+    {
+        "id": "shardingdao.eth",
+        "votesCount": 14,
+        "categories": []
+    },
+    {
+        "id": "solos.eth",
+        "votesCount": 313,
+        "categories": []
+    },
+    {
+        "id": "geeksg.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "m.bsnapshot.eth",
+        "votesCount": 117,
+        "categories": []
+    },
+    {
+        "id": "ffdao.eth",
+        "votesCount": 663,
+        "categories": []
+    },
+    {
+        "id": "krebit.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "fei.eth",
+        "votesCount": 14257,
+        "categories": []
+    },
+    {
+        "id": "olympusdao.eth",
+        "votesCount": 50729,
+        "categories": []
+    },
+    {
+        "id": "leafan.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "nsure.eth",
+        "votesCount": 12,
+        "categories": []
+    },
+    {
+        "id": "adamant.eth",
+        "votesCount": 518,
+        "categories": []
+    },
+    {
+        "id": "blockzerolabs.eth",
+        "votesCount": 2307,
+        "categories": [
+        "service",
+        "grant"
+        ]
+    },
+    {
+        "id": "elastic-vote-sandbox.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "igov.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cherryblossomcommunity.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "levyathan.eth",
+        "votesCount": 314,
+        "categories": []
+    },
+    {
+        "id": "viralata.eth",
+        "votesCount": 521,
+        "categories": []
+    },
+    {
+        "id": "creditblockchain.eth",
+        "votesCount": 46,
+        "categories": []
+    },
+    {
+        "id": "akropolis.eth",
+        "votesCount": 249,
+        "categories": []
+    },
+    {
+        "id": "curadai.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "sirenmarkets.eth",
+        "votesCount": 30,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "unifundglobal.eth",
+        "votesCount": 27,
+        "categories": []
+    },
+    {
+        "id": "slimefinance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "berrydata.eth",
+        "votesCount": 177,
+        "categories": []
+    },
+    {
+        "id": "test.pzsm.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "axiondao.eth",
+        "votesCount": 4197,
+        "categories": []
+    },
+    {
+        "id": "dfvindex.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "doomies.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "basketdao.eth",
+        "votesCount": 1001,
+        "categories": []
+    },
+    {
+        "id": "brt.otoco.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "iotexnetwork.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "iftip.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "strudel.eth",
+        "votesCount": 15,
+        "categories": []
+    },
+    {
+        "id": "0xdef1.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "entropyseeds.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "complus.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "fera.eth",
+        "votesCount": 46,
+        "categories": []
+    },
+    {
+        "id": "aluna.eth",
+        "votesCount": 32,
+        "categories": []
+    },
+    {
+        "id": "suprafinance.xyz",
+        "votesCount": 21,
+        "categories": []
+    },
+    {
+        "id": "pollo.eth",
+        "votesCount": 102,
+        "categories": []
+    },
+    {
+        "id": "hiveshares.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "claimxyz.eth",
+        "votesCount": 71,
+        "categories": []
+    },
+    {
+        "id": "treedefi.eth",
+        "votesCount": 22,
+        "categories": []
+    },
+    {
+        "id": "nervefinance.eth",
+        "votesCount": 193,
+        "categories": []
+    },
+    {
+        "id": "pleasrdao.eth",
+        "votesCount": 1097,
+        "categories": []
+    },
+    {
+        "id": "halodao.eth",
+        "votesCount": 58,
+        "categories": []
+    },
+    {
+        "id": "stackerventures.eth",
+        "votesCount": 86,
+        "categories": []
+    },
+    {
+        "id": "enigma16.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "everipediaiq.eth",
+        "votesCount": 142,
+        "categories": [
+        "protocol",
+        "social"
+        ]
+    },
+    {
+        "id": "parallaxprotocol.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "token.m1guelpf.eth",
+        "votesCount": 15,
+        "categories": []
+    },
+    {
+        "id": "ebog.eth",
+        "votesCount": 654,
+        "categories": []
+    },
+    {
+        "id": "chrisco.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "frictionfinance.eth",
+        "votesCount": 98,
+        "categories": []
+    },
+    {
+        "id": "crd.eth",
+        "votesCount": 14,
+        "categories": []
+    },
+    {
+        "id": "alend.amun.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "shedapp.eth",
+        "votesCount": 243,
+        "categories": [
+        "media",
+        "protocol"
+        ]
+    },
+    {
+        "id": "uberhaus.eth",
+        "votesCount": 379,
+        "categories": []
+    },
+    {
+        "id": "em3dao.eth",
+        "votesCount": 38,
+        "categories": []
+    },
+    {
+        "id": "julpad.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "hakka.eth",
+        "votesCount": 1710,
+        "categories": []
+    },
+    {
+        "id": "rallygov.eth",
+        "votesCount": 3970,
+        "categories": []
+    },
+    {
+        "id": "changfan.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "waifusiongov.eth",
+        "votesCount": 129,
+        "categories": []
+    },
+    {
+        "id": "úrnua.eth",
+        "votesCount": 44,
+        "categories": []
+    },
+    {
+        "id": "kishutoken.eth",
+        "votesCount": 12,
+        "categories": []
+    },
+    {
+        "id": "uniq.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "geometrylabs.eth",
+        "votesCount": 14,
+        "categories": []
+    },
+    {
+        "id": "samuv.eth",
+        "votesCount": 91,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "zkswapgov.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "turpintinz.eth",
+        "votesCount": 19,
+        "categories": []
+    },
+    {
+        "id": "shadowpakt.storymode.eth",
+        "votesCount": 88,
+        "categories": []
+    },
+    {
+        "id": "layercash.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "tianranzhang.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bsc.bzx.eth",
+        "votesCount": 248,
+        "categories": []
+    },
+    {
+        "id": "metacartel.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "finnexusbsc.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dexfolio.eth",
+        "votesCount": 60,
+        "categories": []
+    },
+    {
+        "id": "stakewise.eth",
+        "votesCount": 1607,
+        "categories": []
+    },
+    {
+        "id": "cryptokekbsc.eth",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "dbookplatform.eth",
+        "votesCount": 70,
+        "categories": []
+    },
+    {
+        "id": "mithcash2.eth",
+        "votesCount": 119,
+        "categories": []
+    },
+    {
+        "id": "stonedefi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "scoobi.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "pippi.eth",
+        "votesCount": 128,
+        "categories": []
+    },
+    {
+        "id": "dgov.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "chainbay.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ethersocks.eth",
+        "votesCount": 109,
+        "categories": []
+    },
+    {
+        "id": "nococaine.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "creaton.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dogen.eth",
+        "votesCount": 370,
+        "categories": []
+    },
+    {
+        "id": "debaseonomics.eth",
+        "votesCount": 383,
+        "categories": []
+    },
+    {
+        "id": "klt.eth",
+        "votesCount": 76,
+        "categories": []
+    },
+    {
+        "id": "myceliumgrowth.eth",
+        "votesCount": 94,
+        "categories": []
+    },
+    {
+        "id": "infinitycrypto.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "0xb1.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "shardcoin.eth",
+        "votesCount": 229,
+        "categories": []
+    },
+    {
+        "id": "hyruleswap.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "rootdraws.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "fairsafe.eth",
+        "votesCount": 413,
+        "categories": []
+    },
+    {
+        "id": "alexx855.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "thunderbirdgov.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "belugaprotocol.eth",
+        "votesCount": 18,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "crowdex.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "joe-defi.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "afterparty.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "musky.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "splitworld.eth",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "jitime.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "fartoken.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "soappunk.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "djedi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "lolcat.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "justmarketbuy.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ecm.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "liftkitchen.eth",
+        "votesCount": 487,
+        "categories": []
+    },
+    {
+        "id": "apeswap-finance.eth",
+        "votesCount": 1822,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "masknetwork.eth",
+        "votesCount": 5096,
+        "categories": []
+    },
+    {
+        "id": "losercoin.eth",
+        "votesCount": 173,
+        "categories": []
+    },
+    {
+        "id": "gzks.eth",
+        "votesCount": 116,
+        "categories": []
+    },
+    {
+        "id": "bsaepfl.eth",
+        "votesCount": 28,
+        "categories": []
+    },
+    {
+        "id": "covinu.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "boardroomlabs.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "mcswagg.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "scamily.eth",
+        "votesCount": 33,
+        "categories": []
+    },
+    {
+        "id": "polkaflare.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bozo-capital.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "tinvdao.eth",
+        "votesCount": 341,
+        "categories": []
+    },
+    {
+        "id": "basedloans.eth",
+        "votesCount": 175,
+        "categories": []
+    },
+    {
+        "id": "stackervc.eth",
+        "votesCount": 160,
+        "categories": []
+    },
+    {
+        "id": "pascall.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "xsig.eth",
+        "votesCount": 18,
+        "categories": []
+    },
+    {
+        "id": "dgcl.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "libertas.eth",
+        "votesCount": 13,
+        "categories": []
+    },
+    {
+        "id": "dappchaser.eth",
+        "votesCount": 22,
+        "categories": []
+    },
+    {
+        "id": "unigod.storymode.eth",
+        "votesCount": 43,
+        "categories": []
+    },
+    {
+        "id": "flygoing.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "treatvote.eth",
+        "votesCount": 965,
+        "categories": []
+    },
+    {
+        "id": "superfarm.eth",
+        "votesCount": 83,
+        "categories": []
+    },
+    {
+        "id": "smoothyfinance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bpro.eth",
+        "votesCount": 287,
+        "categories": []
+    },
+    {
+        "id": "innovationtheory.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "dolphincoin.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "onepoolfinance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "guaini.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "bohemiandao.eth",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "pantherswap.eth",
+        "votesCount": 1337,
+        "categories": []
+    },
+    {
+        "id": "eth3913.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "moonrat.eth",
+        "votesCount": 3075,
+        "categories": []
+    },
+    {
+        "id": "smoothybsc.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "hegic.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bsc.defidolla.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "b1mt.eth",
+        "votesCount": 31,
+        "categories": []
+    },
+    {
+        "id": "pastadao.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "buckswap.eth",
+        "votesCount": 82,
+        "categories": []
+    },
+    {
+        "id": "flydao.eth",
+        "votesCount": 15,
+        "categories": []
+    },
+    {
+        "id": "blxpr.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "getsafex.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "buger.eth",
+        "votesCount": 371,
+        "categories": []
+    },
+    {
+        "id": "orangecats.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "alchemistdefi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "gaiadao.eth",
+        "votesCount": 120,
+        "categories": []
+    },
+    {
+        "id": "ens.eth",
+        "votesCount": 115736,
+        "categories": []
+    },
+    {
+        "id": "hodorfi.eth",
+        "votesCount": 15,
+        "categories": []
+    },
+    {
+        "id": "mars26.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "feederfinance.eth",
+        "votesCount": 290,
+        "categories": []
+    },
+    {
+        "id": "acoconutbsc.eth",
+        "votesCount": 26,
+        "categories": []
+    },
+    {
+        "id": "buche.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "meowdao.eth",
+        "votesCount": 37,
+        "categories": []
+    },
+    {
+        "id": "porkswap.eth",
+        "votesCount": 47,
+        "categories": []
+    },
+    {
+        "id": "bscbadger.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "flashcommunity.eth",
+        "votesCount": 167,
+        "categories": []
+    },
+    {
+        "id": "pupperdao.eth",
+        "votesCount": 114,
+        "categories": []
+    },
+    {
+        "id": "adventurelandfinance.eth",
+        "votesCount": 26,
+        "categories": []
+    },
+    {
+        "id": "banklessvault.eth",
+        "votesCount": 23294,
+        "categories": []
+    },
+    {
+        "id": "fingerprints.eth",
+        "votesCount": 727,
+        "categories": [
+        "collector"
+        ]
+    },
+    {
+        "id": "spookyswap.eth",
+        "votesCount": 18278,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "elasticbnb.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "alwayshasbeen.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ampleforthorg.eth",
+        "votesCount": 483,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "frogdaogov.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "vasily.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "snapshotesting.xyz",
+        "votesCount": 23,
+        "categories": []
+    },
+    {
+        "id": "astromoon.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cryptovibetribe.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "altrucoin.eth",
+        "votesCount": 656,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "polisdao.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "govrn-test.govrn.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "xiaoyuwan.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "blackboxart.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "fontcommunity.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "troylee.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "wanxutao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "libertasdex.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "vitalik.storymode.eth",
+        "votesCount": 114,
+        "categories": []
+    },
+    {
+        "id": "crisisdao.eth",
+        "votesCount": 959,
+        "categories": []
+    },
+    {
+        "id": "spiritswap.eth",
+        "votesCount": 2443,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "poodltoken.eth",
+        "votesCount": 456,
+        "categories": [
+        "investment",
+        "collector"
+        ]
+    },
+    {
+        "id": "partydao.eth",
+        "votesCount": 262,
+        "categories": []
+    },
+    {
+        "id": "vbswap.eth",
+        "votesCount": 155,
+        "categories": []
+    },
+    {
+        "id": "cryptodigger.eth",
+        "votesCount": 31,
+        "categories": []
+    },
+    {
+        "id": "becoswap.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "apescape.eth",
+        "votesCount": 54,
+        "categories": []
+    },
+    {
+        "id": "rotomoon.eth",
+        "votesCount": 428,
+        "categories": []
+    },
+    {
+        "id": "cccccccc.eth",
+        "votesCount": 96,
+        "categories": []
+    },
+    {
+        "id": "icap-governance.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "deversifi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "recharge-finance.eth",
+        "votesCount": 17,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "gmetoken.eth",
+        "votesCount": 22,
+        "categories": []
+    },
+    {
+        "id": "cdtk.computerdata.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "0xdollar",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "7add",
+        "votesCount": 82,
+        "categories": []
+    },
+    {
+        "id": "achievmintry",
+        "votesCount": 124,
+        "categories": []
+    },
+    {
+        "id": "acryptos",
+        "votesCount": 3167,
+        "categories": []
+    },
+    {
+        "id": "alex",
+        "votesCount": 24,
+        "categories": []
+    },
+    {
+        "id": "alpha-bsc",
+        "votesCount": 11,
+        "categories": []
+    },
+    {
+        "id": "alpha-ethereum",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "ampleforth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "amplegold",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "amplesense",
+        "votesCount": 208,
+        "categories": []
+    },
+    {
+        "id": "anj",
+        "votesCount": 315,
+        "categories": []
+    },
+    {
+        "id": "anjmol",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "aragon",
+        "votesCount": 240,
+        "categories": []
+    },
+    {
+        "id": "aragonchina",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "arckyf",
+        "votesCount": 135,
+        "categories": []
+    },
+    {
+        "id": "bake",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "based",
+        "votesCount": 863,
+        "categories": []
+    },
+    {
+        "id": "bee2",
+        "votesCount": 27,
+        "categories": []
+    },
+    {
+        "id": "bella",
+        "votesCount": 18,
+        "categories": []
+    },
+    {
+        "id": "bloody",
+        "votesCount": 237,
+        "categories": []
+    },
+    {
+        "id": "bobaswap",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "boosted-finance",
+        "votesCount": 20,
+        "categories": []
+    },
+    {
+        "id": "bote",
+        "votesCount": 13,
+        "categories": []
+    },
+    {
+        "id": "btf",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "build",
+        "votesCount": 381,
+        "categories": []
+    },
+    {
+        "id": "captain",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cargo",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cartel",
+        "votesCount": 16,
+        "categories": []
+    },
+    {
+        "id": "chadsvc",
+        "votesCount": 91,
+        "categories": []
+    },
+    {
+        "id": "chartex",
+        "votesCount": 58,
+        "categories": []
+    },
+    {
+        "id": "clover",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "cofix",
+        "votesCount": 41,
+        "categories": []
+    },
+    {
+        "id": "coin",
+        "votesCount": 99,
+        "categories": []
+    },
+    {
+        "id": "contribute",
+        "votesCount": 32,
+        "categories": []
+    },
+    {
+        "id": "core",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "creed",
+        "votesCount": 67,
+        "categories": []
+    },
+    {
+        "id": "culture",
+        "votesCount": 63,
+        "categories": []
+    },
+    {
+        "id": "cuni",
+        "votesCount": 101,
+        "categories": []
+    },
+    {
+        "id": "d5",
+        "votesCount": 10,
+        "categories": []
+    },
+    {
+        "id": "dai-prize-pool",
+        "votesCount": 11,
+        "categories": []
+    },
+    {
+        "id": "daniell-mesquita-xdai",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "daosquare",
+        "votesCount": 13,
+        "categories": []
+    },
+    {
+        "id": "dawn",
+        "votesCount": 1375,
+        "categories": []
+    },
+    {
+        "id": "decentribe",
+        "votesCount": 18,
+        "categories": []
+    },
+    {
+        "id": "defiat",
+        "votesCount": 56,
+        "categories": []
+    },
+    {
+        "id": "dego",
+        "votesCount": 3438,
+        "categories": []
+    },
+    {
+        "id": "dfi",
+        "votesCount": 522,
+        "categories": []
+    },
+    {
+        "id": "dice",
+        "votesCount": 13,
+        "categories": []
+    },
+    {
+        "id": "dollar-protocol",
+        "votesCount": 760,
+        "categories": []
+    },
+    {
+        "id": "domo",
+        "votesCount": 24,
+        "categories": []
+    },
+    {
+        "id": "ebog-rinkeby",
+        "votesCount": 137,
+        "categories": []
+    },
+    {
+        "id": "egg",
+        "votesCount": 11,
+        "categories": []
+    },
+    {
+        "id": "equalizer",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "esprezzo",
+        "votesCount": 9,
+        "categories": []
+    },
+    {
+        "id": "etgfinance",
+        "votesCount": 33,
+        "categories": []
+    },
+    {
+        "id": "exnetwork",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "fairswap",
+        "votesCount": 17,
+        "categories": []
+    },
+    {
+        "id": "finnexus",
+        "votesCount": 276,
+        "categories": []
+    },
+    {
+        "id": "flamingo",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "fortube-eth",
+        "votesCount": 45,
+        "categories": []
+    },
+    {
+        "id": "fortube-rinkeby",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "fries",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "frontier",
+        "votesCount": 31,
+        "categories": []
+    },
+    {
+        "id": "galaxy",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "gem",
+        "votesCount": 13,
+        "categories": []
+    },
+    {
+        "id": "gene-finance",
+        "votesCount": 138,
+        "categories": []
+    },
+    {
+        "id": "giveth",
+        "votesCount": 19,
+        "categories": []
+    },
+    {
+        "id": "gmt",
+        "votesCount": 21,
+        "categories": []
+    },
+    {
+        "id": "golff",
+        "votesCount": 222,
+        "categories": []
+    },
+    {
+        "id": "griffin",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "growthdefi",
+        "votesCount": 94,
+        "categories": []
+    },
+    {
+        "id": "hubdao",
+        "votesCount": 248,
+        "categories": []
+    },
+    {
+        "id": "iyffinance",
+        "votesCount": 88,
+        "categories": []
+    },
+    {
+        "id": "jamm",
+        "votesCount": 90,
+        "categories": []
+    },
+    {
+        "id": "jiaozi",
+        "votesCount": 203,
+        "categories": []
+    },
+    {
+        "id": "katana",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "lao",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "lcore",
+        "votesCount": 56,
+        "categories": []
+    },
+    {
+        "id": "lex",
+        "votesCount": 24,
+        "categories": []
+    },
+    {
+        "id": "lexdao",
+        "votesCount": 63,
+        "categories": []
+    },
+    {
+        "id": "limitswap",
+        "votesCount": 54,
+        "categories": []
+    },
+    {
+        "id": "mantra-dao",
+        "votesCount": 6887,
+        "categories": []
+    },
+    {
+        "id": "mee",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "metric",
+        "votesCount": 129,
+        "categories": []
+    },
+    {
+        "id": "moonswap",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "moontools",
+        "votesCount": 209,
+        "categories": []
+    },
+    {
+        "id": "music",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "mybit",
+        "votesCount": 22,
+        "categories": []
+    },
+    {
+        "id": "narwhal",
+        "votesCount": 82,
+        "categories": []
+    },
+    {
+        "id": "nft",
+        "votesCount": 220,
+        "categories": []
+    },
+    {
+        "id": "nice",
+        "votesCount": 92,
+        "categories": []
+    },
+    {
+        "id": "oaklanddao",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "octofi",
+        "votesCount": 1089,
+        "categories": []
+    },
+    {
+        "id": "ourbloc",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "payrue",
+        "votesCount": 41,
+        "categories": []
+    },
+    {
+        "id": "penguin-party",
+        "votesCount": 116,
+        "categories": []
+    },
+    {
+        "id": "percent",
+        "votesCount": 85,
+        "categories": []
+    },
+    {
+        "id": "pok",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "pokt-network",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "polyient-games-governance",
+        "votesCount": 489,
+        "categories": []
+    },
+    {
+        "id": "portion",
+        "votesCount": 49,
+        "categories": []
+    },
+    {
+        "id": "potion-kovan",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "pria",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "qian-bsc",
+        "votesCount": 57,
+        "categories": []
+    },
+    {
+        "id": "qian-bsc-testnet",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "qian-eth",
+        "votesCount": 44,
+        "categories": []
+    },
+    {
+        "id": "qubcoins",
+        "votesCount": 48,
+        "categories": []
+    },
+    {
+        "id": "raid-guild",
+        "votesCount": 39,
+        "categories": []
+    },
+    {
+        "id": "rdao",
+        "votesCount": 11,
+        "categories": []
+    },
+    {
+        "id": "reb2",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "rigoblock",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "rope",
+        "votesCount": 452,
+        "categories": []
+    },
+    {
+        "id": "rot",
+        "votesCount": 662,
+        "categories": []
+    },
+    {
+        "id": "s-finance",
+        "votesCount": 34,
+        "categories": []
+    },
+    {
+        "id": "sake",
+        "votesCount": 576,
+        "categories": []
+    },
+    {
+        "id": "sav3",
+        "votesCount": 1911,
+        "categories": []
+    },
+    {
+        "id": "sdoge",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "seal",
+        "votesCount": 275,
+        "categories": []
+    },
+    {
+        "id": "send",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "shilldao",
+        "votesCount": 14,
+        "categories": []
+    },
+    {
+        "id": "shrimp",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "shroom",
+        "votesCount": 126,
+        "categories": []
+    },
+    {
+        "id": "sleeping",
+        "votesCount": 12,
+        "categories": []
+    },
+    {
+        "id": "smol",
+        "votesCount": 13,
+        "categories": []
+    },
+    {
+        "id": "sogur",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "spaghetti",
+        "votesCount": 55,
+        "categories": []
+    },
+    {
+        "id": "spring-dao",
+        "votesCount": 15,
+        "categories": []
+    },
+    {
+        "id": "status",
+        "votesCount": 73,
+        "categories": []
+    },
+    {
+        "id": "swaphub",
+        "votesCount": 11,
+        "categories": []
+    },
+    {
+        "id": "swapx",
+        "votesCount": 108,
+        "categories": []
+    },
+    {
+        "id": "swerve",
+        "votesCount": 850,
+        "categories": []
+    },
+    {
+        "id": "taco",
+        "votesCount": 49,
+        "categories": []
+    },
+    {
+        "id": "tballiance",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "tenspeed",
+        "votesCount": 79,
+        "categories": []
+    },
+    {
+        "id": "thelao",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "thirm",
+        "votesCount": 73,
+        "categories": []
+    },
+    {
+        "id": "toast",
+        "votesCount": 25,
+        "categories": []
+    },
+    {
+        "id": "ton",
+        "votesCount": 33,
+        "categories": []
+    },
+    {
+        "id": "trias",
+        "votesCount": 15,
+        "categories": []
+    },
+    {
+        "id": "trustwallet",
+        "votesCount": 19259,
+        "categories": []
+    },
+    {
+        "id": "ulu",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "unicore",
+        "votesCount": 45,
+        "categories": []
+    },
+    {
+        "id": "uniswap",
+        "votesCount": 244834,
+        "categories": []
+    },
+    {
+        "id": "wage",
+        "votesCount": 15,
+        "categories": []
+    },
+    {
+        "id": "weenus",
+        "votesCount": 54,
+        "categories": []
+    },
+    {
+        "id": "weth",
+        "votesCount": 20,
+        "categories": []
+    },
+    {
+        "id": "weth-rinkeby",
+        "votesCount": 93,
+        "categories": []
+    },
+    {
+        "id": "wolfage",
+        "votesCount": 37,
+        "categories": []
+    },
+    {
+        "id": "wolfdefi",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "xfinance",
+        "votesCount": 15,
+        "categories": []
+    },
+    {
+        "id": "y3d",
+        "votesCount": 9,
+        "categories": []
+    },
+    {
+        "id": "yakuza",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "yearn",
+        "votesCount": 4836,
+        "categories": []
+    },
+    {
+        "id": "yeld",
+        "votesCount": 90,
+        "categories": []
+    },
+    {
+        "id": "yfarm",
+        "votesCount": 35,
+        "categories": []
+    },
+    {
+        "id": "yfbeta",
+        "votesCount": 708,
+        "categories": []
+    },
+    {
+        "id": "yffs",
+        "votesCount": 55,
+        "categories": []
+    },
+    {
+        "id": "yflink",
+        "votesCount": 228,
+        "categories": []
+    },
+    {
+        "id": "yieldfarming-insure",
+        "votesCount": 138,
+        "categories": []
+    },
+    {
+        "id": "ymen",
+        "votesCount": 126,
+        "categories": []
+    },
+    {
+        "id": "yuan",
+        "votesCount": 21,
+        "categories": []
+    },
+    {
+        "id": "zeta",
+        "votesCount": 13,
+        "categories": []
+    },
+    {
+        "id": "zlot",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "zzz-finance",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "hidao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "taodao.eth",
+        "votesCount": 133,
+        "categories": []
+    },
+    {
+        "id": "unersdl.eth",
+        "votesCount": 633,
+        "categories": []
+    },
+    {
+        "id": "munchproject.eth",
+        "votesCount": 738,
+        "categories": []
+    },
+    {
+        "id": "openssv.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "sweeperdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "neuralmeme.eth",
+        "votesCount": 304,
+        "categories": []
+    },
+    {
+        "id": "charged.eth",
+        "votesCount": 204,
+        "categories": []
+    },
+    {
+        "id": "lowb.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "pickle.eth",
+        "votesCount": 4631,
+        "categories": []
+    },
+    {
+        "id": "bondly.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "zoocoin.eth",
+        "votesCount": 1045,
+        "categories": []
+    },
+    {
+        "id": "guoxinchen.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "behodler.eth",
+        "votesCount": 274,
+        "categories": []
+    },
+    {
+        "id": "cryptopunkdao.eth",
+        "votesCount": 24,
+        "categories": []
+    },
+    {
+        "id": "fork-finance.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "snapshot.dcl.eth",
+        "votesCount": 127495,
+        "categories": []
+    },
+    {
+        "id": "ourshib.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "varen.eth",
+        "votesCount": 472,
+        "categories": []
+    },
+    {
+        "id": "nftsnafu.eth",
+        "votesCount": 52,
+        "categories": []
+    },
+    {
+        "id": "koshik.xyz",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "celernetwork.eth",
+        "votesCount": 52,
+        "categories": []
+    },
+    {
+        "id": "svc001.eth",
+        "votesCount": 306,
+        "categories": []
+    },
+    {
+        "id": "fairmoon.eth",
+        "votesCount": 306,
+        "categories": []
+    },
+    {
+        "id": "bitdecay.eth",
+        "votesCount": 12,
+        "categories": []
+    },
+    {
+        "id": "cybertime.eth",
+        "votesCount": 243,
+        "categories": []
+    },
+    {
+        "id": "plantswap.eth",
+        "votesCount": 27,
+        "categories": []
+    },
+    {
+        "id": "snowswap.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "smartdex-voting.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "moonbud.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "aevolve.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "apesonline.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "lunadoge.eth",
+        "votesCount": 182,
+        "categories": []
+    },
+    {
+        "id": "moonpirate.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "goodghosting.eth",
+        "votesCount": 0,
+        "categories": [
+        "protocol",
+        "social"
+        ]
+    },
+    {
+        "id": "frankendefi.eth",
+        "votesCount": 53,
+        "categories": []
+    },
+    {
+        "id": "isat.eth",
+        "votesCount": 203,
+        "categories": [
+        "grant"
+        ]
+    },
+    {
+        "id": "safepig.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cathy-bank.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "jaeyuntv.eth",
+        "votesCount": 70,
+        "categories": []
+    },
+    {
+        "id": "screensaver.eth",
+        "votesCount": 77,
+        "categories": []
+    },
+    {
+        "id": "kaiinutoken.eth",
+        "votesCount": 21,
+        "categories": []
+    },
+    {
+        "id": "dogown.eth",
+        "votesCount": 42,
+        "categories": []
+    },
+    {
+        "id": "skiddo.eth",
+        "votesCount": 20,
+        "categories": []
+    },
+    {
+        "id": "qidao.eth",
+        "votesCount": 71947,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "halodao-kovan.eth",
+        "votesCount": 42,
+        "categories": []
+    },
+    {
+        "id": "zhusun.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "primexyz.eth",
+        "votesCount": 343,
+        "categories": [
+        "protocol",
+        "service"
+        ]
+    },
+    {
+        "id": "mod.eth",
+        "votesCount": 56,
+        "categories": []
+    },
+    {
+        "id": "jennydao.eth",
+        "votesCount": 334,
+        "categories": []
+    },
+    {
+        "id": "smooty.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "conqueruranus.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "koaladefi.eth",
+        "votesCount": 105,
+        "categories": []
+    },
+    {
+        "id": "xbefinance.eth",
+        "votesCount": 343,
+        "categories": []
+    },
+    {
+        "id": "tama.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dao.pob.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "newinu.eth",
+        "votesCount": 17,
+        "categories": []
+    },
+    {
+        "id": "bitblocks.eth",
+        "votesCount": 176,
+        "categories": [
+        "investment"
+        ]
+    },
+    {
+        "id": "earnnetwork.eth",
+        "votesCount": 35,
+        "categories": []
+    },
+    {
+        "id": "scorpion9979.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "forest-token.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "coindemic.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "gremlindao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "siphonfinance.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "rubicexchange.eth",
+        "votesCount": 315,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "ballersvote.eth",
+        "votesCount": 191,
+        "categories": []
+    },
+    {
+        "id": "matus.eth",
+        "votesCount": 9,
+        "categories": []
+    },
+    {
+        "id": "dogone.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "hifi-finance.eth",
+        "votesCount": 643,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "inufarm.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "imsuperleague.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "elenafinance.eth",
+        "votesCount": 23,
+        "categories": []
+    },
+    {
+        "id": "qilintoken.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "apyvision.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "uniclynft.eth",
+        "votesCount": 398,
+        "categories": []
+    },
+    {
+        "id": "shibby.eth",
+        "votesCount": 212,
+        "categories": []
+    },
+    {
+        "id": "ibizatoken.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dmx.amun.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "dfi.amun.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "vote-steakhouse.eth",
+        "votesCount": 53,
+        "categories": []
+    },
+    {
+        "id": "seedifyfund.eth",
+        "votesCount": 33,
+        "categories": []
+    },
+    {
+        "id": "samoswap.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "rarible.eth",
+        "votesCount": 8055,
+        "categories": []
+    },
+    {
+        "id": "impossibleobject.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ethermore.eth",
+        "votesCount": 43,
+        "categories": []
+    },
+    {
+        "id": "onebit.eth",
+        "votesCount": 189,
+        "categories": []
+    },
+    {
+        "id": "votewarp.eth",
+        "votesCount": 115,
+        "categories": []
+    },
+    {
+        "id": "iron-polygon.eth",
+        "votesCount": 185,
+        "categories": []
+    },
+    {
+        "id": "puddingswap.eth",
+        "votesCount": 169,
+        "categories": []
+    },
+    {
+        "id": "honestfinance.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "nagafinance.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "fenixtoken.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "v01.hopr-dao.eth",
+        "votesCount": 582,
+        "categories": []
+    },
+    {
+        "id": "qilincoin.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "decrypt-media.eth",
+        "votesCount": 2191,
+        "categories": []
+    },
+    {
+        "id": "nfthub.eth",
+        "votesCount": 11,
+        "categories": []
+    },
+    {
+        "id": "atato.eth",
+        "votesCount": 22,
+        "categories": []
+    },
+    {
+        "id": "keytango.eth",
+        "votesCount": 17,
+        "categories": []
+    },
+    {
+        "id": "poptown.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "rbn.eth",
+        "votesCount": 5014,
+        "categories": []
+    },
+    {
+        "id": "liquifi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "defislate.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dogshit.eth",
+        "votesCount": 30,
+        "categories": []
+    },
+    {
+        "id": "supershiba.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "x0swap.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "clamisland.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "gamifydex.eth",
+        "votesCount": 39,
+        "categories": []
+    },
+    {
+        "id": "honeydao.eth",
+        "votesCount": 1817,
+        "categories": []
+    },
+    {
+        "id": "multiobjekt.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dao1.eth",
+        "votesCount": 187,
+        "categories": []
+    },
+    {
+        "id": "kumainu.eth",
+        "votesCount": 73,
+        "categories": []
+    },
+    {
+        "id": "gitcoindao.eth",
+        "votesCount": 108028,
+        "categories": [
+        "protocol",
+        "grant"
+        ]
+    },
+    {
+        "id": "backpackdao.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "lavaswap.eth",
+        "votesCount": 87,
+        "categories": []
+    },
+    {
+        "id": "therecharge.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "kyl.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "isitcopernicus.eth",
+        "votesCount": 33,
+        "categories": []
+    },
+    {
+        "id": "meebitsdao-test.eth",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "daopanel.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "launchxfinance.eth",
+        "votesCount": 185,
+        "categories": []
+    },
+    {
+        "id": "zaplabs.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "wsbdapp.eth",
+        "votesCount": 647,
+        "categories": []
+    },
+    {
+        "id": "htmoon.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "treth.eth",
+        "votesCount": 3,
+        "categories": [
+        "service"
+        ]
+    },
+    {
+        "id": "pragmadev2.eth",
+        "votesCount": 19,
+        "categories": []
+    },
+    {
+        "id": "opanda.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "index-coop.eth",
+        "votesCount": 24379,
+        "categories": [
+        "investment"
+        ]
+    },
+    {
+        "id": "dfx.eth",
+        "votesCount": 919,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "pragmadev.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dea.eth",
+        "votesCount": 1087,
+        "categories": [
+        "protocol",
+        "investment"
+        ]
+    },
+    {
+        "id": "snapshot-test.bootnode-dev.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "carbonswap.eth",
+        "votesCount": 11342,
+        "categories": []
+    },
+    {
+        "id": "saferug.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "phuture.eth",
+        "votesCount": 0,
+        "categories": [
+        "protocol",
+        "investment"
+        ]
+    },
+    {
+        "id": "wisvote.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "thegrandbanks.eth",
+        "votesCount": 210,
+        "categories": []
+    },
+    {
+        "id": "yuntcapital.eth",
+        "votesCount": 44,
+        "categories": []
+    },
+    {
+        "id": "bepronetwork.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "sandglass.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "chinacrypto.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "givingtoservices.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "legt.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "lyra.eth",
+        "votesCount": 2251,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "iotex.eth",
+        "votesCount": 1970,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "easydex.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "levernetwork.eth",
+        "votesCount": 64,
+        "categories": []
+    },
+    {
+        "id": "tlever.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "fortubegov.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "harvesters.eth",
+        "votesCount": 110,
+        "categories": []
+    },
+    {
+        "id": "streamr.eth",
+        "votesCount": 8307,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "club.eth",
+        "votesCount": 619,
+        "categories": []
+    },
+    {
+        "id": "czar.storymode.eth",
+        "votesCount": 54,
+        "categories": []
+    },
+    {
+        "id": "grumpyfinance.eth",
+        "votesCount": 34,
+        "categories": []
+    },
+    {
+        "id": "mine.amun.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cryptoplaza.eth",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "drop.amun.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ringprotocol.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "miami-dao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "fortubegovbsc.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "spore-engineering.eth",
+        "votesCount": 12,
+        "categories": []
+    },
+    {
+        "id": "wenchao.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "dogevote.eth",
+        "votesCount": 33,
+        "categories": []
+    },
+    {
+        "id": "rinkeby.deversifi.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "schnoodle.eth",
+        "votesCount": 243,
+        "categories": [
+        "protocol",
+        "service"
+        ]
+    },
+    {
+        "id": "delph.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "rhat.eth",
+        "votesCount": 139,
+        "categories": []
+    },
+    {
+        "id": "fengyang.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "0xdegen.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "partyplanningdao.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "suzakucoin.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "levernetwork-eth.eth",
+        "votesCount": 25,
+        "categories": []
+    },
+    {
+        "id": "testtokensnapshot.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "ladz.eth",
+        "votesCount": 42,
+        "categories": []
+    },
+    {
+        "id": "subdomain.testname.eth",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "echo-token.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "apwine.eth",
+        "votesCount": 1913,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "ultraflat.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "awsl.eth",
+        "votesCount": 0,
+        "categories": [
+        "social",
+        "investment"
+        ]
+    },
+    {
+        "id": "quadraticvoting.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "stormxio.eth",
+        "votesCount": 206,
+        "categories": []
+    },
+    {
+        "id": "zenft.eth",
+        "votesCount": 249,
+        "categories": [
+        "collector",
+        "social"
+        ]
+    },
+    {
+        "id": "ampled.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "rcubedao.xyz",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "yotta21.eth",
+        "votesCount": 3,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "researchhub.eth",
+        "votesCount": 168,
+        "categories": []
+    },
+    {
+        "id": "alicehe.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "flux01.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "flux-bsc.eth",
+        "votesCount": 153,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "flux-heco.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "flux-oec.eth",
+        "votesCount": 0,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "unlock-protocol.eth",
+        "votesCount": 759,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "rcubedao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "metta.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "icebrk.eth",
+        "votesCount": 154,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "marbleclash.eth",
+        "votesCount": 13,
+        "categories": []
+    },
+    {
+        "id": "apestreet.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "frenchienetwork.eth",
+        "votesCount": 20,
+        "categories": []
+    },
+    {
+        "id": "mintlaab.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "longdrinkfinance.eth",
+        "votesCount": 24,
+        "categories": []
+    },
+    {
+        "id": "chimpyswap.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ldt.eth",
+        "votesCount": 57,
+        "categories": []
+    },
+    {
+        "id": "abstrakt.eth",
+        "votesCount": 0,
+        "categories": []
+    }, 
+    {
+        "id": "cometh.eth",
+        "votesCount": 10,
+        "categories": []
+    },
+    {
+        "id": "vol.eth",
+        "votesCount": 1887,
+        "categories": []
+    },
+    {
+        "id": "cosmicswap.eth",
+        "votesCount": 10,
+        "categories": []
+    },
+    {
+        "id": "secretsky.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cheesecakeswap.eth",
+        "votesCount": 78,
+        "categories": []
+    },
+    {
+        "id": "samhans.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cryptonerds.eth",
+        "votesCount": 12,
+        "categories": []
+    },
+    {
+        "id": "palestinefinance.eth",
+        "votesCount": 86,
+        "categories": []
+    },
+    {
+        "id": "thylacine.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "gnosisdaotest.eth",
+        "votesCount": 19,
+        "categories": []
+    },
+    {
+        "id": "pacoca.eth",
+        "votesCount": 1319,
+        "categories": []
+    },
+    {
+        "id": "finnexus-bsc.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "snowcrashdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "yinhexi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "robonomics-network.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "vote.robonomics-network.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "phxbsc.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "phxeth.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "pineappler.eth",
+        "votesCount": 0,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "curve.eth",
+        "votesCount": 2002,
+        "categories": []
+    },
+    {
+        "id": "growingdao.eth",
+        "votesCount": 147,
+        "categories": []
+    },
+    {
+        "id": "wooinu.eth",
+        "votesCount": 17,
+        "categories": []
+    },
+    {
+        "id": "jseam.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "estatefinance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "thecypherverse.eth",
+        "votesCount": 382,
+        "categories": []
+    },
+    {
+        "id": "darrenalex.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "fridgedao.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "cryptoasis.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "moar.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "planetfinance.eth",
+        "votesCount": 4260,
+        "categories": []
+    },
+    {
+        "id": "cabindao.eth",
+        "votesCount": 1039,
+        "categories": []
+    },
+    {
+        "id": "blackpoolhq.eth",
+        "votesCount": 152,
+        "categories": []
+    },
+    {
+        "id": "sushigov.eth",
+        "votesCount": 46839,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "1inch.eth",
+        "votesCount": 7373,
+        "categories": []
+    },
+    {
+        "id": "torn-community.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "mort.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "polysafu.eth",
+        "votesCount": 9,
+        "categories": []
+    },
+    {
+        "id": "miragex.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "domfi.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "piggyfinance.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "cryptexdao.eth",
+        "votesCount": 106,
+        "categories": []
+    },
+    {
+        "id": "manekari.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "kogecoin.eth",
+        "votesCount": 4166,
+        "categories": []
+    },
+    {
+        "id": "creepz.eth",
+        "votesCount": 70,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "vote.bogtools.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "polybread.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "lastslice.eth",
+        "votesCount": 120,
+        "categories": []
+    },
+    {
+        "id": "neptunemutual.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "levidao.eth",
+        "votesCount": 190,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "galaxydefi.eth",
+        "votesCount": 46,
+        "categories": []
+    },
+    {
+        "id": "gimmix.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "gemach.eth",
+        "votesCount": 55,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "santadao.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "elontwoface.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "topbidder.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "apymonrevolution.eth",
+        "votesCount": 125,
+        "categories": []
+    },
+    {
+        "id": "compro.eth",
+        "votesCount": 71,
+        "categories": []
+    },
+    {
+        "id": "massnomis.eth",
+        "votesCount": 29,
+        "categories": []
+    },
+    {
+        "id": "esterfinance.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "champstable.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "dsbswap.eth",
+        "votesCount": 45,
+        "categories": []
+    },
+    {
+        "id": "lexpunk.eth",
+        "votesCount": 47,
+        "categories": []
+    },
+    {
+        "id": "handao.eth",
+        "votesCount": 54,
+        "categories": []
+    },
+    {
+        "id": "grants.blakeburrito.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dogperson.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "giftedhands.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "tradestars.eth",
+        "votesCount": 12,
+        "categories": []
+    },
+    {
+        "id": "thxprotocol.eth",
+        "votesCount": 16,
+        "categories": [
+        "service",
+        "protocol"
+        ]
+    },
+    {
+        "id": "punkprotocol.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "safemooncash.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "mplzz.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "tea-swap.eth",
+        "votesCount": 1253,
+        "categories": []
+    },
+    {
+        "id": "museumofcryptoart.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cvx.eth",
+        "votesCount": 80596,
+        "categories": []
+    },
+    {
+        "id": "sswap.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ninepoint.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dispense.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "markfherwig.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "testmystuff.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "eth1559.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "50centnetwork.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "luckypro.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ioihot.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "macsb.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "orbitsdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "matrixetf.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "prosperdao.xyz",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "taosu.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "notenea.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "tipsytoken.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "asnapshot.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "tomyumgoong.eth",
+        "votesCount": 19,
+        "categories": []
+    },
+    {
+        "id": "selkie.eth",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "theogo.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "aave.eth",
+        "votesCount": 2178641,
+        "categories": []
+    },
+    {
+        "id": "greatweb.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "nft-zoo.eth",
+        "votesCount": 25,
+        "categories": []
+    },
+    {
+        "id": "polygon.bzx.eth",
+        "votesCount": 243,
+        "categories": []
+    },
+    {
+        "id": "sickvibes.eth",
+        "votesCount": 46,
+        "categories": []
+    },
+    {
+        "id": "mariapaula.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "bundeskunsthalle.eth",
+        "votesCount": 37,
+        "categories": []
+    },
+    {
+        "id": "pitbulldao.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "swivelfinance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "zeuz.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "art.ultraflat.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "apriltoken.eth",
+        "votesCount": 125,
+        "categories": []
+    },
+    {
+        "id": "azulo-test.eth",
+        "votesCount": 18,
+        "categories": []
+    },
+    {
+        "id": "yogi-fi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "spectralfinance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dogelondao.eth",
+        "votesCount": 1001,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "poolgrants.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dao.omg.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "sydtek.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "hugofinance.eth",
+        "votesCount": 25,
+        "categories": []
+    },
+    {
+        "id": "tart.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "levernetwork-heco.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "hunny.eth",
+        "votesCount": 78,
+        "categories": []
+    },
+    {
+        "id": "safemooncash.xyz",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "vote.cantaloupeisland.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "buyerbuyer.eth",
+        "votesCount": 203,
+        "categories": []
+    },
+    {
+        "id": "enzymefinance.eth",
+        "votesCount": 94,
+        "categories": []
+    },
+    {
+        "id": "evermoon.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "elbertxu.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "staking.idlefinance.eth",
+        "votesCount": 463,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "thehedgehog.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "compusophy.eth",
+        "votesCount": 204,
+        "categories": []
+    },
+    {
+        "id": "workhardfinance.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "ssvnetwork.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "steakbank.eth",
+        "votesCount": 49,
+        "categories": []
+    },
+    {
+        "id": "cream-listing.eth",
+        "votesCount": 152,
+        "categories": []
+    },
+    {
+        "id": "unn.eth",
+        "votesCount": 49,
+        "categories": []
+    },
+    {
+        "id": "mainnet.ssvnetwork.eth",
+        "votesCount": 1944,
+        "categories": []
+    },
+    {
+        "id": "rinkeby.ssvnetwork.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "chad-devs.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "picklejar-test.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "sanshuinufinance.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "brinkgov.eth",
+        "votesCount": 592,
+        "categories": []
+    },
+    {
+        "id": "fbomb.eth",
+        "votesCount": 110,
+        "categories": []
+    },
+    {
+        "id": "uniquephoto.eth",
+        "votesCount": 43,
+        "categories": []
+    },
+    {
+        "id": "gov.omg.eth",
+        "votesCount": 9,
+        "categories": []
+    },
+    {
+        "id": "uniquefans.eth",
+        "votesCount": 15,
+        "categories": []
+    },
+    {
+        "id": "lollidao.eth",
+        "votesCount": 20,
+        "categories": []
+    },
+    {
+        "id": "nestprotocols.eth",
+        "votesCount": 30,
+        "categories": []
+    },
+    {
+        "id": "drctoken.eth",
+        "votesCount": 375,
+        "categories": []
+    },
+    {
+        "id": "machinalabs.eth",
+        "votesCount": 20,
+        "categories": []
+    },
+    {
+        "id": "sporkdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "copperlaunch.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bnugdao.eth",
+        "votesCount": 0,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "brotdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cake.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "gfdao.eth",
+        "votesCount": 72,
+        "categories": [
+        "protocol",
+        "creator"
+        ]
+    },
+    {
+        "id": "tonychen.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "fakerdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ultradao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "b-money.eth",
+        "votesCount": 13,
+        "categories": []
+    },
+    {
+        "id": "mstablegrants.eth",
+        "votesCount": 460,
+        "categories": []
+    },
+    {
+        "id": "unilend-finance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "polarcat.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "alkemidao.eth",
+        "votesCount": 47,
+        "categories": []
+    },
+    {
+        "id": "phxcrypto.eth",
+        "votesCount": 14,
+        "categories": []
+    },
+    {
+        "id": "babykraken.eth",
+        "votesCount": 450,
+        "categories": []
+    },
+    {
+        "id": "mcafeemoonshot.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "polyvertex.eth",
+        "votesCount": 210,
+        "categories": []
+    },
+    {
+        "id": "casperdefi.eth",
+        "votesCount": 45,
+        "categories": []
+    },
+    {
+        "id": "sram1337.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "bsc.hyperjumpdao.eth",
+        "votesCount": 83,
+        "categories": []
+    },
+    {
+        "id": "depocket.eth",
+        "votesCount": 54,
+        "categories": []
+    },
+    {
+        "id": "to-the-moon-farm.eth",
+        "votesCount": 13,
+        "categories": []
+    },
+    {
+        "id": "coin-bid.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "memecouncil.eth",
+        "votesCount": 75,
+        "categories": []
+    },
+    {
+        "id": "myensdomain.eth",
+        "votesCount": 14,
+        "categories": []
+    },
+    {
+        "id": "ftm.hyperjumpdao.eth",
+        "votesCount": 259,
+        "categories": []
+    },
+    {
+        "id": "mycryptoxp.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "clugov.eth",
+        "votesCount": 251,
+        "categories": []
+    },
+    {
+        "id": "wowswap.eth",
+        "votesCount": 27,
+        "categories": []
+    },
+    {
+        "id": "apetroop.eth",
+        "votesCount": 23,
+        "categories": []
+    },
+    {
+        "id": "palvote.eth",
+        "votesCount": 1105,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "nftstarslabel.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "daoos.eth",
+        "votesCount": 32,
+        "categories": []
+    },
+    {
+        "id": "omt.eth",
+        "votesCount": 123,
+        "categories": []
+    },
+    {
+        "id": "apy.eth",
+        "votesCount": 969,
+        "categories": []
+    },
+    {
+        "id": "criptocirculo.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "coinclicker.eth",
+        "votesCount": 9,
+        "categories": []
+    },
+    {
+        "id": "alongdomainisacheapdomain.eth",
+        "votesCount": 23,
+        "categories": []
+    },
+    {
+        "id": "bbs-io.eth",
+        "votesCount": 10,
+        "categories": []
+    },
+    {
+        "id": "bitdao.eth",
+        "votesCount": 36738,
+        "categories": []
+    },
+    {
+        "id": "stablegaj.eth",
+        "votesCount": 35,
+        "categories": []
+    },
+    {
+        "id": "polygaj.eth",
+        "votesCount": 144,
+        "categories": []
+    },
+    {
+        "id": "joyst.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "meebitsdao.eth",
+        "votesCount": 544,
+        "categories": []
+    },
+    {
+        "id": "getrichie.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "mytest.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "mod-bsc.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "mod-ftm.eth",
+        "votesCount": 53,
+        "categories": []
+    },
+    {
+        "id": "zhangwill.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "grreg.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "sister-in-law.eth",
+        "votesCount": 10,
+        "categories": [
+        "protocol",
+        "investment"
+        ]
+    },
+    {
+        "id": "inumaki.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "camelcorn.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "origingov.eth",
+        "votesCount": 874,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "eart.eth",
+        "votesCount": 12,
+        "categories": []
+    },
+    {
+        "id": "dawg.inumaki.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "olecoin.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "nomadex.eth",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "mantra-dao.eth",
+        "votesCount": 327,
+        "categories": []
+    },
+    {
+        "id": "instadapp-gov.eth",
+        "votesCount": 251,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "macoin.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "gift-coin.eth",
+        "votesCount": 29,
+        "categories": []
+    },
+    {
+        "id": "doge2-crypto.eth",
+        "votesCount": 17,
+        "categories": []
+    },
+    {
+        "id": "team-exchange.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "brightmoments.eth",
+        "votesCount": 2769,
+        "categories": [
+        "social",
+        "creator"
+        ]
+    },
+    {
+        "id": "hueman.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "blockhash.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "macncheese.eth",
+        "votesCount": 25,
+        "categories": [
+        "protocol",
+        "service"
+        ]
+    },
+    {
+        "id": "elimu.eth",
+        "votesCount": 16,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "dinfo.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "jtuk.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "lifetree.eth",
+        "votesCount": 27,
+        "categories": [
+        "collector"
+        ]
+    },
+    {
+        "id": "bezoge.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "badg.eth",
+        "votesCount": 198,
+        "categories": []
+    },
+    {
+        "id": "interspecies.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "grantsdao.eth",
+        "votesCount": 203,
+        "categories": []
+    },
+    {
+        "id": "misterkool.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "herobits.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "newbet.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "rugpullindex.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "bnations.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "polytoken.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "starl.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "digitalrevenues.eth",
+        "votesCount": 0,
+        "categories": [
+        "social",
+        "investment"
+        ]
+    },
+    {
+        "id": "telmocoin.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "hnd.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "36fuji.eth",
+        "votesCount": 164,
+        "categories": []
+    },
+    {
+        "id": "luckymaneki.eth",
+        "votesCount": 1102,
+        "categories": []
+    },
+    {
+        "id": "sewerratsocialclub.eth",
+        "votesCount": 118,
+        "categories": []
+    },
+    {
+        "id": "nftswtf.eth",
+        "votesCount": 24,
+        "categories": []
+    },
+    {
+        "id": "mintclub.eth",
+        "votesCount": 17,
+        "categories": []
+    },
+    {
+        "id": "sfsfsf2013.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "pokelon.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "polywrap.eth",
+        "votesCount": 846,
+        "categories": []
+    },
+    {
+        "id": "neonblue.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "strangebrew.eth",
+        "votesCount": 101,
+        "categories": []
+    },
+    {
+        "id": "mcnventures.eth",
+        "votesCount": 37,
+        "categories": []
+    },
+    {
+        "id": "polytest.eth",
+        "votesCount": 10,
+        "categories": []
+    },
+    {
+        "id": "ubi-voting.eth",
+        "votesCount": 453,
+        "categories": []
+    },
+    {
+        "id": "nieri.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "alteco.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cryptosheinix.eth",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "degensfarm.eth",
+        "votesCount": 101,
+        "categories": []
+    },
+    {
+        "id": "swapdotnet.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "degenzdao.eth",
+        "votesCount": 589,
+        "categories": []
+    },
+    {
+        "id": "oplae.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "blockchaincolumbia.eth",
+        "votesCount": 57,
+        "categories": []
+    },
+    {
+        "id": "gornhegemony.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "togetherstrong.eth",
+        "votesCount": 2521,
+        "categories": []
+    },
+    {
+        "id": "zild.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "london.pob.eth",
+        "votesCount": 703,
+        "categories": []
+    },
+    {
+        "id": "octobar.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "cvcommunity.eth",
+        "votesCount": 70,
+        "categories": []
+    },
+    {
+        "id": "nftmatchcard.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "mbeeblebrox.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "leekdao.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "botan.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "nouns.eth",
+        "votesCount": 66,
+        "categories": []
+    },
+    {
+        "id": "leandroj.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "rampdefi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "muffins.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "mstablegovernance.eth",
+        "votesCount": 9839,
+        "categories": []
+    },
+    {
+        "id": "arablefi.eth",
+        "votesCount": 312,
+        "categories": []
+    },
+    {
+        "id": "robey.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "moon-vault.eth",
+        "votesCount": 45,
+        "categories": [
+        "protocol",
+        "investment"
+        ]
+    },
+    {
+        "id": "shapeshiftdao.eth",
+        "votesCount": 17253,
+        "categories": [
+        "protocol",
+        "service"
+        ]
+    },
+    {
+        "id": "bigppdao.eth",
+        "votesCount": 208,
+        "categories": []
+    },
+    {
+        "id": "seenhaus.eth",
+        "votesCount": 250,
+        "categories": []
+    },
+    {
+        "id": "8paynetwork.eth",
+        "votesCount": 47,
+        "categories": []
+    },
+    {
+        "id": "0xgov.eth",
+        "votesCount": 1657,
+        "categories": []
+    },
+    {
+        "id": "mimo-polygon.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "redmocracia.eth",
+        "votesCount": 10,
+        "categories": []
+    },
+    {
+        "id": "harshrajat.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "arthadao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ningw.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "papaland.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cryptoarttothemoon.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "fuschu.eth",
+        "votesCount": 27,
+        "categories": []
+    },
+    {
+        "id": "alch.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "injay.eth",
+        "votesCount": 22,
+        "categories": []
+    },
+    {
+        "id": "impactdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "betswirl.eth",
+        "votesCount": 12,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "biboune.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "daoutliers.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ikram.eth",
+        "votesCount": 10,
+        "categories": []
+    },
+    {
+        "id": "stredium.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "roxel.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "gnometoken.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "shobainu.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "0xemperor.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "manifoldfinance.eth",
+        "votesCount": 0,
+        "categories": [
+        "service",
+        "protocol"
+        ]
+    },
+    {
+        "id": "adex.eth",
+        "votesCount": 124,
+        "categories": []
+    },
+    {
+        "id": "vhs.eth",
+        "votesCount": 0,
+        "categories": [
+        "social",
+        "creator"
+        ]
+    },
+    {
+        "id": "polygon.cryptexdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ethtraderdao.eth",
+        "votesCount": 380,
+        "categories": []
+    },
+    {
+        "id": "farmgod.eth",
+        "votesCount": 216,
+        "categories": []
+    },
+    {
+        "id": "buzzedbears.eth",
+        "votesCount": 2334,
+        "categories": []
+    },
+    {
+        "id": "juchain.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "xdollarfi.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "trustcommunity.eth",
+        "votesCount": 37,
+        "categories": []
+    },
+    {
+        "id": "thalescouncil.eth",
+        "votesCount": 1070,
+        "categories": []
+    },
+    {
+        "id": "novaswap.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "polyheat.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "jimmyx.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bustabnb.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "tombfinance.eth",
+        "votesCount": 436,
+        "categories": []
+    },
+    {
+        "id": "corinicoin.xyz",
+        "votesCount": 78,
+        "categories": []
+    },
+    {
+        "id": "pixelinc.eth",
+        "votesCount": 21,
+        "categories": []
+    },
+    {
+        "id": "universexyz.eth",
+        "votesCount": 63,
+        "categories": []
+    },
+    {
+        "id": "seswap-finance.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "dorg.eth",
+        "votesCount": 1459,
+        "categories": [
+        "service"
+        ]
+    },
+    {
+        "id": "shibafantom.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "johnwang.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bohobones.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "daoinvest.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "shuajj.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "ssv-test.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "game-swap.eth",
+        "votesCount": 12,
+        "categories": []
+    },
+    {
+        "id": "thropic.eth",
+        "votesCount": 51,
+        "categories": []
+    },
+    {
+        "id": "thecreative.eth",
+        "votesCount": 14,
+        "categories": [
+        "service",
+        "creator"
+        ]
+    },
+    {
+        "id": "phunkdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "boredbananas.eth",
+        "votesCount": 205,
+        "categories": []
+    },
+    {
+        "id": "mscoin.eth",
+        "votesCount": 3,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "huwacoin.eth",
+        "votesCount": 4307,
+        "categories": []
+    },
+    {
+        "id": "planetnft.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "spacestation.eth",
+        "votesCount": 48,
+        "categories": []
+    },
+    {
+        "id": "dopeshibas.eth",
+        "votesCount": 317,
+        "categories": []
+    },
+    {
+        "id": "nftworkspace.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "jetswap-finance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "财富自由.ETH",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "discord.art",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "zerogoki.eth",
+        "votesCount": 82,
+        "categories": []
+    },
+    {
+        "id": "toshidao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dera.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cakemonster.eth",
+        "votesCount": 1203,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "xtsworld.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "mengduo.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "valixorg.eth",
+        "votesCount": 20,
+        "categories": []
+    },
+    {
+        "id": "agdeportes.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "thalesgov.eth",
+        "votesCount": 880,
+        "categories": []
+    },
+    {
+        "id": "polycatfi.eth",
+        "votesCount": 2688,
+        "categories": []
+    },
+    {
+        "id": "yorocoon.eth",
+        "votesCount": 11,
+        "categories": []
+    },
+    {
+        "id": "tommyg.eth",
+        "votesCount": 34,
+        "categories": []
+    },
+    {
+        "id": "wallstreetbetsdex.eth",
+        "votesCount": 10,
+        "categories": []
+    },
+    {
+        "id": "harems.eth",
+        "votesCount": 13,
+        "categories": []
+    },
+    {
+        "id": "irstha.eth",
+        "votesCount": 14,
+        "categories": [
+        "service"
+        ]
+    },
+    {
+        "id": "kemin.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "hogeteamdelta.eth",
+        "votesCount": 21,
+        "categories": []
+    },
+    {
+        "id": "tdbc.eth",
+        "votesCount": 60,
+        "categories": []
+    },
+    {
+        "id": "mintgrant.eth",
+        "votesCount": 64,
+        "categories": []
+    },
+    {
+        "id": "nftorbit.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "lendland.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "lixir.eth",
+        "votesCount": 105,
+        "categories": []
+    },
+    {
+        "id": "cryptohalloffame.eth",
+        "votesCount": 0,
+        "categories": [
+        "creator",
+        "media"
+        ]
+    },
+    {
+        "id": "swapstream.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "lebanonsdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "viewcy.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "developer-kcc.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "otaleg.eth",
+        "votesCount": 22,
+        "categories": []
+    },
+    {
+        "id": "veibff.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "elektradao.eth",
+        "votesCount": 94,
+        "categories": []
+    },
+    {
+        "id": "minto.eth",
+        "votesCount": 387,
+        "categories": [
+        "investment",
+        "service"
+        ]
+    },
+    {
+        "id": "lofcrypto.eth",
+        "votesCount": 270,
+        "categories": [
+        "social",
+        "creator"
+        ]
+    },
+    {
+        "id": "tecommons.eth",
+        "votesCount": 558,
+        "categories": []
+    },
+    {
+        "id": "mcv.eth",
+        "votesCount": 551,
+        "categories": []
+    },
+    {
+        "id": "dexkit.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "angryb.eth",
+        "votesCount": 53,
+        "categories": []
+    },
+    {
+        "id": "alienclub.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "adijo.eth",
+        "votesCount": 22,
+        "categories": []
+    },
+    {
+        "id": "fffolio.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "samopup.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "polygoon.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "alphrdao.eth",
+        "votesCount": 132,
+        "categories": []
+    },
+    {
+        "id": "bitmates.eth",
+        "votesCount": 210,
+        "categories": []
+    },
+    {
+        "id": "stndgov.eth",
+        "votesCount": 13,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "kargainworld.eth",
+        "votesCount": 0,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "witchtoken.eth",
+        "votesCount": 294,
+        "categories": []
+    },
+    {
+        "id": "getprotocolsnapshot.eth",
+        "votesCount": 296,
+        "categories": []
+    },
+    {
+        "id": "artinu.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "purrnelopescountryclub.eth",
+        "votesCount": 2586,
+        "categories": []
+    },
+    {
+        "id": "lulzfail.eth",
+        "votesCount": 27,
+        "categories": []
+    },
+    {
+        "id": "eggs.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "polygon-jetswap-finance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "shiba-swap.eth",
+        "votesCount": 5372,
+        "categories": [
+        "investment",
+        "protocol"
+        ]
+    },
+    {
+        "id": "monstrocities.eth",
+        "votesCount": 83,
+        "categories": []
+    },
+    {
+        "id": "moonwalkersdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "shinyobjects.eth",
+        "votesCount": 1,
+        "categories": [
+        "social",
+        "grant"
+        ]
+    },
+    {
+        "id": "hubdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "nftcharts.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "richquack.eth",
+        "votesCount": 90,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "totemfinance.eth",
+        "votesCount": 75,
+        "categories": []
+    },
+    {
+        "id": "xeo4.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "streetbased.eth",
+        "votesCount": 3,
+        "categories": [
+        "investment"
+        ]
+    },
+    {
+        "id": "mahapolygon.eth",
+        "votesCount": 31,
+        "categories": []
+    },
+    {
+        "id": "ubq.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "communifty.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "test1.testname.eth",
+        "votesCount": 26,
+        "categories": []
+    },
+    {
+        "id": "checoin.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "fountains.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "banksocialdao.eth",
+        "votesCount": 1108,
+        "categories": [
+        "social",
+        "investment"
+        ]
+    },
+    {
+        "id": "dinnerdao.eth",
+        "votesCount": 75,
+        "categories": []
+    },
+    {
+        "id": "hapione.eth",
+        "votesCount": 87,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "teleology.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "mmf.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "metaverseminds.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "kcc.eth",
+        "votesCount": 2724,
+        "categories": []
+    },
+    {
+        "id": "degatedao.eth",
+        "votesCount": 98,
+        "categories": []
+    },
+    {
+        "id": "horizonprotocol.eth",
+        "votesCount": 59,
+        "categories": []
+    },
+    {
+        "id": "karmadao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "pooryia.eth",
+        "votesCount": 25,
+        "categories": []
+    },
+    {
+        "id": "kukaburra.eth",
+        "votesCount": 53,
+        "categories": []
+    },
+    {
+        "id": "m.club.eth",
+        "votesCount": 257,
+        "categories": []
+    },
+    {
+        "id": "mnft.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "lililashka.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "aquafinance.eth",
+        "votesCount": 32,
+        "categories": []
+    },
+    {
+        "id": "nightlight.eth",
+        "votesCount": 9,
+        "categories": []
+    },
+    {
+        "id": "polyswift.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "raistone.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "okmoon.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "gog.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "phetta.eth",
+        "votesCount": 14,
+        "categories": []
+    },
+    {
+        "id": "gypsyking.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "dao.dappnode.eth",
+        "votesCount": 92,
+        "categories": []
+    },
+    {
+        "id": "apestake.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "nftcommunitydao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dinoswapexchange.eth",
+        "votesCount": 48,
+        "categories": []
+    },
+    {
+        "id": "buildcities.eth",
+        "votesCount": 19,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "tonstarter.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "testbsw.eth",
+        "votesCount": 59,
+        "categories": []
+    },
+    {
+        "id": "lostsouls.eth",
+        "votesCount": 48,
+        "categories": []
+    },
+    {
+        "id": "babyifusd.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "rgov.eth",
+        "votesCount": 60,
+        "categories": []
+    },
+    {
+        "id": "tetu.eth",
+        "votesCount": 1216,
+        "categories": []
+    },
+    {
+        "id": "infinitydao.eth",
+        "votesCount": 29,
+        "categories": []
+    },
+    {
+        "id": "litfam.eth",
+        "votesCount": 53,
+        "categories": []
+    },
+    {
+        "id": "digitalventures.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "fucd.eth",
+        "votesCount": 132,
+        "categories": []
+    },
+    {
+        "id": "treasurekey.eth",
+        "votesCount": 33,
+        "categories": []
+    },
+    {
+        "id": "bobocash.eth",
+        "votesCount": 31,
+        "categories": []
+    },
+    {
+        "id": "tap.eth",
+        "votesCount": 9,
+        "categories": []
+    },
+    {
+        "id": "miamitechruns.eth",
+        "votesCount": 834,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "takodefi.eth",
+        "votesCount": 71,
+        "categories": []
+    },
+    {
+        "id": "onepixeldao.eth",
+        "votesCount": 473,
+        "categories": []
+    },
+    {
+        "id": "pharo.eth",
+        "votesCount": 203,
+        "categories": [
+        "protocol",
+        "service"
+        ]
+    },
+    {
+        "id": "lion-dao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "matiasz.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "million-farm.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "biswap-org.eth",
+        "votesCount": 23903,
+        "categories": []
+    },
+    {
+        "id": "desertrat.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "proteincommunity.eth",
+        "votesCount": 357,
+        "categories": [
+        "creator"
+        ]
+    },
+    {
+        "id": "100rainbows.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "sharkdao.eth",
+        "votesCount": 7696,
+        "categories": []
+    },
+    {
+        "id": "bustagamefi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "blockyu.eth",
+        "votesCount": 129,
+        "categories": []
+    },
+    {
+        "id": "yydsb.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "linkstar.eth",
+        "votesCount": 223,
+        "categories": [
+        "media",
+        "social"
+        ]
+    },
+    {
+        "id": "noacoop.eth",
+        "votesCount": 1,
+        "categories": [
+        "social",
+        "investment"
+        ]
+    },
+    {
+        "id": "fellowshipdao.eth",
+        "votesCount": 46,
+        "categories": []
+    },
+    {
+        "id": "deadkev.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "deboni.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "thoreum.eth",
+        "votesCount": 512,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "infinitedao.eth",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "eglvote.eth",
+        "votesCount": 10,
+        "categories": []
+    },
+    {
+        "id": "loserchick.eth",
+        "votesCount": 539,
+        "categories": []
+    },
+    {
+        "id": "nftrehab.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "dao.minersvip.eth",
+        "votesCount": 67,
+        "categories": []
+    },
+    {
+        "id": "ownfund.eth",
+        "votesCount": 826,
+        "categories": []
+    },
+    {
+        "id": "neroone.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "stelium.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "unipilot.eth",
+        "votesCount": 195,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "tiledao.eth",
+        "votesCount": 168,
+        "categories": []
+    },
+    {
+        "id": "lofinft.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "onlymemes.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "kuhoge.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "autofactory.eth",
+        "votesCount": 10,
+        "categories": []
+    },
+    {
+        "id": "paybswap.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "nearth.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "lotiondao.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "danilomatias.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "thewolfgang.eth",
+        "votesCount": 113,
+        "categories": []
+    },
+    {
+        "id": "moonwolf.eth",
+        "votesCount": 49,
+        "categories": []
+    },
+    {
+        "id": "moonbeamnetwork.eth",
+        "votesCount": 14,
+        "categories": []
+    },
+    {
+        "id": "elmurci.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bankerdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "emergencedao.eth",
+        "votesCount": 68,
+        "categories": []
+    },
+    {
+        "id": "shouyi-governance.eth",
+        "votesCount": 11,
+        "categories": []
+    },
+    {
+        "id": "hatdao.eth",
+        "votesCount": 172,
+        "categories": []
+    },
+    {
+        "id": "glicpixv1.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "minorityprogrammers.eth",
+        "votesCount": 37,
+        "categories": [
+        "social",
+        "creator"
+        ]
+    },
+    {
+        "id": "genzdao.eth",
+        "votesCount": 93,
+        "categories": []
+    },
+    {
+        "id": "tyevlag.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "yutinghuang.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "nashdao.eth",
+        "votesCount": 348,
+        "categories": []
+    },
+    {
+        "id": "bullsontheblock.eth",
+        "votesCount": 3636,
+        "categories": []
+    },
+    {
+        "id": "jbdao.eth",
+        "votesCount": 21736,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "godsunchained.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "unilion.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "thewatch.eth",
+        "votesCount": 110,
+        "categories": [
+        "media"
+        ]
+    },
+    {
+        "id": "nfxtdao.eth",
+        "votesCount": 32,
+        "categories": []
+    },
+    {
+        "id": "gummybull.eth",
+        "votesCount": 12,
+        "categories": []
+    },
+    {
+        "id": "yamp.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "kolektivo.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "unlock-community.eth",
+        "votesCount": 9,
+        "categories": []
+    },
+    {
+        "id": "bananafi.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "fusedao.eth",
+        "votesCount": 136,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "yape.eth",
+        "votesCount": 75,
+        "categories": []
+    },
+    {
+        "id": "realfevrfans.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "cre8r.eth",
+        "votesCount": 651,
+        "categories": []
+    },
+    {
+        "id": "balancer.eth",
+        "votesCount": 113988,
+        "categories": []
+    },
+    {
+        "id": "dfyn.eth",
+        "votesCount": 402,
+        "categories": []
+    },
+    {
+        "id": "hyperblade.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "usebraintrust.eth",
+        "votesCount": 289,
+        "categories": []
+    },
+    {
+        "id": "ametadao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cryptotins.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "wagmidao.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "syncronauts.eth",
+        "votesCount": 374,
+        "categories": []
+    },
+    {
+        "id": "oishun.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "sujiyan.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "globalcoinresearch.eth",
+        "votesCount": 164,
+        "categories": []
+    },
+    {
+        "id": "thelyceum.eth",
+        "votesCount": 148,
+        "categories": [
+        "social",
+        "protocol"
+        ]
+    },
+    {
+        "id": "landshare.eth",
+        "votesCount": 607,
+        "categories": []
+    },
+    {
+        "id": "mattbrown.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ricochet.eth",
+        "votesCount": 931,
+        "categories": []
+    },
+    {
+        "id": "xtblock.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "kemis.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "youswap-dao.eth",
+        "votesCount": 68,
+        "categories": []
+    },
+    {
+        "id": "rinkeby.test1534525.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "peacedao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "thedragon.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "parachutedao.eth",
+        "votesCount": 76,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "dao.decrypt.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "tokenville.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "potadaos.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "lunargovernance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "birdlaws.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "sarcophagus-ambassadors.eth",
+        "votesCount": 207,
+        "categories": []
+    },
+    {
+        "id": "kangaroocourt.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "igive.eth",
+        "votesCount": 14,
+        "categories": []
+    },
+    {
+        "id": "babydao.eth",
+        "votesCount": 93,
+        "categories": []
+    },
+    {
+        "id": "cryptokoh.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "tjelailah.eth",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "raccoonsclub.eth",
+        "votesCount": 20,
+        "categories": []
+    },
+    {
+        "id": "snapshot.sockdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "tokenizerdefi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "partypenguins.eth",
+        "votesCount": 122,
+        "categories": []
+    },
+    {
+        "id": "ags.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "metrox.eth",
+        "votesCount": 2117,
+        "categories": []
+    },
+    {
+        "id": "huskyavax.eth",
+        "votesCount": 88,
+        "categories": []
+    },
+    {
+        "id": "cryptocavenetwork.eth",
+        "votesCount": 1,
+        "categories": [
+        "investment"
+        ]
+    },
+    {
+        "id": "styx.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "doorknock.eth",
+        "votesCount": 614,
+        "categories": []
+    },
+    {
+        "id": "solseedlings.eth",
+        "votesCount": 57,
+        "categories": []
+    },
+    {
+        "id": "oogwei.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "vaughnlinton.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "vroomdao.eth",
+        "votesCount": 30,
+        "categories": []
+    },
+    {
+        "id": "sharkcovedao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cryptokekftm.eth",
+        "votesCount": 22,
+        "categories": []
+    },
+    {
+        "id": "nami.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "shouyi-governance-hsc.eth",
+        "votesCount": 24,
+        "categories": []
+    },
+    {
+        "id": "retokendao.eth",
+        "votesCount": 266,
+        "categories": []
+    },
+    {
+        "id": "test1534525.eth",
+        "votesCount": 9,
+        "categories": []
+    },
+    {
+        "id": "goetheinstitu.eth",
+        "votesCount": 43,
+        "categories": []
+    },
+    {
+        "id": "debatemonkey.eth",
+        "votesCount": 262,
+        "categories": []
+    },
+    {
+        "id": "cosmecomics.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "alchemistdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "songadao.eth",
+        "votesCount": 262,
+        "categories": [
+        "media",
+        "creator"
+        ]
+    },
+    {
+        "id": "bitalliance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "soulswap.eth",
+        "votesCount": 579,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "burnyboys.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bgansv2.eth",
+        "votesCount": 3797,
+        "categories": []
+    },
+    {
+        "id": "test1.shot.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "rock72.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "acredao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "theculturedao.eth",
+        "votesCount": 264,
+        "categories": []
+    },
+    {
+        "id": "feistydao.eth",
+        "votesCount": 201,
+        "categories": []
+    },
+    {
+        "id": "test4.shot.eth",
+        "votesCount": 55,
+        "categories": []
+    },
+    {
+        "id": "fantomrock.eth",
+        "votesCount": 24,
+        "categories": []
+    },
+    {
+        "id": "pi7.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "zomta.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "blvkhvnd.eth",
+        "votesCount": 34,
+        "categories": []
+    },
+    {
+        "id": "24px.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "huangchen.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "dao.festivaldistrict.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "daocity.eth",
+        "votesCount": 19988,
+        "categories": []
+    },
+    {
+        "id": "cryptopoops.eth",
+        "votesCount": 23,
+        "categories": []
+    },
+    {
+        "id": "hewerclan.empathacrobat.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "hepa.eth",
+        "votesCount": 25,
+        "categories": []
+    },
+    {
+        "id": "votewithrocks.eth",
+        "votesCount": 55,
+        "categories": []
+    },
+    {
+        "id": "deepdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "arrowdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "testingfive.eth",
+        "votesCount": 26,
+        "categories": []
+    },
+    {
+        "id": "happybunnies.eth",
+        "votesCount": 15,
+        "categories": []
+    },
+    {
+        "id": "waterdao.eth",
+        "votesCount": 37,
+        "categories": []
+    },
+    {
+        "id": "anchorcertificates.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "audiogrants.eth",
+        "votesCount": 14,
+        "categories": []
+    },
+    {
+        "id": "dydxgov.eth",
+        "votesCount": 16458,
+        "categories": []
+    },
+    {
+        "id": "equalitytokyo.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "huangsixiong.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "pundits.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "hungrypandas.eth",
+        "votesCount": 74,
+        "categories": []
+    },
+    {
+        "id": "genesisrocks.eth",
+        "votesCount": 23,
+        "categories": []
+    },
+    {
+        "id": "bageldao.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "lootkingdom.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bsc.bageldao.eth",
+        "votesCount": 101,
+        "categories": []
+    },
+    {
+        "id": "thefledge.eth",
+        "votesCount": 58,
+        "categories": []
+    },
+    {
+        "id": "riskharbor.eth",
+        "votesCount": 445,
+        "categories": [
+        "protocol",
+        "service"
+        ]
+    },
+    {
+        "id": "afrofuture.eth",
+        "votesCount": 17,
+        "categories": []
+    },
+    {
+        "id": "crypto-moth.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "cssgov.eth",
+        "votesCount": 240,
+        "categories": []
+    },
+    {
+        "id": "test3.shot.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "dopedao.eth",
+        "votesCount": 3064,
+        "categories": []
+    },
+    {
+        "id": "scdas.eth",
+        "votesCount": 768,
+        "categories": []
+    },
+    {
+        "id": "slackerdao.eth",
+        "votesCount": 76,
+        "categories": []
+    },
+    {
+        "id": "holywarloot.eth",
+        "votesCount": 39,
+        "categories": []
+    },
+    {
+        "id": "playbackapp.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "liquiditymultisig.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "tptdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "t3rm.eth",
+        "votesCount": 22,
+        "categories": []
+    },
+    {
+        "id": "dwarfmine.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "loot-dao.eth",
+        "votesCount": 3390,
+        "categories": []
+    },
+    {
+        "id": "cookprotocol.eth",
+        "votesCount": 520,
+        "categories": []
+    },
+    {
+        "id": "xlootproject.eth",
+        "votesCount": 1397,
+        "categories": []
+    },
+    {
+        "id": "realmsofether.eth",
+        "votesCount": 202,
+        "categories": []
+    },
+    {
+        "id": "greytoken.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "hexocodes.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "blizzardmoney.eth",
+        "votesCount": 62,
+        "categories": []
+    },
+    {
+        "id": "cryptocrystaldao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "katanansamurai.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "n-project.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "chaseadam17.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "geometryfi.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "sfd.eth",
+        "votesCount": 764,
+        "categories": []
+    },
+    {
+        "id": "iotexlab.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "npcloot.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "immutablex.eth",
+        "votesCount": 535,
+        "categories": []
+    },
+    {
+        "id": "doggdao.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "hbot-dev.eth",
+        "votesCount": 32,
+        "categories": []
+    },
+    {
+        "id": "cntr.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "centaurswap.eth",
+        "votesCount": 69,
+        "categories": []
+    },
+    {
+        "id": "snaptest.dexe.network",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "moonswpadex.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "mcacademy.eth",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "xendfi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "rook.eth",
+        "votesCount": 1307,
+        "categories": []
+    },
+    {
+        "id": "raccoonmafianft.eth",
+        "votesCount": 256,
+        "categories": []
+    },
+    {
+        "id": "raidparty.eth",
+        "votesCount": 19,
+        "categories": []
+    },
+    {
+        "id": "npcguild.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "playmining.eth",
+        "votesCount": 8,
+        "categories": [
+        "creator"
+        ]
+    },
+    {
+        "id": "complifi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "apeswinapes.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "tikudefi.eth",
+        "votesCount": 69,
+        "categories": []
+    },
+    {
+        "id": "gov.gloot.eth",
+        "votesCount": 38,
+        "categories": []
+    },
+    {
+        "id": "ethereannft.eth",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "agld-dao.eth",
+        "votesCount": 128,
+        "categories": []
+    },
+    {
+        "id": "risingsun.eth",
+        "votesCount": 245,
+        "categories": []
+    },
+    {
+        "id": "prespool.eth",
+        "votesCount": 471,
+        "categories": []
+    },
+    {
+        "id": "storydao.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "alumpink.eth",
+        "votesCount": 10,
+        "categories": []
+    },
+    {
+        "id": "figmentdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "shroomz.eth",
+        "votesCount": 930,
+        "categories": []
+    },
+    {
+        "id": "tikifestival.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "uefacup.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "stableunit.eth",
+        "votesCount": 66,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "gyrodao.eth",
+        "votesCount": 9473,
+        "categories": []
+    },
+    {
+        "id": "credmarkhq.eth",
+        "votesCount": 27,
+        "categories": []
+    },
+    {
+        "id": "loveboat.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "agavedao.eth",
+        "votesCount": 928,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "legrenier.eth",
+        "votesCount": 55,
+        "categories": [
+        "social",
+        "collector"
+        ]
+    },
+    {
+        "id": "pantherprotocol.eth",
+        "votesCount": 2659,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "fries2land.eth",
+        "votesCount": 11,
+        "categories": []
+    },
+    {
+        "id": "polywhirl.eth",
+        "votesCount": 10,
+        "categories": []
+    },
+    {
+        "id": "biodefense.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "animeloot.eth",
+        "votesCount": 70,
+        "categories": []
+    },
+    {
+        "id": "kusamoon.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "mitchoz.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "sdao.eth",
+        "votesCount": 1336,
+        "categories": []
+    },
+    {
+        "id": "genwatch.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "moonbeans.eth",
+        "votesCount": 497,
+        "categories": []
+    },
+    {
+        "id": "hofgoats.eth",
+        "votesCount": 177,
+        "categories": []
+    },
+    {
+        "id": "shadecash.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "happyhourdao.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "shiyao.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "rorhug.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "benefactors.eth",
+        "votesCount": 16,
+        "categories": []
+    },
+    {
+        "id": "gamefidao.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "lunaticsdao.eth",
+        "votesCount": 9,
+        "categories": []
+    },
+    {
+        "id": "44hills.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "citizencorner.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bankdefi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "lixian.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "sedaona.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "glicpixv2.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "starcatchers.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "zeitgeist.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "kimchipremium.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "liquidifty.eth",
+        "votesCount": 39,
+        "categories": []
+    },
+    {
+        "id": "conjure.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "thedate.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "genesisproject.eth",
+        "votesCount": 129,
+        "categories": []
+    },
+    {
+        "id": "windingtree.eth",
+        "votesCount": 150,
+        "categories": []
+    },
+    {
+        "id": "gro.xyz",
+        "votesCount": 2172,
+        "categories": [
+        "creator",
+        "protocol"
+        ]
+    },
+    {
+        "id": "anoncats.eth",
+        "votesCount": 11,
+        "categories": [
+        "social",
+        "collector"
+        ]
+    },
+    {
+        "id": "sunrisegaming.eth",
+        "votesCount": 619,
+        "categories": []
+    },
+    {
+        "id": "minilab.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "gov.fantums.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "superraredao.eth",
+        "votesCount": 1261,
+        "categories": []
+    },
+    {
+        "id": "unionblock.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "jay3.eth",
+        "votesCount": 255,
+        "categories": []
+    },
+    {
+        "id": "amptrade.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "xwg.eth",
+        "votesCount": 862,
+        "categories": []
+    },
+    {
+        "id": "nft-gods.eth",
+        "votesCount": 344,
+        "categories": []
+    },
+    {
+        "id": "bossybearclub.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "storyblocks.eth",
+        "votesCount": 84,
+        "categories": []
+    },
+    {
+        "id": "staterfinance.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "masq.eth",
+        "votesCount": 25,
+        "categories": []
+    },
+    {
+        "id": "faradao.eth",
+        "votesCount": 1563,
+        "categories": []
+    },
+    {
+        "id": "ledgity.xyz",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "test6.shot.eth",
+        "votesCount": 1593,
+        "categories": [
+        "creator",
+        "protocol"
+        ]
+    },
+    {
+        "id": "test7.shot.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "peco.amun.eth",
+        "votesCount": 26,
+        "categories": []
+    },
+    {
+        "id": "bewee.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "dogcollar.eth",
+        "votesCount": 280,
+        "categories": [
+        "social",
+        "creator"
+        ]
+    },
+    {
+        "id": "wenwenprotocol.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "wdefi.eth",
+        "votesCount": 68,
+        "categories": []
+    },
+    {
+        "id": "oursong.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "igostarter.eth",
+        "votesCount": 1057,
+        "categories": []
+    },
+    {
+        "id": "theclaw.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "ankr-dao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "testplugin.eth",
+        "votesCount": 10,
+        "categories": []
+    },
+    {
+        "id": "marzplots.eth",
+        "votesCount": 33,
+        "categories": []
+    },
+    {
+        "id": "unicodeforgeeks.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "skvlldao.eth",
+        "votesCount": 903,
+        "categories": []
+    },
+    {
+        "id": "themedicidao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "kdn87.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cyberhunter.eth",
+        "votesCount": 361,
+        "categories": []
+    },
+    {
+        "id": "vote-rinkeby.gro.xyz",
+        "votesCount": 8,
+        "categories": []
+    },
+    {
+        "id": "shenchen.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "rbntest.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "enterdao.xyz",
+        "votesCount": 10,
+        "categories": []
+    },
+    {
+        "id": "otoex.eth",
+        "votesCount": 76,
+        "categories": []
+    },
+    {
+        "id": "ethereummailservice.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "onjuno.eth",
+        "votesCount": 37,
+        "categories": []
+    },
+    {
+        "id": "snapshotplayground.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "meowfinance.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "szns.shean.eth",
+        "votesCount": 62,
+        "categories": []
+    },
+    {
+        "id": "dgenesis.eth",
+        "votesCount": 15,
+        "categories": []
+    },
+    {
+        "id": "soter.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "brightunion.eth",
+        "votesCount": 48,
+        "categories": []
+    },
+    {
+        "id": "geometrydefi.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "hatchdraco.eth",
+        "votesCount": 422,
+        "categories": []
+    },
+    {
+        "id": "wraithswap.eth",
+        "votesCount": 35,
+        "categories": []
+    },
+    {
+        "id": "treasurycouncil.eth",
+        "votesCount": 2136,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "swiftfinance.eth",
+        "votesCount": 160,
+        "categories": []
+    },
+    {
+        "id": "landdao.eth",
+        "votesCount": 190,
+        "categories": []
+    },
+    {
+        "id": "zdao.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "definerorg.eth",
+        "votesCount": 16,
+        "categories": [
+        "investment",
+        "protocol"
+        ]
+    },
+    {
+        "id": "snepshot.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "sandman.finance",
+        "votesCount": 69,
+        "categories": []
+    },
+    {
+        "id": "omnimorphs.eth",
+        "votesCount": 855,
+        "categories": []
+    },
+    {
+        "id": "alpha-finance-lab.eth",
+        "votesCount": 48,
+        "categories": []
+    },
+    {
+        "id": "flootfamiliar.eth",
+        "votesCount": 162,
+        "categories": []
+    },
+    {
+        "id": "beetsdaotest.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "sherpacash.eth",
+        "votesCount": 343,
+        "categories": []
+    },
+    {
+        "id": "seachaintoken.xyz",
+        "votesCount": 170,
+        "categories": []
+    },
+    {
+        "id": "primerating.eth",
+        "votesCount": 468,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "shep.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "theheirgame.eth",
+        "votesCount": 24,
+        "categories": []
+    },
+    {
+        "id": "perfdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bluejayfinance.eth",
+        "votesCount": 13,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "furutest.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "sienaroad.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "fuckfiatmoney.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "coinica.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "dextertortoriello.eth",
+        "votesCount": 32,
+        "categories": []
+    },
+    {
+        "id": "gearbox.eth",
+        "votesCount": 54797,
+        "categories": []
+    },
+    {
+        "id": "dfrag.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "alienayame.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "abracadabrabymerlinthemagician.eth",
+        "votesCount": 4681,
+        "categories": []
+    },
+    {
+        "id": "freeriver.eth",
+        "votesCount": 64,
+        "categories": []
+    },
+    {
+        "id": "chibidao.eth",
+        "votesCount": 233,
+        "categories": []
+    },
+    {
+        "id": "unicorndao.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "synapseprotocol.eth",
+        "votesCount": 1832,
+        "categories": []
+    },
+    {
+        "id": "digiworlds.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "hodlsmoney.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "alexfurnica.eth",
+        "votesCount": 9,
+        "categories": []
+    },
+    {
+        "id": "nearpad.eth",
+        "votesCount": 0,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "oldeighties.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "polis-dao.eth",
+        "votesCount": 187,
+        "categories": []
+    },
+    {
+        "id": "takeprofitfi.eth",
+        "votesCount": 29,
+        "categories": []
+    },
+    {
+        "id": "daomstr.eth",
+        "votesCount": 219,
+        "categories": []
+    },
+    {
+        "id": "nftat.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "nextdao.eth",
+        "votesCount": 226,
+        "categories": []
+    },
+    {
+        "id": "thewaifudao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "voltswap.eth",
+        "votesCount": 115,
+        "categories": []
+    },
+    {
+        "id": "babyspacefloki.eth",
+        "votesCount": 16,
+        "categories": []
+    },
+    {
+        "id": "wizgot.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "superteam.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "magiclandfi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "daobit.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "lobstersdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dogiracommunity.eth",
+        "votesCount": 900,
+        "categories": []
+    },
+    {
+        "id": "metagamehub.eth",
+        "votesCount": 1779,
+        "categories": [
+        "investment"
+        ]
+    },
+    {
+        "id": "grafx.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "unravelling.eth",
+        "votesCount": 56,
+        "categories": []
+    },
+    {
+        "id": "eggdao.eth",
+        "votesCount": 30,
+        "categories": []
+    },
+    {
+        "id": "onchainblunts.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "notional.eth",
+        "votesCount": 599,
+        "categories": []
+    },
+    {
+        "id": "kittyparty.eth",
+        "votesCount": 67,
+        "categories": [
+        "social",
+        "investment"
+        ]
+    },
+    {
+        "id": "metaversedaos.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "expectchaos.eth",
+        "votesCount": 570,
+        "categories": []
+    },
+    {
+        "id": "magicdao.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "marnotaur-dao.eth",
+        "votesCount": 444,
+        "categories": []
+    },
+    {
+        "id": "multiversedao.eth",
+        "votesCount": 131,
+        "categories": []
+    },
+    {
+        "id": "thedaoist.eth",
+        "votesCount": 47,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "borntopump.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "test.johnletey.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "10b57e6da0.eth",
+        "votesCount": 3892,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "fuji-dao.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "senary.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "xxtka.eth",
+        "votesCount": 277,
+        "categories": []
+    },
+    {
+        "id": "degenerator.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "upsidedao.eth",
+        "votesCount": 736,
+        "categories": []
+    },
+    {
+        "id": "poopie.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "quarters.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "valou.eth",
+        "votesCount": 33,
+        "categories": []
+    },
+    {
+        "id": "0xadventures.eth",
+        "votesCount": 28,
+        "categories": []
+    },
+    {
+        "id": "affclub.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "fractaldimensions.eth",
+        "votesCount": 15,
+        "categories": []
+    },
+    {
+        "id": "marsupialmadness.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "vote.asudao.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "ensbid.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "akiradao.eth",
+        "votesCount": 11,
+        "categories": []
+    },
+    {
+        "id": "bananana.eth",
+        "votesCount": 49,
+        "categories": []
+    },
+    {
+        "id": "swpr.eth",
+        "votesCount": 30959,
+        "categories": []
+    },
+    {
+        "id": "avanyan.eth",
+        "votesCount": 9,
+        "categories": []
+    },
+    {
+        "id": "busd.bsc.bageldao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "utopiavc.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "happygaj.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "genesisblocks.eth",
+        "votesCount": 3811,
+        "categories": []
+    },
+    {
+        "id": "defioptionsdao.eth",
+        "votesCount": 51,
+        "categories": []
+    },
+    {
+        "id": "dotfinance.eth",
+        "votesCount": 364,
+        "categories": []
+    },
+    {
+        "id": "city.fwb.eth",
+        "votesCount": 902,
+        "categories": []
+    },
+    {
+        "id": "eightsriddle.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "jomessy.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "yedaoist.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "shunkakinoki.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "dripgov.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "0xbakes.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "0xtonga.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "stationlabs.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "mpayswap.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "blocks-dao.eth",
+        "votesCount": 4185,
+        "categories": []
+    },
+    {
+        "id": "multiplayerdao.eth",
+        "votesCount": 268,
+        "categories": []
+    },
+    {
+        "id": "cryptohoots.eth",
+        "votesCount": 1321,
+        "categories": []
+    },
+    {
+        "id": "vapejuicejordan.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "elderblight.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ropkafin.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "maremortis.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "thehoneypot.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "wetube.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "hammerfade.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "latecheckout.eth",
+        "votesCount": 55,
+        "categories": []
+    },
+    {
+        "id": "empireandfoundation.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "piedao.eth",
+        "votesCount": 8432,
+        "categories": []
+    },
+    {
+        "id": "unknowable.eth",
+        "votesCount": 9,
+        "categories": []
+    },
+    {
+        "id": "westerndawn.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "no-one.eth",
+        "votesCount": 15,
+        "categories": []
+    },
+    {
+        "id": "littlesharts.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "cyberkongz.eth",
+        "votesCount": 3356,
+        "categories": []
+    },
+    {
+        "id": "pagedao.eth",
+        "votesCount": 217,
+        "categories": [
+        "protocol",
+        "creator"
+        ]
+    },
+    {
+        "id": "goodmonth.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bendao.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "ss.tokentowndao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "rocketriders.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "maidcoin.eth",
+        "votesCount": 86,
+        "categories": []
+    },
+    {
+        "id": "chiliagon.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "getsplice.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "orcapod.eth",
+        "votesCount": 165,
+        "categories": []
+    },
+    {
+        "id": "bhdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "spaceknightclub.eth",
+        "votesCount": 29,
+        "categories": []
+    },
+    {
+        "id": "co.tokentowndao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "yeetdao.eth",
+        "votesCount": 5,
+        "categories": []
+    },
+    {
+        "id": "bestiesdao.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "cornhub.eth",
+        "votesCount": 13,
+        "categories": []
+    },
+    {
+        "id": "tsa-gospel.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "ggtest.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "gec.eth",
+        "votesCount": 752,
+        "categories": []
+    },
+    {
+        "id": "defily.eth",
+        "votesCount": 25,
+        "categories": []
+    },
+    {
+        "id": "xuran.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "galaxer.eth",
+        "votesCount": 37,
+        "categories": [
+        "media",
+        "collector"
+        ]
+    },
+    {
+        "id": "indiedao.eth",
+        "votesCount": 286,
+        "categories": [
+        "service"
+        ]
+    },
+    {
+        "id": "atxdao.eth",
+        "votesCount": 615,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "dao.obitel.eth",
+        "votesCount": 0,
+        "categories": [
+        "investment",
+        "grant"
+        ]
+    },
+    {
+        "id": "democracy.leprosorium.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "trustednode.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "pfr.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "wearedorkis.eth",
+        "votesCount": 248,
+        "categories": []
+    },
+    {
+        "id": "0xsilas.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "szns2.shean.eth",
+        "votesCount": 20,
+        "categories": []
+    },
+    {
+        "id": "svs.eth",
+        "votesCount": 8931,
+        "categories": []
+    },
+    {
+        "id": "toastfi.eth",
+        "votesCount": 51,
+        "categories": []
+    },
+    {
+        "id": "attadao.eth",
+        "votesCount": 139,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "v2-multiplierfinance.eth",
+        "votesCount": 88,
+        "categories": []
+    },
+    {
+        "id": "nftvote.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "kleros.eth",
+        "votesCount": 797,
+        "categories": []
+    },
+    {
+        "id": "yieldguild.eth",
+        "votesCount": 74,
+        "categories": []
+    },
+    {
+        "id": "decentralandsnap.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "matches.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "isaacpatka.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "mutantsdao.eth",
+        "votesCount": 27401,
+        "categories": []
+    },
+    {
+        "id": "testname.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "t3.testname.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "forgottengov.eth",
+        "votesCount": 5170,
+        "categories": []
+    },
+    {
+        "id": "surf.finance",
+        "votesCount": 8,
+        "categories": [
+        "investment",
+        "protocol"
+        ]
+    },
+    {
+        "id": "cryptobabies.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "goopsnapshot.eth",
+        "votesCount": 1749,
+        "categories": []
+    },
+    {
+        "id": "kusgov.eth",
+        "votesCount": 533,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "thehashes.eth",
+        "votesCount": 649,
+        "categories": []
+    },
+    {
+        "id": "popcorn-snapshot.eth",
+        "votesCount": 1345,
+        "categories": [
+        "protocol",
+        "social"
+        ]
+    },
+    {
+        "id": "wagmigotchi-dao.eth",
+        "votesCount": 124,
+        "categories": []
+    },
+    {
+        "id": "test2.szns.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "testdao.szns.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "leaguedao.eth",
+        "votesCount": 86,
+        "categories": []
+    },
+    {
+        "id": "scaleswap.eth",
+        "votesCount": 2850,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "cryptopackagedgoods.eth",
+        "votesCount": 54,
+        "categories": []
+    },
+    {
+        "id": "snapshot.bulletlabs.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "axdao.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "hakt.eth",
+        "votesCount": 17,
+        "categories": []
+    },
+    {
+        "id": "samuraicryptos.eth",
+        "votesCount": 62,
+        "categories": []
+    },
+    {
+        "id": "myrevengecat.eth",
+        "votesCount": 26,
+        "categories": []
+    },
+    {
+        "id": "trava.eth",
+        "votesCount": 395,
+        "categories": []
+    },
+    {
+        "id": "zombiesdao.eth",
+        "votesCount": 3921,
+        "categories": []
+    },
+    {
+        "id": "cafeswappolygon.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "glife.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "mesofinance.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "yangww.eth",
+        "votesCount": 32,
+        "categories": []
+    },
+    {
+        "id": "20220202222.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "seconds.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "axoncable.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "20000.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "btcool.eth",
+        "votesCount": 9,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "lovehui.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "eth9999.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "sunyuchentron.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "eastblue.eth",
+        "votesCount": 2,
+        "categories": []
+    },
+    {
+        "id": "theone634.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "chinaeth.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "0xbtcvault.eth",
+        "votesCount": 19,
+        "categories": []
+    },
+    {
+        "id": "montagut.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "bitkiller.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "platformcouncil.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "treefinance.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "beanstalkfarms.eth",
+        "votesCount": 3898,
+        "categories": [
+        "protocol"
+        ]
+    },
+    {
+        "id": "obskatebords.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "qqcom.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "sassychimps.eth",
+        "votesCount": 169,
+        "categories": []
+    },
+    {
+        "id": "deconcentration.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "dropnerd.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "sunming.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "yioreea.eth",
+        "votesCount": 35,
+        "categories": [
+        "social"
+        ]
+    },
+    {
+        "id": "fanbi.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "long8.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "wanghan.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "jump123.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "nbblockchain.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "pengdakwan.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "tokenpocketwallet.eth",
+        "votesCount": 4,
+        "categories": []
+    },
+    {
+        "id": "sunflowerindustries.eth",
+        "votesCount": 38,
+        "categories": []
+    },
+    {
+        "id": "troytoken.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "decentralizedgame.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "lailai.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "wsgcoin.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "apollodao.eth",
+        "votesCount": 4032,
+        "categories": []
+    },
+    {
+        "id": "ceresmoney.eth",
+        "votesCount": 7,
+        "categories": []
+    },
+    {
+        "id": "taco.ethid.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "3flower.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "unknowndao.eth",
+        "votesCount": 93,
+        "categories": []
+    },
+    {
+        "id": "mountainsea.eth",
+        "votesCount": 2,
+        "categories": [
+        "protocol",
+        "social"
+        ]
+    },
+    {
+        "id": "tengbb.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "helloone.eth",
+        "votesCount": 3,
+        "categories": [
+        "protocol",
+        "social"
+        ]
+    },
+    {
+        "id": "pnkb.eth",
+        "votesCount": 60,
+        "categories": []
+    },
+    {
+        "id": "cosmoscoin.eth",
+        "votesCount": 1,
+        "categories": []
+    },
+    {
+        "id": "cuiweiyan.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "jungle77.eth",
+        "votesCount": 0,
+        "categories": []
+    },
+    {
+        "id": "terransforce.eth",
+        "votesCount": 1,
+        "categories": [
+        "protocol",
+        "social"
+        ]
+    },
+    {
+        "id": "yipit.eth",
+        "votesCount": 15,
+        "categories": [
+        "protocol",
+        "social"
+        ]
+    },
+    {
+        "id": "poapfun.eth",
+        "votesCount": 3,
+        "categories": []
+    },
+    {
+        "id": "uwucrew.eth",
+        "votesCount": 1115,
+        "categories": []
+    },
+    {
+        "id": "kitpics.eth",
+        "votesCount": 9,
+        "categories": []
+    },
+    {
+        "id": "pxgdao.eth",
+        "votesCount": 218,
+        "categories": []
+    },
+    {
+        "id": "fluffyinu.eth",
+        "votesCount": 6,
+        "categories": []
+    },
+    {
+        "id": "artemisprotocol.eth",
+        "votesCount": 0,
+        "categories": []
+    }
 ]
 
 export default spaces;

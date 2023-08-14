@@ -5,7 +5,7 @@ const App = () => {
 
   return (
     <div>
-      Hello world from App 
+      <b> Hello world from App </b> 
       <SelectComponent/>
       {/* <FetchSpaces /> */}
     </div>

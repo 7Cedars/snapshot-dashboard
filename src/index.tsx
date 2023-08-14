@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { apiDemoUrl } from "./constants";
+import { apiDemoUrl, apiProductionUrl } from "./constants";
 import store from './reducers/store'
 import { Provider } from 'react-redux'
 
@@ -11,7 +11,7 @@ import { ApolloClient,
 } from '@apollo/client'
 
 const client = new ApolloClient({
-  uri: apiDemoUrl,
+  uri: apiProductionUrl, // apiProductionUrl or apiDemoUrl (demo URL does not give correct data)
   cache: new InMemoryCache(),
 })
 

@@ -8,8 +8,7 @@ interface Props {
   space: Space
 }
 
-const SelectionButton = ({key, space}: Props) => {
-  // const addingSpace = useAppSelector(state => state.selectedSpaces) (do not need initial state)
+const SelectionButton = ({space}: Props) => {
   const dispatch = useAppDispatch()
 
   return (
@@ -17,7 +16,6 @@ const SelectionButton = ({key, space}: Props) => {
       {space.id}. Total votes: {space.votesCount}
         <button 
           type="submit"
-          id={key}
           // value={space.id}
           className="font-medium text-white/[.8] px-5 hover:text-white sm:py-6"
           onClick={(() => dispatch(addSpace(space)))}
@@ -28,15 +26,17 @@ const SelectionButton = ({key, space}: Props) => {
   )
 }
 
-
-
 export const SelectSpacesForm = () => {
+  const loadedProposals = useAppSelector(state => state.loadedProposals)
+  
   const compareVotes = (a: Space, b: Space) => {
     return b.votesCount - a.votesCount
   }
 
   let selectionList = spaces.sort(compareVotes)
   selectionList = selectionList.slice(0, 10)
+  console.log("selectionList: ", selectionList)
+  console.log("loadedProposals: ", loadedProposals)
 
   return (
     <div> 
@@ -45,7 +45,6 @@ export const SelectSpacesForm = () => {
       {
       selectionList.map((space: Space) => (
         <SelectionButton key = {space.id} space={space} />
-        // <div key = {space.id}  > {space.id} </div>
       ))
       }
     

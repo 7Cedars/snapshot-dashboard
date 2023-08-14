@@ -8,6 +8,15 @@ const SPACE_DETAILS = gql`
   }
 `
 
+const PROPOSAL_DETAILS = gql`
+  fragment ProposalDetails on Proposal {
+    id
+    votes
+    start
+    end
+  }
+`
+
 export const LIST_SPACES = gql`
   query listSpaces($first: Int!, $skip:Int!){
     spaces(
@@ -20,4 +29,22 @@ export const LIST_SPACES = gql`
     }
   }
   ${SPACE_DETAILS}
+`
+
+export const PROPOSALS_FROM_SPACE = gql`
+  query proposalsFromSpace($first: Int!, $skip:Int!, $space:String!){
+    proposals(
+      first: $first,
+      skip: $skip,
+      where: {
+        space: $space,
+        state: "closed"
+      },
+      orderBy: "created",
+      orderDirection: asc
+    ) {
+      ...ProposalDetails 
+    }
+  }
+  ${PROPOSAL_DETAILS}
 `

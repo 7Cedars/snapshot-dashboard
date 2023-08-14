@@ -14,15 +14,24 @@ export const selectedSpacesSlice = createSlice({
   initialState: initialState, 
   reducers: {
     addSpace: (state, action: PayloadAction<Space>) => {
-      state.spaces.push(action.payload)
+      const spaceIsSelected = state.spaces.find((space: Space) => {
+        return space.id === action.payload.id
+      })
+      console.log("spaceIsSelected: ", spaceIsSelected)
+      if (spaceIsSelected === undefined) {  
+        state.spaces.push(action.payload)
+      }
     }, 
-    // removeSpace(state, action) {
-    //   state.push(action.payload)
-    // }
+    removeSpace: (state, action: PayloadAction<Space>) => {
+      const changedState = state.spaces.filter((space: Space) => 
+        space.id !==  action.payload.id)
+      state.spaces = changedState
+      console.log("changedState: ", changedState)
+    }
   }
 })
 
-export const { addSpace } = selectedSpacesSlice.actions
+export const { addSpace, removeSpace } = selectedSpacesSlice.actions
 
 // export const { vote, appendAnecdote, setAnecdotes } = anecdoteSlice.actions
 
