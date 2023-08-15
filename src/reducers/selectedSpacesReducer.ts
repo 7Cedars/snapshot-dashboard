@@ -1,5 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { Space } from '../types'
+import { useAppDispatch } from './hooks'
 
 interface selectedSpacesState {
   spaces: Space[]
@@ -33,6 +34,11 @@ export const selectedSpacesSlice = createSlice({
 
 export const { addSpace, removeSpace } = selectedSpacesSlice.actions
 
-// export const { vote, appendAnecdote, setAnecdotes } = anecdoteSlice.actions
+// export const initialiseSpace= () => {
+//   return async (dispatch) => {
+//     const anecdotes = await anecdoteService.getAll()
+//     dispatch(setAnecdotes(anecdotes))
+//   }
+// }
 
 export default selectedSpacesSlice.reducer

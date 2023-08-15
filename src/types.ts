@@ -1,5 +1,6 @@
 export interface Proposal {
   id: string;
+  space: OnlyNameSpace; 
   votes: number;
   start: number;
   end: number;
@@ -15,3 +16,5 @@ export interface ListSpacesGqlValues {
   first: number; 
   skip: number;
 }
+
+export type OnlyNameSpace = Omit<Space, 'votesCount' | 'categories'>;

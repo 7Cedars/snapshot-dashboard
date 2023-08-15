@@ -1,36 +1,15 @@
 import spaces from "../../data/spacesList"
 import {Space} from "../../types" 
-import { useAppSelector, useAppDispatch } from '../../reducers/hooks'
-import { addSpace } from '../../reducers/selectedSpacesReducer'
+
 import { SyntheticEvent, useEffect, useState } from "react"
 import Select, {MultiValue } from 'react-select'
 import makeAnimated from 'react-select/animated';
 
-interface Props {
-  key: string, 
-  space: Space
-}
+import SelectButton from "./SelectButton";
 
 interface Option {
   value: string;  
   label: string;  
-}
-
-const SelectionButton = ({space}: Props) => {
-  const dispatch = useAppDispatch()
-
-  return (
-    <div>
-      {space.id}. Total votes: {space.votesCount}
-        <button 
-          type="submit"
-          className="font-medium text-white/[.8] px-5 hover:text-white sm:py-6"
-          onClick={(() => dispatch(addSpace(space)))}
-          >
-          Add
-        </button> 
-    </div>
-  )
 }
 
 export const SelectSpacesForm = () => {
@@ -102,7 +81,7 @@ export const SelectSpacesForm = () => {
 
       {
       spacesToShow.map((space: Space) => (
-        <SelectionButton key = {space.id} space={space} />
+        <SelectButton key = {space.id} space={space} />
       ))
       }
     

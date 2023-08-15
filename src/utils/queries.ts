@@ -11,6 +11,9 @@ const SPACE_DETAILS = gql`
 const PROPOSAL_DETAILS = gql`
   fragment ProposalDetails on Proposal {
     id
+    space {
+      id
+    }
     votes
     start
     end
