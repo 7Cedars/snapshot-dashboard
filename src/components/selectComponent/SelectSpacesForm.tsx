@@ -3,12 +3,17 @@ import {Space} from "../../types"
 import { useAppSelector, useAppDispatch } from '../../reducers/hooks'
 import { addSpace } from '../../reducers/selectedSpacesReducer'
 import { SyntheticEvent, useEffect, useState } from "react"
-import Select from 'react-select'
+import Select, {MultiValue } from 'react-select'
 import makeAnimated from 'react-select/animated';
 
 interface Props {
   key: string, 
   space: Space
+}
+
+interface Option {
+  value: string;  
+  label: string;  
 }
 
 const SelectionButton = ({space}: Props) => {
@@ -30,48 +35,60 @@ const SelectionButton = ({space}: Props) => {
 
 export const SelectSpacesForm = () => {
   // const loadedProposals = useAppSelector(state => state.loadedProposals)
-  const [ spacesToShow, setSpacesToShow ] = useState<Space[]>([])
-  const animatedComponents = makeAnimated();
-
   const compareVotes = (a: Space, b: Space) => {
     return b.votesCount - a.votesCount
   }
 
-  const spacesList = spaces.sort(compareVotes)
+  const animatedComponents = makeAnimated();
+  const [ filteredSpaces, setFilteredSpaces ] = useState<Space[]>(spaces.sort(compareVotes))
+  const [ spacesToShow, setSpacesToShow ] = useState<Space[]>([])
+  const [ selectedCategories ] = useState<MultiValue<Option>>();
+
   useEffect(() => {
-    setSpacesToShow(spacesList.slice(0,10))
+    setSpacesToShow(filteredSpaces.slice(0,10))
   }, [])
 
+  useEffect(() => {
+    setSpacesToShow(filteredSpaces.slice(0,10))
+  }, [filteredSpaces])
+
   const categoriesList: string[] = [] 
-  spacesList.map((space: Space) => { 
+  spaces.map((space: Space) => {  
     categoriesList.push(...space.categories) 
   })
   const categories = Array.from(new Set(categoriesList))
-  const selectOptions = categories.map((category: string) => (
+  const selectOptions: Option[] = categories.map((category: string) => (
     { value: category, label: category }
-    ) )
+  ))
   
-  console.log("selectOptions: ", selectOptions)
+  const handleFilterChange = (option: MultiValue<Option>) => {
 
-  const handleFilterChange = (event: SyntheticEvent) => {
-    const _filteredSpaces = spacesList.filter((space: Space) => 
-      space.id.toLowerCase().includes((event.target as HTMLInputElement).value.toLowerCase())
-    )
-    setSpacesToShow(_filteredSpaces.slice(0,10))
+      const selectedValues: string[] = option.map(item => item.value) 
+      const filteredSpaces = spaces.filter((space: Space) => 
+      space.categories.some(item => selectedValues.includes(item))
+      )
+
+      setFilteredSpaces(filteredSpaces)
   }
 
-//   const onChange = (option: readonly Option[], actionMeta: ActionMeta<Option>) => {
-//     ...
-//  }
+  const handleSearchChange = (event: SyntheticEvent) => {
+    event.preventDefault
+
+    const _searchedSpaces = filteredSpaces.filter((space: Space) => 
+    space.id.toLowerCase().includes((event.target as HTMLInputElement).value.toLowerCase())
+  )
+  setSpacesToShow(_searchedSpaces.slice(0,10))    
+  }
 
   return (
     <div> 
       Select Spaces Form
-      <Select closeMenuOnSelect={false}
+      <Select closeMenuOnSelect={true}
               components={animatedComponents}
               isMulti
+              value={selectedCategories}
               options={selectOptions}
-              onChange={handleFilterChange} 
+              onChange={option => handleFilterChange(option)}
               />
       <div>
         <input
@@ -79,7 +96,7 @@ export const SelectSpacesForm = () => {
           placeholder="search by name"
           //  value={stringFilter}
           id="first"
-          onChange={handleFilterChange}
+          onChange={handleSearchChange}
         />
       </div>
 
