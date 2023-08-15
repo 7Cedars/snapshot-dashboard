@@ -71,7 +71,7 @@ export const SelectSpacesForm = () => {
               />
       <div>
         <input
-          type="string"
+          type="search"
           placeholder="search by name"
           //  value={stringFilter}
           id="first"
