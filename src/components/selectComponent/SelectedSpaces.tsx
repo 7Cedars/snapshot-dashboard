@@ -5,14 +5,6 @@ import { addProposals } from '../../reducers/proposalsReducer'
 import { PROPOSALS_FROM_SPACE } from '../../utils/queries'
 import { useLazyQuery } from '@apollo/client'
 
-// useEffect(() => {
-//   const result = useLazyQuery(PROPOSALS_FROM_SPACE, {
-//     variables: { first: 1000, skip: 0, space: "streamr.eth"} 
-//   })
-
-//   console.log("data: ", result)
-// }, [])
-
 export const SelectedSpaces = () => {
   const spacesSelected = useAppSelector(state => state.selectedSpaces)
   const dispatch = useAppDispatch()
@@ -26,9 +18,6 @@ export const SelectedSpaces = () => {
     } 
     console.log("data: ", data)
     dispatch(addProposals(data)) 
-   
-
-    // return (<div> Proposals loaded</div>)
   }
 
   return (

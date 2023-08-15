@@ -1,7 +1,6 @@
 // I will uncomment these as I implement them.. 
 
 import { configureStore } from '@reduxjs/toolkit'
-// import filterReducer from './filterReducer'
 import selectedSpacesReducer from './selectedSpacesReducer'
 // import timeRangeReducer from './timeRangeReducer'
 import proposalsReducer from './proposalsReducer'
@@ -10,7 +9,6 @@ import proposalsReducer from './proposalsReducer'
 
 const store = configureStore({
   reducer: {
-    // filter: filterReducer, 
     selectedSpaces: selectedSpacesReducer, 
     // timeRange: timeRangeReducer, 
     loadedProposals: proposalsReducer, 
