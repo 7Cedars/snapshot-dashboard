@@ -16,7 +16,12 @@ export const proposalsSlice = createSlice({
     addProposals: (state, action: PayloadAction<LoadedProposalsState>) => {
       console.log("action.payload: ", action.payload)
       action.payload.proposals.map((proposal: Proposal) => {
-        state.proposals.push(proposal)
+        const updatedProposal = {
+          ...proposal,
+          start: proposal.start * 1000, 
+          end: proposal.end * 1000
+        }
+        state.proposals.push(updatedProposal)
       })
       // NB: Note that we do NOT check for duplicates. I assume it would become very slow, quickly. 
       // This does mean I cannot assume uniqueness: this has to be enforced later on.  

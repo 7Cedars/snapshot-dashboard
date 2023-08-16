@@ -34,11 +34,4 @@ export const selectedSpacesSlice = createSlice({
 
 export const { addSpace, removeSpace } = selectedSpacesSlice.actions
 
-// export const initialiseSpace= () => {
-//   return async (dispatch) => {
-//     const anecdotes = await anecdoteService.getAll()
-//     dispatch(setAnecdotes(anecdotes))
-//   }
-// }
-
 export default selectedSpacesSlice.reducer

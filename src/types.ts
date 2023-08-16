@@ -9,7 +9,12 @@ export interface Proposal {
 export interface Space {
   id: string;
   votesCount: number;
-  categories: string[]
+  categories: string[];
+}
+
+export interface Voter {
+  voter: string;
+  proposal: OnlyIdProposal;
 }
 
 export interface ListSpacesGqlValues {
@@ -18,3 +23,6 @@ export interface ListSpacesGqlValues {
 }
 
 export type OnlyNameSpace = Omit<Space, 'votesCount' | 'categories'>;
+export type OnlyIdProposal = Omit<Proposal, 
+  | 'space' | 'categories' | 'votes' | 'start' | 'end' 
+  >;

@@ -1,9 +1,11 @@
-import { useState, SyntheticEvent } from "react";
+import { useAppSelector } from "../../reducers/hooks";
+import { toDateFormat, toTimestamp } from "../../utils/utils";
+import { useAppDispatch } from "../../reducers/hooks";
+import { updateStartDate, updateEndDate } from "../../reducers/timeRangeReducer";
 
 const TimeRangeComponent = () => {
-
-  const [startDate, setStartDate] = useState<string>("2020-01-01")
-  const [endDate, setEndDate] = useState<string>("2020-02-01")
+  const dispatch = useAppDispatch()
+  const timeRange = useAppSelector(state => state.timeRange)
 
   return (
     <div> 
@@ -13,9 +15,13 @@ const TimeRangeComponent = () => {
       <input
           type="date"
           placeholder="startDate"
-          value={startDate}
+          value={toDateFormat(timeRange.startDate)}
           id="startDate"
-          onChange={(date) => setStartDate(date.target.value)}
+          onChange={(date) => dispatch(
+            updateStartDate(
+              toTimestamp(date.target.value)
+              )
+            )}
         />
       </div>
       <div> 
@@ -23,9 +29,13 @@ const TimeRangeComponent = () => {
       <input
           type="date"
           placeholder="endDate"
-          value={endDate}
+          value={toDateFormat(timeRange.endDate)}
           id="endDate"
-          onChange={(date) => setEndDate(date.target.value)}
+          onChange={(date) => dispatch(
+            updateEndDate(
+              toTimestamp(date.target.value)
+              )
+            )}
         />
       </div>
     </div>
