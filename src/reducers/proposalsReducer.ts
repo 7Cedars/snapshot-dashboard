@@ -42,6 +42,7 @@ export const proposalsSlice = createSlice({
       if (proposalToChange) {
         const changedProposal: Proposal = {
           ...proposalToChange,
+          votesLoaded: true,
           votes: action.payload.votes
         }
         const changedState = state.proposals.map(proposal => 
