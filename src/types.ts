@@ -14,7 +14,8 @@ export interface Space {
 
 export interface Voter {
   voter: string;
-  proposal: OnlyIdProposal;
+  space: OnlyNameSpace;
+  proposal: OnlyIdProposal; 
 }
 
 export interface ListSpacesGqlValues {

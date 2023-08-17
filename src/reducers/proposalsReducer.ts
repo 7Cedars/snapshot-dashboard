@@ -18,7 +18,7 @@ export const proposalsSlice = createSlice({
       action.payload.proposals.map((proposal: Proposal) => {
         const updatedProposal = {
           ...proposal,
-          start: proposal.start * 1000, 
+          start: proposal.start * 1000, // multiply by thousand to align with standard JS timestamp format
           end: proposal.end * 1000
         }
         state.proposals.push(updatedProposal)

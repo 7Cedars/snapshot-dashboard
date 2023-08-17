@@ -64,6 +64,9 @@ export const VOTERS_ON_PROPOSALS = gql`
       proposal {
         id
       }
+      space {
+        id
+      }
     }
   }
 `

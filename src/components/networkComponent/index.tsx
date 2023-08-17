@@ -2,41 +2,51 @@ import { useLazyQuery } from '@apollo/client'
 import { VOTERS_ON_PROPOSALS } from '../../utils/queries'
 import { SyntheticEvent, useEffect } from 'react'; 
 import { useAppSelector } from '../../reducers/hooks';
+import { Proposal, Space } from '../../types';
+import { useAppDispatch } from '../../reducers/hooks';
+import { updateSelectedProposals } from '../../reducers/voterReducer';
 
 const NetworkComponent = () => {
-
+  const dispatch = useAppDispatch()
   const [ votersOnProposals ] = useLazyQuery(VOTERS_ON_PROPOSALS)
-  const spacesSelected = useAppSelector(state => state.selectedSpaces)
-  const timeRangeSelected = useAppSelector(state => state.timeRange)
+  const timeRange = useAppSelector(state => state.timeRange)
+  const loadedProposals = useAppSelector(state => state.loadedProposals)
+  const selectedProposals = useAppSelector(state => state.loadedVoters.selectedProposals)
 
-  // useEffect(() => {
+  useEffect(() => {
+    const selectedProposals: Proposal[] = [] 
+    
+    loadedProposals.proposals.map((proposal: Proposal) => {
 
-
-  // }, [spacesSelected, timeRangeSelected])
-
-
-  // 1648246815
-  // 1676415282961
-
-
+      if (timeRange.startDate <= proposal.start && proposal.start <= timeRange.endDate 
+          &&
+          timeRange.startDate <= proposal.end && proposal.end <= timeRange.endDate) 
+          {
+            selectedProposals.push(proposal)
+          }
+    })
+    dispatch(updateSelectedProposals(selectedProposals))
+    // console.log("selectedProposals: ", selectedProposals)
+  }, [loadedProposals, timeRange])
   
   const handleOnClick = async (event: SyntheticEvent) => {
     event.preventDefault
+    const selectedProposalIds: string[] = selectedProposals.map((proposal: Proposal) => 
+      proposal.id
+    )
+
     try {
       const { data, loading } = 
-      await votersOnProposals({
-        variables: { first: 1000, proposal_in: [
-          "0x02577e684b93e4448f3bf11709895b1a61b39b382180ceeee1a062fa04404af5", 
-          "0x265f3b7dad61dd5c1fd1baabaaacf2ce0321259735aac94da0443816eb4cc603"
-        ]} 
-      })
-        if (loading) {
-          console.log("Loading")
-        } 
-        console.log("data: ", data)
-    } catch (e) {
-      console.log("ERROR: ", e)
-    }
+        await votersOnProposals({
+          variables: { first: 1000, proposal_in: selectedProposalIds} 
+        })
+          if (loading) {
+            console.log("Loading")
+          } 
+          console.log("VOTER DATA: ", data)
+         } catch (e) {
+        console.log("ERROR: ", e)
+      }
   }
 
   return (
