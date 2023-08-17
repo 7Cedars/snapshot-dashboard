@@ -1,9 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { Space } from '../types'
-import { useAppDispatch } from './hooks'
 
 interface selectedSpacesState {
-  spaces: Space[]
+  spaces: Space[];
 }
 
 const initialState: selectedSpacesState = {

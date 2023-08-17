@@ -34,13 +34,13 @@ export const LIST_SPACES = gql`
   ${SPACE_DETAILS}
 `
 
-export const PROPOSALS_FROM_SPACE = gql`
-  query proposalsFromSpace($first: Int!, $skip:Int!, $space:String!){
+export const PROPOSALS_FROM_SPACES = gql`
+  query proposalsFromSpaces($first: Int!, $skip:Int!, $space_in:[String!]!){
     proposals(
       first: $first,
       skip: $skip,
       where: {
-        space: $space,
+        space_in: $space_in,
         state: "closed"
       },
       orderBy: "created",

@@ -1,38 +1,21 @@
-import { SyntheticEvent } from 'react'
+import { SyntheticEvent, useState } from 'react'
 import { useAppDispatch } from '../../reducers/hooks'
+import { Space} from "../../types" 
 import { addSpace } from '../../reducers/selectedSpacesReducer'
-import {Space} from "../../types" 
-import { PROPOSALS_FROM_SPACE } from '../../utils/queries'
-import { useLazyQuery } from '@apollo/client'
-import { addProposals } from '../../reducers/proposalsReducer'
 
 interface Props {
-  key: string, 
   space: Space
+  key: string
 }
 
 const SelectButton = ({space}: Props) => {
   const dispatch = useAppDispatch()
-  const [proposalsFromSpace ] = useLazyQuery(PROPOSALS_FROM_SPACE)
-
+  
   const handleOnClick = async (event: SyntheticEvent) => {
     event.preventDefault
-    try {
-      const { data, loading } = 
-        await proposalsFromSpace({
-          variables: { first: 500, skip: 0, space: space.id} 
-        })
-        if (loading) {
-          console.log("Loading")
-        } 
-        console.log("data: ", data)
-        dispatch(addProposals(data))
-        dispatch(addSpace(space)) 
-    } catch (e) {
-      console.log("ERROR: ", e)
-    }
+    dispatch(addSpace(space))
   }
-
+  
   return (
     <div>
       {space.id}. Total votes: {space.votesCount}

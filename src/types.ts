@@ -1,7 +1,9 @@
 export interface Proposal {
   id: string;
   space: OnlyNameSpace; 
-  votes: number;
+  totalVotes: number;
+  votesLoaded: boolean;
+  votes: Vote[]; 
   start: number;
   end: number;
 }
@@ -12,11 +14,25 @@ export interface Space {
   categories: string[];
 }
 
-export interface Voter {
+export interface Vote {
   voter: string;
-  space: OnlyNameSpace;
-  proposal: OnlyIdProposal; 
+  created: number;
 }
+
+export interface TimeRange {
+  startDate: number;
+  endDate: number
+}
+export interface ProposalsInSpace {
+  spaceId: string;
+  proposals: Proposal[];
+}
+
+export interface VotersInSpace {
+  SpaceId: string;
+  votersIds: string[];
+}
+
 
 export interface ListSpacesGqlValues {
   first: number; 

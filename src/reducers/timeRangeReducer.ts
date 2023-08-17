@@ -1,14 +1,9 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { Space } from '../types'
-import { useAppDispatch } from './hooks'
+import { TimeRange } from '../types'
+import { standardDateRange } from '../constants'
 
-interface timeRangeState {
-  startDate: number;
-  endDate: number
-}
-
-const initialState: timeRangeState = {
-  startDate: Date.now() - 15778800000, // Equals six months
+const initialState: TimeRange = {
+  startDate: Date.now() - standardDateRange,
   endDate: Date.now()
 }
 
