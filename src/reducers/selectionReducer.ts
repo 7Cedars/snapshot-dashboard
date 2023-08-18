@@ -1,16 +1,21 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { Space } from '../types'
+import { standardDateRange } from '../constants'
 
-interface selectedSpacesState {
+interface selectionState {
   spaces: Space[];
+  startDate: number; 
+  endDate: number; 
 }
 
-const initialState: selectedSpacesState = {
-  spaces: []
+const initialState: selectionState = {
+  spaces: [], 
+  startDate: Date.now() - standardDateRange,
+  endDate: Date.now()
 }
 
 export const selectedSpacesSlice = createSlice({
-  name: 'selectedSpaces',
+  name: 'selection',
   initialState: initialState, 
   reducers: {
     addSpace: (state, action: PayloadAction<Space>) => {
@@ -27,10 +32,16 @@ export const selectedSpacesSlice = createSlice({
         space.id !==  action.payload.id)
       state.spaces = changedState
       console.log("changedState: ", changedState)
-    }
+    }, 
+    updateStartDate: (state, action: PayloadAction<number>) => {
+      state.startDate = action.payload
+    }, 
+    updateEndDate: (state, action: PayloadAction<number>) => {
+      state.endDate = action.payload
+    }, 
   }
 })
 
-export const { addSpace, removeSpace } = selectedSpacesSlice.actions
+export const { addSpace, removeSpace, updateStartDate, updateEndDate } = selectedSpacesSlice.actions
 
 export default selectedSpacesSlice.reducer

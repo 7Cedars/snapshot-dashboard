@@ -44,7 +44,7 @@ export const SelectSpacesForm = () => {
 
       const selectedValues: string[] = option.map(item => item.value) 
       const filteredSpaces = spaces.filter((space: Space) => 
-      space.categories.some(item => selectedValues.includes(item))
+        space.categories.some(item => selectedValues.includes(item))
       )
 
       setFilteredSpaces(filteredSpaces)

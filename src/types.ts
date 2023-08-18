@@ -15,6 +15,7 @@ export interface Space {
 }
 
 export interface Vote {
+  proposal: OnlyIdProposal; 
   voter: string;
   created: number;
 }

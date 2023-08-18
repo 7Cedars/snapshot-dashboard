@@ -62,10 +62,8 @@ export const VOTERS_ON_PROPOSALS = gql`
       }
     ) {
       voter
+      created
       proposal {
-        id
-      }
-      space {
         id
       }
     }

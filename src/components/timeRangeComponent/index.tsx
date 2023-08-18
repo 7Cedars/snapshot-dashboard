@@ -1,24 +1,24 @@
 import { useAppSelector } from "../../reducers/hooks";
 import { toDateFormat, toTimestamp } from "../../utils/utils";
 import { useAppDispatch } from "../../reducers/hooks";
-import { updateStartDate, updateEndDate } from "../../reducers/timeRangeReducer";
+import { updateStartDate, updateEndDate } from "../../reducers/selectionReducer";
 import { Space, Proposal } from "../../types";
 import { useLazyQuery } from "@apollo/client";
 import { PROPOSALS_FROM_SPACES } from "../../utils/queries";
 import { addProposals } from "../../reducers/proposalsReducer";
 import { SyntheticEvent } from "react";
+import { fetchProposals } from "../proposalServices";
 
 const TimeRangeComponent = () => {
 
   const dispatch = useAppDispatch()
   const [ proposalsFromSpaces ] = useLazyQuery(PROPOSALS_FROM_SPACES)
-  const timeRange = useAppSelector(state => state.timeRange)
-  const selectedSpaces  = useAppSelector(state => state.selectedSpaces)
+  const { spaces, startDate, endDate } = useAppSelector(state => state.selection)
   const loadedProposals = useAppSelector(state => state.loadedProposals)
   const proposalSpaces = loadedProposals.proposals.map(proposal => proposal.space.id)
 
   const spacesToLoad: string[] = []
-  selectedSpaces.spaces.map(space => 
+  spaces.map(space => 
     { if (proposalSpaces.indexOf(space.id) === -1) 
       { spacesToLoad.push(space.id) }
     } 
@@ -26,6 +26,10 @@ const TimeRangeComponent = () => {
   console.log("spacesToLoad: ", spacesToLoad)
 
   const handleOnClick = async () => {
+
+    // const result = fetchProposals() 
+
+    // console.log(result)
 
     if (spacesToLoad.length !== 0) {
       try {
@@ -36,7 +40,7 @@ const TimeRangeComponent = () => {
             if (loading) {
               console.log("Loading")
             } 
-            console.log("VOTER DATA: ", data)
+            console.log("PROPOSAL DATA: ", data)
             dispatch(addProposals(data.proposals))
           } catch (e) {
           console.log("ERROR: ", e)
@@ -80,7 +84,7 @@ const TimeRangeComponent = () => {
       <input
           type="date"
           placeholder="startDate"
-          value={toDateFormat(timeRange.startDate)}
+          value={toDateFormat(startDate)}
           id="startDate"
           onChange={(date) => dispatch(
             updateStartDate(
@@ -94,7 +98,7 @@ const TimeRangeComponent = () => {
       <input
           type="date"
           placeholder="endDate"
-          value={toDateFormat(timeRange.endDate)}
+          value={toDateFormat(endDate)}
           id="endDate"
           onChange={(date) => dispatch(
             updateEndDate(

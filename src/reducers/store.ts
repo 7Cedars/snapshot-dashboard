@@ -2,15 +2,13 @@
 
 import { configureStore } from '@reduxjs/toolkit'
 
-import selectedSpacesReducer from './selectedSpacesReducer'
-import timeRangeReducer from './timeRangeReducer'
+import selectionReducer from './selectionReducer'
 import proposalsReducer from './proposalsReducer'
 // import notificationReducer './notificationReducer'
 
 const store = configureStore({
   reducer: {
-    selectedSpaces: selectedSpacesReducer, 
-    timeRange: timeRangeReducer, 
+    selection: selectionReducer, 
     loadedProposals: proposalsReducer, 
     // notification: notificationReducer
   }

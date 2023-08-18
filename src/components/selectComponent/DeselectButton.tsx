@@ -1,6 +1,6 @@
 import { SyntheticEvent } from 'react'
 import { useAppDispatch } from '../../reducers/hooks'
-import { removeSpace } from '../../reducers/selectedSpacesReducer'
+import { removeSpace } from '../../reducers/selectionReducer'
 import { removeProposals } from '../../reducers/proposalsReducer'
 import {Space} from "../../types" 
 
