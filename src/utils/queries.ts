@@ -53,9 +53,10 @@ export const PROPOSALS_FROM_SPACES = gql`
 `
 
 export const VOTERS_ON_PROPOSALS = gql`
-  query votersOnProposals($first: Int!, $proposal_in:[String!]!){
+  query votersOnProposals($first: Int!, $skip:Int!, $proposal_in:[String!]!){
     votes (
       first: $first, 
+      skip: $skip,
       where: {
         proposal_in: $proposal_in
       }

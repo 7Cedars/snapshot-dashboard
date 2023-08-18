@@ -61,6 +61,6 @@ export const proposalsSlice = createSlice({
   }
 })
 
-export const { addProposals, removeProposals } = proposalsSlice.actions
+export const { addProposals, removeProposals, addVotes } = proposalsSlice.actions
 
 export default proposalsSlice.reducer

@@ -5,11 +5,11 @@ import { updateStartDate, updateEndDate } from "../../reducers/timeRangeReducer"
 import { Space, Proposal } from "../../types";
 import { useLazyQuery } from "@apollo/client";
 import { PROPOSALS_FROM_SPACES } from "../../utils/queries";
-// import { proposalsPerSpace } from "../../utils/proposalServices";
 import { addProposals } from "../../reducers/proposalsReducer";
 import { SyntheticEvent } from "react";
 
 const TimeRangeComponent = () => {
+
   const dispatch = useAppDispatch()
   const [ proposalsFromSpaces ] = useLazyQuery(PROPOSALS_FROM_SPACES)
   const timeRange = useAppSelector(state => state.timeRange)
@@ -43,6 +43,27 @@ const TimeRangeComponent = () => {
         }
     }
   }
+
+  // const handleStartDateChange = async () => {
+
+  //   if (spacesToLoad.length !== 0) {
+  //     try {
+  //       const { data, loading } = 
+  //         await proposalsFromSpaces({
+  //           variables: { first: 1000, skip: 0, space_in: spacesToLoad} 
+  //         })
+  //           if (loading) {
+  //             console.log("Loading")
+  //           } 
+  //           console.log("VOTER DATA: ", data)
+  //           dispatch(addProposals(data.proposals))
+  //         } catch (e) {
+  //         console.log("ERROR: ", e)
+  //       }
+  //   }
+  // }
+
+  // return (<div> EMPTY </div>) 
 
   return (
     <div> 
