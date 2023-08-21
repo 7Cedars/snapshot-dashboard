@@ -1,7 +1,7 @@
 import { SyntheticEvent, useState } from 'react'
 import { useAppDispatch } from '../../reducers/hooks'
 import { Space} from "../../types" 
-import { addSpace } from '../../reducers/selectionReducer'
+import { addSpace } from '../../reducers/userInputReducer'
 
 interface Props {
   space: Space

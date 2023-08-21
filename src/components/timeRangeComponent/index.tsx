@@ -1,26 +1,39 @@
 import { useAppSelector } from "../../reducers/hooks";
 import { toDateFormat, toTimestamp } from "../../utils/utils";
 import { useAppDispatch } from "../../reducers/hooks";
-import { updateStartDate, updateEndDate } from "../../reducers/selectionReducer";
-import { Space, Proposal } from "../../types";
+import { updateStartDate, updateEndDate } from "../../reducers/userInputReducer";
+import { Proposal } from "../../types";
 import { useLazyQuery } from "@apollo/client";
 import { PROPOSALS_FROM_SPACES } from "../../utils/queries";
 import { addProposals } from "../../reducers/proposalsReducer";
-import { SyntheticEvent } from "react";
-import { fetchProposals } from "../proposalServices";
+import { toSelectedProposals } from "../../utils/utils";
+import { useEffect, useState } from "react";
 
-const TimeRangeComponent = () => {
+const TimeRangeComponent = () => { 
 
   const dispatch = useAppDispatch()
   const [ proposalsFromSpaces ] = useLazyQuery(PROPOSALS_FROM_SPACES)
-  const { spaces, startDate, endDate } = useAppSelector(state => state.selection)
-  const loadedProposals = useAppSelector(state => state.loadedProposals)
+  const { selectedSpaces, startDate, endDate } = useAppSelector(state => state.userInput)
+  const proposals = useAppSelector(state => state.loadedProposals.proposals)
+  const [selectedProposals, setSelectedProposals] = useState<Proposal[]>([])
+
+  useEffect(() => {
+    const selectedProposals = toSelectedProposals({ 
+      proposals,
+      selectedSpaces, 
+      startDate : null, 
+      endDate: null
+    })
+
+    setSelectedProposals(selectedProposals)
+    
+  }, [ proposals, selectedSpaces ])
 
   const handleOnClick = async () => {
-    const proposalSpaces = loadedProposals.proposals.map(proposal => proposal.space.id)
+    const proposalSpaces = selectedProposals.map(proposal => proposal.space.id)
     const spacesToLoad: string[] = []
     
-    spaces.map(space => 
+    selectedSpaces.map(space => 
       { if (proposalSpaces.indexOf(space.id) === -1) 
         { spacesToLoad.push(space.id) }
       } 
@@ -43,27 +56,6 @@ const TimeRangeComponent = () => {
         }
     }
   }
-
-  // const handleStartDateChange = async () => {
-
-  //   if (spacesToLoad.length !== 0) {
-  //     try {
-  //       const { data, loading } = 
-  //         await proposalsFromSpaces({
-  //           variables: { first: 1000, skip: 0, space_in: spacesToLoad} 
-  //         })
-  //           if (loading) {
-  //             console.log("Loading")
-  //           } 
-  //           console.log("VOTER DATA: ", data)
-  //           dispatch(addProposals(data.proposals))
-  //         } catch (e) {
-  //         console.log("ERROR: ", e)
-  //       }
-  //   }
-  // }
-
-  // return (<div> EMPTY </div>) 
 
   return (
     <div> 

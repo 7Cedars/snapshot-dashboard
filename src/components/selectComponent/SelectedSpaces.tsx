@@ -3,11 +3,11 @@ import { useAppSelector } from '../../reducers/hooks'
 import DeselectButton from "./DeselectButton"
 
 export const SelectedSpaces = () => {
-  const { spaces } = useAppSelector(state => state.selection)
+  const { selectedSpaces } = useAppSelector(state => state.userInput)
 
   return (
     <div>
-      {spaces.map((space: Space) => (
+      {selectedSpaces.map((space: Space) => (
         <div key = {space.id} > { space.id } 
         <DeselectButton key = {space.id} space = {space} /> 
         </div>

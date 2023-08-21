@@ -2,13 +2,13 @@
 
 import { configureStore } from '@reduxjs/toolkit'
 
-import selectionReducer from './selectionReducer'
+import userInputReducer from './userInputReducer'
 import proposalsReducer from './proposalsReducer'
 // import notificationReducer './notificationReducer'
 
 const store = configureStore({
   reducer: {
-    selection: selectionReducer, 
+    userInput: userInputReducer, 
     loadedProposals: proposalsReducer, 
     // notification: notificationReducer
   }
