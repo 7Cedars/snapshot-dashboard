@@ -1,6 +1,6 @@
 import { SyntheticEvent } from 'react'
 import { useAppDispatch } from '../../reducers/hooks'
-import { updateUrl } from '../../reducers/userInputReducer'
+import { updateUrl } from '../../reducers/urlReducer'
 
 interface Props {
   key: string, 

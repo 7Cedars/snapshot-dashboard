@@ -1,7 +1,7 @@
 import { useAppSelector } from "../../reducers/hooks";
 import { toDateFormat, toTimestamp } from "../../utils/utils";
 import { useAppDispatch } from "../../reducers/hooks";
-import { updateStartDate, updateEndDate, updateUrl } from "../../reducers/userInputReducer";
+import { updateUrl } from "../../reducers/urlReducer";
 import { Proposal } from "../../types";
 import { useLazyQuery } from "@apollo/client";
 import { PROPOSALS_FROM_SPACES } from "../../utils/queries";

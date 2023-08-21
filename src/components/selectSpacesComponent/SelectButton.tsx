@@ -1,7 +1,7 @@
 import { SyntheticEvent, useState } from 'react'
 import { useAppDispatch } from '../../reducers/hooks'
 import { Space} from "../../types" 
-import { updateUrl } from '../../reducers/userInputReducer'
+import { updateUrl } from '../../reducers/urlReducer'
 
 interface Props {
   space: Space

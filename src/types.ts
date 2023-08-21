@@ -20,7 +20,6 @@ export interface Vote {
   created: number;
 }
 export interface UserInputState {
-  urlData: string; 
   selectedSpaces: string[];
   startDate: number; 
   endDate: number; 

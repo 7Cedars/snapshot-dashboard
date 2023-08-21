@@ -59,7 +59,8 @@ export const toSpaceEntry = (object: unknown): Space => {
 // Never ever trust anything you receive from an outside source... 
 
 // NB: still WIP: see below.  
-export const toUserInputEntry = (object: unknown): UserInputState => { 
+export const parseInputEntries = (object: unknown): UserInputState => { 
+  console.log("parseInputEntries is called.")
   if (!isString(object)) {
     throw new Error(`Incorrect or missing dataUrl: ${object}`);
   }
