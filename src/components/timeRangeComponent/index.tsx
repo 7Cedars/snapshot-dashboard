@@ -1,7 +1,7 @@
 import { useAppSelector } from "../../reducers/hooks";
 import { toDateFormat, toTimestamp } from "../../utils/utils";
 import { useAppDispatch } from "../../reducers/hooks";
-import { updateStartDate, updateEndDate } from "../../reducers/userInputReducer";
+import { updateStartDate, updateEndDate, updateUrl } from "../../reducers/userInputReducer";
 import { Proposal } from "../../types";
 import { useLazyQuery } from "@apollo/client";
 import { PROPOSALS_FROM_SPACES } from "../../utils/queries";
@@ -15,7 +15,7 @@ const TimeRangeComponent = () => {
   const [ proposalsFromSpaces ] = useLazyQuery(PROPOSALS_FROM_SPACES)
   const { selectedSpaces, startDate, endDate } = useAppSelector(state => state.userInput)
   const proposals = useAppSelector(state => state.loadedProposals.proposals)
-  const [selectedProposals, setSelectedProposals] = useState<Proposal[]>([ ])
+  const [selectedProposals, setSelectedProposals] = useState<Proposal[]>([])
 
   useEffect(() => {
     const selectedProposals = toSelectedProposals({ 
@@ -30,10 +30,9 @@ const TimeRangeComponent = () => {
   }, [ proposals, selectedSpaces ])
 
   const handleOnClick = async () => {
-    const selectedSpacesIds = selectedSpaces.map(space => space.id)
     const loadedSpaces = selectedProposals.map(proposal => proposal.space.id)
 
-    const spacesToLoad = selectedSpacesIds.filter(spaceId => 
+    const spacesToLoad = selectedSpaces.filter(spaceId => 
       loadedSpaces.indexOf(spaceId) === -1
     )
 
@@ -83,10 +82,16 @@ const TimeRangeComponent = () => {
           value={toDateFormat(startDate)}
           id="startDate"
           onChange={(date) => dispatch(
-            updateStartDate(
-              toTimestamp(date.target.value)
-              )
+            updateUrl({
+              data: toTimestamp(date.target.value), 
+              type: 'startDate'
+              })
             )}
+          // onChange={(date) => dispatch(
+          //   updateStartDate(
+          //     toTimestamp(date.target.value)
+          //     )
+            // )}
         />
       </div>
       <div> 
@@ -97,10 +102,16 @@ const TimeRangeComponent = () => {
           value={toDateFormat(endDate)}
           id="endDate"
           onChange={(date) => dispatch(
-            updateEndDate(
-              toTimestamp(date.target.value)
-              )
+            updateUrl({
+              data: toTimestamp(date.target.value), 
+              type: 'endDate'
+              })
             )}
+          // onChange={(date) => dispatch(
+          //   updateEndDate(
+          //     toTimestamp(date.target.value)
+          //     )
+          //   )}
         />
       </div>
     </div>

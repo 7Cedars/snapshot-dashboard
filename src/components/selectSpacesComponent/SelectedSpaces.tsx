@@ -1,4 +1,3 @@
-import {Space} from "../../types" 
 import { useAppSelector } from '../../reducers/hooks'
 import DeselectButton from "./DeselectButton"
 
@@ -7,9 +6,9 @@ export const SelectedSpaces = () => {
 
   return (
     <div>
-      {selectedSpaces.map((space: Space) => (
-        <div key = {space.id} > { space.id } 
-        <DeselectButton key = {space.id} space = {space} /> 
+      {selectedSpaces.map((spaceId: string) => (
+        <div key = {spaceId} > { spaceId } 
+        <DeselectButton key = {spaceId} spaceId = {spaceId} /> 
         </div>
       ))
       }

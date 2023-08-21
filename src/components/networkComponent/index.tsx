@@ -2,20 +2,11 @@ import { useLazyQuery } from '@apollo/client'
 import { VOTERS_ON_PROPOSALS } from '../../utils/queries'
 import { SyntheticEvent, useEffect, useState } from 'react'; 
 import { useAppSelector } from '../../reducers/hooks';
-import { Proposal, Space, Vote } from '../../types';
+import { Proposal } from '../../types';
 import { useAppDispatch } from '../../reducers/hooks';
 import { addVotes } from '../../reducers/proposalsReducer'
 import { toNetworkGraph } from '../../utils/transposeData';
 import { toSelectedProposals } from '../../utils/utils';
-
-interface votersOnProposalsProps {
-  loading: boolean;
-  data: {votes: Vote[]};
-}
-
-// NB Refactor later: 
-// loadedProposals => savedProposals
-// selectedProposals => loadedProposals
 
 const NetworkComponent = () => {
   const dispatch = useAppDispatch()

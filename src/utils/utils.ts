@@ -2,7 +2,7 @@ import { NetworkGraph, Proposal, Node, Vote, Space } from "../types";
 
 interface Props {
   proposals: Proposal[], 
-  selectedSpaces: Space[], 
+  selectedSpaces: string[], 
   startDate: number | null, 
   endDate: number | null 
 }
@@ -11,8 +11,8 @@ export const toDateFormat = (timestamp: number): string => {
   return new Date(timestamp).toISOString().split('T')[0]
 }; 
 
-export const toTimestamp = (dateFormat: string): number => { 
-  return Date.parse(dateFormat)
+export const toTimestamp = (dateFormat: string): string => { 
+  return String(Date.parse(dateFormat))
 };
 
 export const toSelectedProposals = ( {proposals, selectedSpaces, startDate, endDate}: Props  ) => {
@@ -23,9 +23,8 @@ export const toSelectedProposals = ( {proposals, selectedSpaces, startDate, endD
     return startDate <= timeStamp && timeStamp <= endDate 
   }
   
-  const spaceIds = selectedSpaces.map(space => space.id)
   const amongSelectedSpaces = (spaceId: string): boolean => {
-    return spaceIds.includes(spaceId)
+    return selectedSpaces.includes(spaceId)
   }
 
   const selectedProposals: Proposal[] = [] 

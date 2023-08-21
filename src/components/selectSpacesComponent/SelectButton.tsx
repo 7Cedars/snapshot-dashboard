@@ -1,7 +1,7 @@
 import { SyntheticEvent, useState } from 'react'
 import { useAppDispatch } from '../../reducers/hooks'
 import { Space} from "../../types" 
-import { addSpace } from '../../reducers/userInputReducer'
+import { updateUrl } from '../../reducers/userInputReducer'
 
 interface Props {
   space: Space
@@ -13,7 +13,7 @@ const SelectButton = ({space}: Props) => {
   
   const handleOnClick = async (event: SyntheticEvent) => {
     event.preventDefault
-    dispatch(addSpace(space))
+    dispatch(updateUrl({data: space.id, type: "space"}))
   }
   
   return (

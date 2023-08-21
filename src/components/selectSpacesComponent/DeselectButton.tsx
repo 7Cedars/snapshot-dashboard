@@ -1,21 +1,18 @@
 import { SyntheticEvent } from 'react'
 import { useAppDispatch } from '../../reducers/hooks'
-import { removeSpace } from '../../reducers/userInputReducer'
-import { removeProposals } from '../../reducers/proposalsReducer'
-import {Space} from "../../types" 
+import { updateUrl } from '../../reducers/userInputReducer'
 
 interface Props {
   key: string, 
-  space: Space
+  spaceId: string
 }
 
-const DeselectButton = ({space}: Props) => {
+const DeselectButton = ({spaceId}: Props) => {
   const dispatch = useAppDispatch()
 
   const handleOnClick = async (event: SyntheticEvent) => {
     event.preventDefault
-    dispatch(removeSpace(space)) 
-    dispatch(removeProposals(space)) 
+    dispatch(updateUrl({data: spaceId, type: 'space'})) 
   }
 
   return (

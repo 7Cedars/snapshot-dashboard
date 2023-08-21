@@ -19,11 +19,12 @@ export interface Vote {
   voter: string;
   created: number;
 }
-
-// export interface TimeRange {
-//   startDate: number;
-//   endDate: number
-// }
+export interface UserInputState {
+  urlData: string; 
+  selectedSpaces: string[];
+  startDate: number; 
+  endDate: number; 
+}
 
 export interface ProposalsInSpace {
   spaceId: string;
@@ -46,6 +47,10 @@ export type Notification = {
   type: string;
 }
 
+export type UrlDataPayload= {
+  data: string
+  type: 'space' | 'startDate' | 'endDate'
+}
 
 export interface NetworkGraph {
   nodes: Node[];
