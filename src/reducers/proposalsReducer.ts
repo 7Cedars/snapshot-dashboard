@@ -33,9 +33,9 @@ export const proposalsSlice = createSlice({
       // NB: Note that we do NOT check for duplicates. I assume it would become very slow, quickly. 
       // This does mean I cannot assume uniqueness: this has to be enforced later on.  
     },
-    addVotes: (state, action: PayloadAction<addVotesPayload>) => {
+    addVotes: (state, action: PayloadAction<Vote[]>) => {
       const proposals = state.proposals
-      const votes = action.payload.votes.votes
+      const votes = action.payload
      
       const updatedProposals = proposals.map(proposal => {
         

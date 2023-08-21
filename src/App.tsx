@@ -1,5 +1,5 @@
 // import FetchSpaces from "./components/FetchSpaces";
-import SelectComponent from "./components/selectComponent";
+import SelectComponent from "./components/selectSpacesComponent";
 import NetworkComponent from "./components/networkComponent";
 import TimeRangeComponent from "./components/timeRangeComponent";
 

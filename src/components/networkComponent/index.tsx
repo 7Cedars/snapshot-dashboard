@@ -39,27 +39,39 @@ const NetworkComponent = () => {
   const handleDataOnClick = async (event: SyntheticEvent) => {
     event.preventDefault
 
-    const proposalString = selectedProposals.map(proposal => proposal.id)
-    console.log("proposalString: ", proposalString)
+    const proposalsToLoad = selectedProposals.filter(proposal => 
+      proposal.votesLoaded === false
+    )    
+    const proposalsToLoadStr = proposalsToLoad.map(proposal => proposal.id)
 
-    try {
-      const { data }: votersOnProposalsProps = 
-        await votersOnProposals({
-          variables: { first: 1000, skip: 0, proposal_in: proposalString} 
-        })
+    if (proposalsToLoadStr.length > 0) {
+      try {
+        let continueFetching = true;
+        let skip = 0;
+        while (continueFetching === true) {
+      
+          const { data } = await votersOnProposals({
+            variables: { first: 1000, skip: skip, proposal_in: proposalsToLoadStr} 
+          })
 
-        const votes = data 
-        console.log("LOADED VOTES: ", votes)
-        const proposals = selectedProposals as Proposal[] 
-        dispatch(addVotes({votes, proposals}))
+          console.log("FETCHED VOTES: ", data)
+          console.log("LENGTH Fetched votes: ", data.votes.length)
+          
+          dispatch(addVotes(data.votes))
 
-        } catch (e) {
+          if (data.votes.length !== 1000) { 
+            continueFetching = false 
+          } else {
+            skip = skip + 1000
+          } 
+        }
+
+      } catch (e) {
         console.log("ERROR: ", e)
       }
-
-      toNetworkGraph(selectedProposals)
+    }
+    toNetworkGraph(selectedProposals)
   }
-  
 
   return (
     <div> 

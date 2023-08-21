@@ -15,7 +15,7 @@ const TimeRangeComponent = () => {
   const [ proposalsFromSpaces ] = useLazyQuery(PROPOSALS_FROM_SPACES)
   const { selectedSpaces, startDate, endDate } = useAppSelector(state => state.userInput)
   const proposals = useAppSelector(state => state.loadedProposals.proposals)
-  const [selectedProposals, setSelectedProposals] = useState<Proposal[]>([])
+  const [selectedProposals, setSelectedProposals] = useState<Proposal[]>([ ])
 
   useEffect(() => {
     const selectedProposals = toSelectedProposals({ 
@@ -30,31 +30,39 @@ const TimeRangeComponent = () => {
   }, [ proposals, selectedSpaces ])
 
   const handleOnClick = async () => {
-    const proposalSpaces = selectedProposals.map(proposal => proposal.space.id)
-    const spacesToLoad: string[] = []
-    
-    selectedSpaces.map(space => 
-      { if (proposalSpaces.indexOf(space.id) === -1) 
-        { spacesToLoad.push(space.id) }
-      } 
-    )
-    console.log("spacesToLoad: ", spacesToLoad)
+    const selectedSpacesIds = selectedSpaces.map(space => space.id)
+    const loadedSpaces = selectedProposals.map(proposal => proposal.space.id)
 
-    if (spacesToLoad.length !== 0) {
+    const spacesToLoad = selectedSpacesIds.filter(spaceId => 
+      loadedSpaces.indexOf(spaceId) === -1
+    )
+
+    if (spacesToLoad.length > 0 ) {
+      
       try {
-        const { data, loading } = 
-          await proposalsFromSpaces({
-            variables: { first: 1000, skip: 0, space_in: spacesToLoad} 
+        let continueFetching = true;
+        let skip = 0;     
+        while (continueFetching === true) {
+
+          const { data } = await proposalsFromSpaces({
+            variables: { first: 1000, skip: skip, space_in: spacesToLoad} 
           })
-            if (loading) {
-              console.log("Loading")
-            } 
-            console.log("PROPOSAL DATA: ", data)
-            dispatch(addProposals(data.proposals))
-          } catch (e) {
-          console.log("ERROR: ", e)
+
+          console.log("FETCHED PROPOSALS: ", data)
+          console.log("LENGTH Fetch: ", data.proposals.length)
+
+          dispatch(addProposals(data.proposals))
+
+          if (data.proposals.length !== 1000) {
+            continueFetching = false
+          } else {
+            skip = skip + 1000
+          }
         }
-    }
+      } catch (e) {
+      console.log("ERROR: ", e)
+      }
+    }    
   }
 
   return (
