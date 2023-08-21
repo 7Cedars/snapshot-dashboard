@@ -20,10 +20,10 @@ export interface Vote {
   created: number;
 }
 
-export interface TimeRange {
-  startDate: number;
-  endDate: number
-}
+// export interface TimeRange {
+//   startDate: number;
+//   endDate: number
+// }
 
 export interface ProposalsInSpace {
   spaceId: string;
@@ -40,6 +40,13 @@ export type Link = {
   target: number;
 }
 
+export type Notification = {
+  id: string;
+  message: string; 
+  type: string;
+}
+
+
 export interface NetworkGraph {
   nodes: Node[];
   links: Link[];
@@ -51,6 +58,7 @@ export interface ListSpacesGqlValues {
 }
 
 export type OnlyNameSpace = Omit<Space, 'votesCount' | 'categories'>;
+export type NotificationWithoutId = Omit<Notification, 'id' >;
 export type OnlyIdProposal = Omit<Proposal, 
   | 'space' | 'categories' | 'votes' | 'start' | 'end' 
   >;

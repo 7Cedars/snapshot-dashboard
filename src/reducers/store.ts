@@ -1,21 +1,18 @@
-// I will uncomment these as I implement them.. 
-
 import { configureStore } from '@reduxjs/toolkit'
-
 import userInputReducer from './userInputReducer'
 import proposalsReducer from './proposalsReducer'
-// import notificationReducer './notificationReducer'
+import notificationReducer from  './notificationReducer'
 
 const store = configureStore({
   reducer: {
     userInput: userInputReducer, 
     loadedProposals: proposalsReducer, 
-    // notification: notificationReducer
+    notification: notificationReducer
   }
 })
-// Infer the `RootState` and `AppDispatch` types from the store itself
+
+// see redux website for these typescript examples. 
 export type RootState = ReturnType<typeof store.getState>
-// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
 export type AppDispatch = typeof store.dispatch
 
 export default store

@@ -5,7 +5,8 @@ import { useAppSelector } from '../../reducers/hooks';
 import { Proposal, Space, Vote } from '../../types';
 import { useAppDispatch } from '../../reducers/hooks';
 import { addVotes } from '../../reducers/proposalsReducer'
-import { toNetworkGraph, toSelectedProposals } from '../../utils/utils';
+import { toNetworkGraph } from '../../utils/transposeData';
+import { toSelectedProposals } from '../../utils/utils';
 
 interface votersOnProposalsProps {
   loading: boolean;
