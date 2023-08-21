@@ -5,6 +5,7 @@ import { useAppSelector } from '../../reducers/hooks';
 import { Proposal, Space, Vote } from '../../types';
 import { useAppDispatch } from '../../reducers/hooks';
 import { addVotes } from '../../reducers/proposalsReducer'
+import { toNetworkGraph } from '../../utils/utils';
 
 interface votersOnProposalsProps {
   loading: boolean;
@@ -17,8 +18,8 @@ const NetworkComponent = () => {
   const [ votersOnProposals ] = useLazyQuery(VOTERS_ON_PROPOSALS)
   const selection = useAppSelector(state => state.selection)
   const loadedProposals = useAppSelector(state => state.loadedProposals.proposals)
-  const spacesSelected = useAppSelector(state => state.selection.spaces)
-  const selectedSpacesIds = spacesSelected.map(space => space.id)
+  const selectedSpaces = useAppSelector(state => state.selection.spaces)
+  const selectedSpacesIds = selectedSpaces.map(space => space.id)
   const [selectedProposals, setSelectedProposals] = useState<Proposal[]>([])
 
   const withinTimeRange = (timeStamp: number ): boolean => {
@@ -42,9 +43,9 @@ const NetworkComponent = () => {
     setSelectedProposals(selectedProposals)
     console.log("selectedProposals: ", selectedProposals)
     
-  }, [selection])
+  }, [selection, loadedProposals])
   
-  const handleOnClick = async (event: SyntheticEvent) => {
+  const handleDataOnClick = async (event: SyntheticEvent) => {
     event.preventDefault
 
     const proposalString = selectedProposals.map(proposal => proposal.id)
@@ -57,12 +58,15 @@ const NetworkComponent = () => {
         })
 
         const votes = data 
+        console.log("LOADED VOTES: ", votes)
         const proposals = selectedProposals as Proposal[] 
         dispatch(addVotes({votes, proposals}))
 
         } catch (e) {
         console.log("ERROR: ", e)
       }
+
+      toNetworkGraph(selectedProposals)
   }
 
   console.log("spacesSelected: ", selectedSpacesIds) 
@@ -76,9 +80,16 @@ const NetworkComponent = () => {
       <button 
         type="submit"
         className="font-medium text-white/[.8] px-5 hover:text-white sm:py-6"
-        onClick={handleOnClick}
+        onClick={handleDataOnClick}
         >
         LOAD DATA
+      </button> 
+      <button 
+        type="submit"
+        className="font-medium text-white/[.8] px-5 hover:text-white sm:py-6"
+        // onClick={handleGraphOnClick}
+        >
+        CREATE GRAPH DATA
       </button> 
     </div>
   );

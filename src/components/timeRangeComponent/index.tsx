@@ -15,21 +15,17 @@ const TimeRangeComponent = () => {
   const [ proposalsFromSpaces ] = useLazyQuery(PROPOSALS_FROM_SPACES)
   const { spaces, startDate, endDate } = useAppSelector(state => state.selection)
   const loadedProposals = useAppSelector(state => state.loadedProposals)
-  const proposalSpaces = loadedProposals.proposals.map(proposal => proposal.space.id)
-
-  const spacesToLoad: string[] = []
-  spaces.map(space => 
-    { if (proposalSpaces.indexOf(space.id) === -1) 
-      { spacesToLoad.push(space.id) }
-    } 
-  )
-  console.log("spacesToLoad: ", spacesToLoad)
 
   const handleOnClick = async () => {
-
-    // const result = fetchProposals() 
-
-    // console.log(result)
+    const proposalSpaces = loadedProposals.proposals.map(proposal => proposal.space.id)
+    const spacesToLoad: string[] = []
+    
+    spaces.map(space => 
+      { if (proposalSpaces.indexOf(space.id) === -1) 
+        { spacesToLoad.push(space.id) }
+      } 
+    )
+    console.log("spacesToLoad: ", spacesToLoad)
 
     if (spacesToLoad.length !== 0) {
       try {

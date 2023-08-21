@@ -18,45 +18,10 @@ interface Props {
   timeRange: TimeRange
 }
 
-export const fetchProposals = async () => {  
-
-  const dispatch = useAppDispatch()
-  const [ proposalsFromSpaces ] = useLazyQuery(PROPOSALS_FROM_SPACES)
-  const loadedProposals = useAppSelector(state => state.loadedProposals).proposals
-  const proposalOfSpace = loadedProposals.map(proposal => proposal.space.id)
-  const { spaces }  = useAppSelector(state => state.selection)
+export const fetchProposals = async () => {
   
-  const spacesToLoad: string[] = []
-  spaces.map(space => 
-    { if (proposalOfSpace.indexOf(space.id) === -1) 
-      { spacesToLoad.push(space.id) }
-    } 
-  )
-  console.log("spacesToLoad: ", spacesToLoad)
+  console.log("Hello world")
 
-  if (spacesToLoad.length !== 0) {
-    try {
-      const { data, loading } = 
-        await proposalsFromSpaces({
-          variables: { first: 1000, skip: 0, space_in: spacesToLoad} 
-        })
-          if (loading) {
-            console.log("Loading")
-          } 
-          console.log("PROPOSAL DATA: ", data)
-          dispatch(addProposals(data.proposals))
-          loadedProposals.push(data.proposals)
-
-        } catch (e) {
-        console.log("ERROR: ", e)
-      }
-  }
-  
-  const output = spaces.map(space =>  
-    loadedProposals.some(proposal => proposal.id.includes(space.id))
-  )
-
-  return output
 }
 
 export const fetchVotes = ({proposalIds, timeRange}: Props) => {

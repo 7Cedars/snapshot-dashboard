@@ -24,16 +24,26 @@ export interface TimeRange {
   startDate: number;
   endDate: number
 }
+
 export interface ProposalsInSpace {
   spaceId: string;
   proposals: Proposal[];
 }
 
-export interface VotersInSpace {
-  SpaceId: string;
-  votersIds: string[];
+export type Node = {
+  id: number;
+  name: string;
 }
 
+export type Link = {
+  source: number; 
+  target: number;
+}
+
+export interface NetworkGraph {
+  nodes: Node[];
+  links: Link[];
+}
 
 export interface ListSpacesGqlValues {
   first: number; 
