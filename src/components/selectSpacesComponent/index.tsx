@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import SelectSpacesForm from "./SelectSpacesForm"
+import SelectSpacesForm from "../searchComponent/SelectSpacesForm"
 import SelectedSpaces from "./SelectedSpaces";
 import { useParams } from "react-router-dom";
 import { parseInputEntries } from "../../utils/parsers";
