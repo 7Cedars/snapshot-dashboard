@@ -1,9 +1,11 @@
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import React from 'react';
 import reportWebVitals from './reportWebVitals';
 import { apiProductionUrl } from "./constants";
 import store from './reducers/store'
 import { Provider } from 'react-redux'
+import './index.css'
 
 import { ApolloClient, 
   InMemoryCache, 

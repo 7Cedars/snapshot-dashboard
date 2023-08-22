@@ -74,13 +74,6 @@ const NetworkComponent = () => {
         >
         LOAD DATA
       </button> 
-      <button 
-        type="submit"
-        className="font-medium text-white/[.8] px-5 hover:text-white sm:py-6"
-        // onClick={handleGraphOnClick}
-        >
-        CREATE GRAPH DATA
-      </button> 
     </div>
   );
 }

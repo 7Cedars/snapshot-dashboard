@@ -57,6 +57,7 @@
   "devDependencies": {
     "@types/uuid": "^9.0.2",
     "deep-freeze": "^0.0.1",
+    "postcss-preset-env": "^9.1.1",
     "tailwindcss": "^3.3.3"
   }
 }
