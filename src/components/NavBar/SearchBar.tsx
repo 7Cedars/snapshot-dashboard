@@ -1,9 +1,9 @@
 import { Fragment, ReactNode, useEffect, useState, SyntheticEvent } from 'react'
 import { Listbox, Transition, Combobox } from '@headlessui/react'
-import { CheckIcon, ChevronUpDownIcon, FunnelIcon, ChevronDownIcon } from '@heroicons/react/20/solid'
+import { CheckIcon, ChevronUpDownIcon, ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Space } from "../../types";
 import spaces from "../../data/spacesList"
-import { useAppDispatch } from '../../reducers/hooks';
+import { useAppDispatch, useAppSelector } from '../../reducers/hooks';
 import { updateUrl } from '../../reducers/urlReducer';
 
 const compareVotes = (a: Space, b: Space) => {
@@ -20,7 +20,8 @@ export default function MySearchBar() {
   const dispatch = useAppDispatch()
   const [selectedCategories, setSelectedCategories] = useState<string[]>([])
   const [filteredSpaces, setFilteredSpaces ] = useState<Space[]>(spaces.sort(compareVotes))
-  const [selectedSpaces, setSelectedSpaces] = useState<Space[]>([])
+  const [preselectedSpaces, setPreselectedSpaces] = useState<Space[]>([])
+  const { selectedSpaces } = useAppSelector(state => state.userInput)
   const [query, setQuery] = useState('')
 
   useEffect (() => {
@@ -29,29 +30,34 @@ export default function MySearchBar() {
       space.categories.some(item => selectedCategories.includes(item))
     )
 
+    const secondFilter = firstFilter.filter((space: Space) => 
+      selectedSpaces.indexOf(space.id) === -1 
+    )
+
     if (query.length > 0) {
-      const secondFilter = firstFilter.filter((space:Space) => 
+      const thirdFilter = secondFilter.filter((space:Space) => 
         space.id.includes(query))
-      setFilteredSpaces(secondFilter)
+      setFilteredSpaces(thirdFilter)
     } else {
-      setFilteredSpaces(firstFilter)
+      setFilteredSpaces(secondFilter)
     }
 
-  }, [selectedCategories, query])
+  }, [selectedCategories, query, selectedSpaces])
 
   const handleOnClick = async (event: SyntheticEvent) => {
     event.preventDefault
-    selectedSpaces.forEach(space => 
+    preselectedSpaces.forEach(space => 
       dispatch(updateUrl({data: space.id, type: 'space'}))
     )
+    setPreselectedSpaces([])
   }
 
   return (
-    <div className="col-span-6 grid grid-cols-8 gap-0 border border-amber-300 rounded-lg p-2 m-2">
+    <div className="col-span-6 grid grid-cols-8 gap-0 rounded-lg p-2 m-2">
     
     {/* First the filter by category button:   */}
 
-      <div className="col-span-2 items-center justify-items-end w-full grid border" > 
+      <div className="col-span-2 justify-items-end w-full grid" > 
         <Listbox value={selectedCategories} onChange={setSelectedCategories} multiple>
           <div className="relative w-full mt-1">
             <Listbox.Button className="relative w-full text-gray-400 cursor-default rounded-l-lg border bg-white py-2 pl-3 pr-10 text-left focus:outline-none sm:text-sm">
@@ -105,16 +111,16 @@ export default function MySearchBar() {
         </div>
 
     {/* Second: the ComboBox searchbar  */}    
-    <div className="col-span-5 w-full  grid border" > 
-      <Combobox value={selectedSpaces} onChange={(event) => setSelectedSpaces(event)} multiple>
+    <div className="col-span-5 w-full grid" > 
+      <Combobox value={preselectedSpaces} onChange={(event) => setPreselectedSpaces(event)} multiple>
         <div className="relative mt-1">
         
           <div className="relative px-2 text-gray-400 cursor-default overflow-hidden border bg-white text-left sm:text-sm">
           <Combobox.Button className = 'truncate max-w-md'>
-          { selectedSpaces.length === 0 ?
+          { preselectedSpaces.length === 0 ?
               "Search DAOs:"
               :
-              selectedSpaces.map(space => space.id).join(", ")
+              preselectedSpaces.map(space => space.id).join(", ")
             }
             <Combobox.Input className = "  relative focus:border-white px-2 text-gray-400 cursor-default overflow-hidden border-0 bg-white text-left sm:text-sm" 
             
@@ -179,13 +185,13 @@ export default function MySearchBar() {
     </div>
 
   {/* And here the add button.. */}
-  <div className="col-span-1 justify-items-start w-full grid border" > 
+  <div className="col-span-1 justify-items-start w-full grid" > 
     <div className="relative mt-1">
         <button 
-        className="bg-blue-500 hover:bg-blue-700 border border-blue-500 text-white font-bold py-2 px-4 rounded-r-lg"
-        type="submit"
-        onClick={handleOnClick}
-        >
+          className="bg-blue-500 hover:bg-blue-700 border border-blue-500 text-white font-bold py-2 px-4 rounded-r-lg"
+          type="submit"
+          onClick={handleOnClick}
+          >
           Add
         </button>
       </div>
