@@ -47,8 +47,8 @@ export type Notification = {
 }
 
 export type UrlDataPayload= {
-  data: string
-  type: 'space' | 'startDate' | 'endDate'
+  data: string;
+  type: 'space' | 'startDate' | 'endDate';
 }
 
 export interface NetworkGraph {

@@ -1,9 +1,10 @@
-import { Fragment, ReactNode, useEffect, useState } from 'react'
+import { Fragment, ReactNode, useEffect, useState, SyntheticEvent } from 'react'
 import { Listbox, Transition, Combobox } from '@headlessui/react'
 import { CheckIcon, ChevronUpDownIcon, FunnelIcon, ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Space } from "../../types";
 import spaces from "../../data/spacesList"
-import { getSpaceUntilMaxLength } from '@testing-library/user-event/dist/utils';
+import { useAppDispatch } from '../../reducers/hooks';
+import { updateUrl } from '../../reducers/urlReducer';
 
 const compareVotes = (a: Space, b: Space) => {
     return b.votesCount - a.votesCount
@@ -16,6 +17,7 @@ spaces.map((space: Space) => {
 const categories = Array.from(new Set(listCategories))
 
 export default function MySearchBar() {
+  const dispatch = useAppDispatch()
   const [selectedCategories, setSelectedCategories] = useState<string[]>([])
   const [filteredSpaces, setFilteredSpaces ] = useState<Space[]>(spaces.sort(compareVotes))
   const [selectedSpaces, setSelectedSpaces] = useState<Space[]>([])
@@ -37,10 +39,15 @@ export default function MySearchBar() {
 
   }, [selectedCategories, query])
 
-  console.log("selectedSpaces: ", selectedSpaces)
+  const handleOnClick = async (event: SyntheticEvent) => {
+    event.preventDefault
+    selectedSpaces.forEach(space => 
+      dispatch(updateUrl({data: space.id, type: 'space'}))
+    )
+  }
 
   return (
-    <div className="col-span-2 grid grid-cols-8 gap-0 border border-amber-300 rounded-lg p-2 m-2">
+    <div className="col-span-6 grid grid-cols-8 gap-0 border border-amber-300 rounded-lg p-2 m-2">
     
     {/* First the filter by category button:   */}
 
@@ -98,16 +105,23 @@ export default function MySearchBar() {
         </div>
 
     {/* Second: the ComboBox searchbar  */}    
-    <div className="col-span-5 w-full grid border" > 
+    <div className="col-span-5 w-full  grid border" > 
       <Combobox value={selectedSpaces} onChange={(event) => setSelectedSpaces(event)} multiple>
         <div className="relative mt-1">
         
           <div className="relative px-2 text-gray-400 cursor-default overflow-hidden border bg-white text-left sm:text-sm">
-          <Combobox.Button>
-            Search DAOs: 
-            <Combobox.Input className = "relative focus:border-white px-2 text-gray-400 cursor-default overflow-hidden border-0 bg-white text-left sm:text-sm" 
+          <Combobox.Button className = 'truncate max-w-md'>
+          { selectedSpaces.length === 0 ?
+              "Search DAOs:"
+              :
+              selectedSpaces.map(space => space.id).join(", ")
+            }
+            <Combobox.Input className = "  relative focus:border-white px-2 text-gray-400 cursor-default overflow-hidden border-0 bg-white text-left sm:text-sm" 
+            
             onChange={(event) => setQuery(event.target.value)}
             />
+            
+          
           </Combobox.Button> 
           </div>
           <Transition
@@ -162,28 +176,19 @@ export default function MySearchBar() {
           </Transition>
         </div>
       </Combobox>
-      {/* <button 
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r-lg"
-          type="submit"
-          // onClick={handleOnClick}
-          >
-            add
-        </button> */}
     </div>
 
   {/* And here the add button.. */}
   <div className="col-span-1 justify-items-start w-full grid border" > 
     <div className="relative mt-1">
-      {/* {space.id}. Total votes: {space.votesCount} */}
-      {/* <div className='relative px-2 text-gray-400 cursor-default overflow-hidden border bg-white text-left sm:text-sm'>  */}
         <button 
-          className="bg-blue-500 hover:bg-blue-700 border border-blue-500 text-white font-bold py-2 px-4 rounded-r-lg"
-          type="submit"
-          // onClick={handleOnClick}
-          >
-            Add
+        className="bg-blue-500 hover:bg-blue-700 border border-blue-500 text-white font-bold py-2 px-4 rounded-r-lg"
+        type="submit"
+        onClick={handleOnClick}
+        >
+          Add
         </button>
-        </div>
+      </div>
     </div>
 
   </div>
