@@ -14,13 +14,13 @@ const App = () => {
       <Navigate to={urlData} /> 
       <NavBar />
       <div className="grid justify-items-center flex flex-wrap w-full text-sm py-0  border-2 border-blue-600">
-        <div className="grid grid-cols-3 gap-2 w-4/5 flex">
+        <div className="grid grid-cols-4 gap-2 w-4/5 flex">
           <div className="container col-span-1 border border-gray rounded-lg border-1 border-blue-300 p-2 m-2">
             <Routes>  
               <Route path=":data" element={<SelectedSpacesComponent/>} />
             </Routes>
           </div>
-          <div className="container col-span-2 border border-gray rounded-lg border-1 border-blue-300 p-2 m-2">
+          <div className="container col-span-3 border border-gray rounded-lg border-1 border-blue-300 p-2 m-2">
             <div> <NetworkComponent />  </div>
             <div> <TimeRangeComponent />  </div>
             {/* <FetchSpaces /> */}

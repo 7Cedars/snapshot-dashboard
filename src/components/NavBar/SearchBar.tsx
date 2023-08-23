@@ -1,6 +1,13 @@
-import { Fragment, ReactNode, useEffect, useState, SyntheticEvent } from 'react'
+import { 
+  Fragment,  
+  useEffect, 
+  useState, 
+  SyntheticEvent } from 'react'
 import { Listbox, Transition, Combobox } from '@headlessui/react'
-import { CheckIcon, ChevronUpDownIcon, ChevronDownIcon } from '@heroicons/react/20/solid'
+import { 
+  CheckIcon, 
+  ChevronDownIcon, 
+  MinusCircleIcon } from '@heroicons/react/24/outline'
 import { Space } from "../../types";
 import spaces from "../../data/spacesList"
 import { useAppDispatch, useAppSelector } from '../../reducers/hooks';
@@ -60,11 +67,11 @@ export default function MySearchBar() {
       <div className="col-span-2 justify-items-end w-full grid" > 
         <Listbox value={selectedCategories} onChange={setSelectedCategories} multiple>
           <div className="relative w-full mt-1">
-            <Listbox.Button className="relative w-full text-gray-400 cursor-default rounded-l-lg border bg-white py-2 pl-3 pr-10 text-left focus:outline-none sm:text-sm">
+            <Listbox.Button className="relative w-full text-blacl=k cursor-default rounded-l-lg border border-black bg-white py-2 pl-3 pr-10 text-left focus:outline-none sm:text-sm">
               Category
               <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
                 <ChevronDownIcon
-                  className="h-5 w-5 text-gray-400"
+                  className="h-5 w-5 text-black"
                   aria-hidden="true"
                 />
               </span>
@@ -115,14 +122,14 @@ export default function MySearchBar() {
       <Combobox value={preselectedSpaces} onChange={(event) => setPreselectedSpaces(event)} multiple>
         <div className="relative mt-1">
         
-          <div className="relative px-2 text-gray-400 cursor-default overflow-hidden border bg-white text-left sm:text-sm">
+          <div className="relative px-2 text-black cursor-default overflow-hidden border border-black bg-white text-left sm:text-sm">
           <Combobox.Button className = 'truncate max-w-md'>
           { preselectedSpaces.length === 0 ?
               "Search DAOs:"
               :
               preselectedSpaces.map(space => space.id).join(", ")
             }
-            <Combobox.Input className = "  relative focus:border-white px-2 text-gray-400 cursor-default overflow-hidden border-0 bg-white text-left sm:text-sm" 
+            <Combobox.Input className = "relative focus:border-white px-2 text-gray-400 cursor-default overflow-hidden border-0 bg-white text-left sm:text-sm" 
             
             onChange={(event) => setQuery(event.target.value)}
             />
@@ -137,9 +144,33 @@ export default function MySearchBar() {
             leaveTo="opacity-0"
             afterLeave={() => setQuery('')}
           >
-            <Combobox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
-              Selected categories: {selectedCategories.join(", ") }
-
+            <Combobox.Options className=" absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+              
+              {selectedCategories.length === 0 ? 
+                <i> No categories selected. </i>
+                : 
+                <div className='p-3 py-2 '> 
+                  <i className='p-2'> Included categories: </i>
+                  <div className='flex -p-1 py-1'>
+                    {selectedCategories.map(category => 
+                      <div key = {category} className='flex center-items justify-items-center col-span-1 p-1 px-3 mx-1 border rounded-full'> 
+                        {category} 
+                        {/* <button 
+                          className="text-black font-bold px-2"
+                          type="submit"
+                          // onClick={handleOnClick}
+                          >
+                          <MinusCircleIcon
+                            className="h-4 w-4 text-red-600"
+                            aria-hidden="true"
+                          />
+                        </button> */}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              }
+            
               {filteredSpaces.length === 0 && query !== '' ? (
                 <div className="relative cursor-default select-none py-2 px-4 text-gray-700">
                   Nothing found.
@@ -149,25 +180,32 @@ export default function MySearchBar() {
                   <Combobox.Option
                     key={space.id}
                     className={({ active }) =>
-                      `relative cursor-default select-none py-2 pl-10 pr-4 ${
-                        active ? 'bg-teal-600 text-white' : 'text-gray-900'
+                      `relative cursor-default select-none py-2 pl-8 pr-4 ${
+                        active ? 'bg-blue-500 text-white' : 'text-gray-900'
                       }`
                     }
                     value={space}
                   >
                     {({ selected, active }) => (
                       <>
-                        <span
-                          className={`block truncate ${
-                            selected ? 'font-medium' : 'font-normal'
-                          }`}
-                        >
-                          {space.id} #votes: {space.votesCount}
-                        </span>
+                        <div className={`block truncate font-medium`} >
+                          {space.id}
+                        </div>
+                        <div className={`block truncate font-light`} >
+                          Total votes: {space.votesCount} 
+                          {space.categories.length > 0 ? 
+                          ` | ${
+                          space.categories.map(category => category).join(", ")
+                          }`
+                          : 
+                          null
+                        }
+                        </div>
+
                         {selected ? (
                           <span
-                            className={`absolute inset-y-0 left-0 flex items-center pl-3 ${
-                              active ? 'text-white' : 'text-teal-600'
+                            className={`absolute inset-y-0 left-0 flex items-center pl-2 ${
+                              active ? 'text-white' : 'text-blue-600'
                             }`}
                           >
                             <CheckIcon className="h-5 w-5" aria-hidden="true" />
@@ -188,7 +226,7 @@ export default function MySearchBar() {
   <div className="col-span-1 justify-items-start w-full grid" > 
     <div className="relative mt-1">
         <button 
-          className="bg-blue-500 hover:bg-blue-700 border border-blue-500 text-white font-bold py-2 px-4 rounded-r-lg"
+          className="bg-blue-500 hover:bg-blue-700 border border-black text-white font-bold py-2 px-4 rounded-r-lg"
           type="submit"
           onClick={handleOnClick}
           >
