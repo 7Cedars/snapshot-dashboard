@@ -24,6 +24,9 @@ export const selectedSpacesSlice = createSlice({
   }
 })
 
-export const { updateSelectedSpaces, updateStartDate, updateEndDate } = selectedSpacesSlice.actions
+export const { 
+  updateSelectedSpaces, 
+  updateStartDate, 
+  updateEndDate } = selectedSpacesSlice.actions
 
 export default selectedSpacesSlice.reducer

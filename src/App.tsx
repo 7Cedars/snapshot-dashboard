@@ -6,10 +6,7 @@ import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import { useAppSelector } from "./reducers/hooks";
 
-import useScript from '../src/hooks/useScript'
-
 const App = () => {
-  useScript('https://use.typekit.net/foobar.js');
   const { urlData } = useAppSelector(state => state.urlData)
   return (
     <Router>

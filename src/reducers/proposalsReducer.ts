@@ -9,11 +9,6 @@ const initialState: LoadedProposalsState = {
   proposals: []
 }
 
-interface addVotesPayload {
-  proposals: Proposal[];
-  votes: {votes: Vote[]};
-}
-
 export const proposalsSlice = createSlice({
   name: 'loadedProposals',
   initialState: initialState,
