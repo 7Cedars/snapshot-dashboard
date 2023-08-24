@@ -29,10 +29,10 @@ const NavBar = () => {
            
     <MySearchBar />   {/* col-span-6 */}
 
-    <div className="grid col-span-2 grid-cols-3 gap-0 rounded-lg p-0 m-0">
+    <div className="flex flex-row-reverse col-span-2 rounded-lg py-4 m-0">
           {/* <div className="flex grow h-10 items-center  sm:justify-end sm:gap-x-7  "> */}
 
-          <div className="container col-span-1 rounded-lg p-2 m-2">
+          <div className="container basis-1/4 flex-none rounded-lg p-0 m-0">
             <button 
               className="text-black font-bold py-2 px-4"
               type="submit"
@@ -45,7 +45,7 @@ const NavBar = () => {
             </button>
           </div>
 
-          <div className="container col-span-1 rounded-lg p-2 m-2">
+          <div className="container basis-1/4 flex-none rounded-lg p-0 m-0">
             <button 
               className="text-black font-bold py-2 px-4"
               type="submit"
@@ -58,7 +58,7 @@ const NavBar = () => {
             </button>
           </div>
 
-          <div className="container col-span-1 rounded-lg p-2 m-2">
+          <div className="container basis-1/4 flex-none rounded-lg p-0 m-0">
             <button 
               className="text-black font-bold py-2 px-4"
               type="submit"
@@ -70,10 +70,9 @@ const NavBar = () => {
               />
             </button>
           </div>
-        </div>
 
-      </div>
-    {/* </div> */}
+        </div>
+    </div>
     </header>
   );
 }

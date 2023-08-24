@@ -8,6 +8,7 @@ const initialState: UserInputState = {
   endDate: Date.now()
 }
 
+// HERE needs to go through parsers... right?! 
 export const selectedSpacesSlice = createSlice({
   name: 'userInput',
   initialState: initialState, 

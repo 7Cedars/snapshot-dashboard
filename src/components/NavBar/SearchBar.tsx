@@ -23,7 +23,7 @@ spaces.map((space: Space) => {
 })
 const categories = Array.from(new Set(listCategories))
 
-export default function MySearchBar() {
+export const MySearchBar = () => {
   const dispatch = useAppDispatch()
   const [selectedCategories, setSelectedCategories] = useState<string[]>([])
   const [filteredSpaces, setFilteredSpaces ] = useState<Space[]>(spaces.sort(compareVotes))
@@ -67,7 +67,7 @@ export default function MySearchBar() {
       <div className="col-span-2 justify-items-end w-full grid" > 
         <Listbox value={selectedCategories} onChange={setSelectedCategories} multiple>
           <div className="relative w-full mt-1">
-            <Listbox.Button className="relative w-full text-blacl=k cursor-default rounded-l-lg border border-black bg-white py-2 pl-3 pr-10 text-left focus:outline-none sm:text-sm">
+            <Listbox.Button className="relative w-full text-blacl=k cursor-default rounded-l-lg border border-gray-400 shadow-lg bg-white py-2 pl-3 pr-10 text-left focus:outline-none sm:text-sm">
               Category
               <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
                 <ChevronDownIcon
@@ -122,7 +122,7 @@ export default function MySearchBar() {
       <Combobox value={preselectedSpaces} onChange={(event) => setPreselectedSpaces(event)} multiple>
         <div className="relative mt-1">
         
-          <div className="relative px-2 text-black cursor-default overflow-hidden border border-black bg-white text-left sm:text-sm">
+          <div className="relative px-2 text-black cursor-default overflow-hidden border border-gray-400 shadow-lg bg-white text-left sm:text-sm">
           <Combobox.Button className = 'truncate max-w-md'>
           { preselectedSpaces.length === 0 ?
               "Search DAOs:"
@@ -144,7 +144,7 @@ export default function MySearchBar() {
             leaveTo="opacity-0"
             afterLeave={() => setQuery('')}
           >
-            <Combobox.Options className=" absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+            <Combobox.Options className=" absolute mt-1 max-h-60 w-full border border-gray-400 overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
               
               {selectedCategories.length === 0 ? 
                 <i> No categories selected. </i>
@@ -155,16 +155,6 @@ export default function MySearchBar() {
                     {selectedCategories.map(category => 
                       <div key = {category} className='flex center-items justify-items-center col-span-1 p-1 px-3 mx-1 border rounded-full'> 
                         {category} 
-                        {/* <button 
-                          className="text-black font-bold px-2"
-                          type="submit"
-                          // onClick={handleOnClick}
-                          >
-                          <MinusCircleIcon
-                            className="h-4 w-4 text-red-600"
-                            aria-hidden="true"
-                          />
-                        </button> */}
                       </div>
                     )}
                   </div>
@@ -226,7 +216,7 @@ export default function MySearchBar() {
   <div className="col-span-1 justify-items-start w-full grid" > 
     <div className="relative mt-1">
         <button 
-          className="bg-blue-500 hover:bg-blue-700 border border-black text-white font-bold py-2 px-4 rounded-r-lg"
+          className="bg-blue-500 hover:bg-blue-700 border border-gray-400  shadow-lg text-white font-bold py-2 px-4 rounded-r-lg"
           type="submit"
           onClick={handleOnClick}
           >
@@ -238,3 +228,5 @@ export default function MySearchBar() {
   </div>
   )
 }
+
+export default MySearchBar
