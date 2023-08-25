@@ -10,6 +10,9 @@ import { Proposal } from "../../types";
 import { toSelectedProposals } from "../../utils/utils";
 import { PROPOSALS_FROM_SPACES } from "../../utils/queries";
 import { useLazyQuery } from "@apollo/client";
+import { toHeatmapData } from "../../utils/transposeData";
+
+
 
 const SelectComponent = () => {
 
@@ -51,7 +54,6 @@ const SelectComponent = () => {
     }
   }
 
-
   useEffect(() => {
     const selectedProposals = toSelectedProposals({ 
       proposals: loadedProposals,
@@ -60,16 +62,17 @@ const SelectComponent = () => {
       endDate: null
     })
 
-    const loadedSpaces = loadedProposals.map(proposal => proposal.space.id)
+    // naming has to be improved here - very confusing
+    const spacesSelected = selectedProposals.map(proposal => proposal.space.id)
     const spacesToLoad = selectedSpaces.filter(spaceId => 
-      loadedSpaces.indexOf(spaceId) === -1
+      spacesSelected.indexOf(spaceId) === -1
       )
     
     console.log("spacesToLoad: ", spacesToLoad)
 
     if (spacesToLoad.length > 0 ) {
       try {
-        loadSpaces(spacesToLoad) 
+        // loadSpaces(spacesToLoad) 
       } catch (e) {
         console.log("ERROR: ", e)
       }

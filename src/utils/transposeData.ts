@@ -18,17 +18,17 @@ interface withinRangeProps {
   spacesRange: number[];
 } 
 
-export const toHeatmap = ({proposals, nCol}: toHeatmapProps) => {
+interface HeatmapProps {
+  x: string;
+  y: string,
+  value: number
+}
 
-  // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
+export const toHeatmapData = ({proposals, nCol}: toHeatmapProps): HeatmapProps[] => {
+
+  // adapted from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
   const range = ({start, stop, nCol}: rangeProps ) =>
-    Array.from({ length: nCol + 1 }, (_, i) => start + i * (stop - start / nCol) );
-
-  const withinRange = ({proposalStart, proposalStop, spacesRange}: withinRangeProps ) => {
-      return spacesRange.filter(number => {
-        proposalStart <= number && number <= proposalStop
-      })
-    }
+    Array.from({ length: nCol + 1 }, (_, i) => start + (i * ((stop - start) / nCol) ));
 
   const start = Math.min(...proposals.map(
     proposal => proposal.start)
@@ -39,40 +39,41 @@ export const toHeatmap = ({proposals, nCol}: toHeatmapProps) => {
   const spacesRange = range(
     {start, stop, nCol }
     )
+    console.log("spacesRange ", spacesRange)
   const spaces = Array.from( 
     new Set(proposals.map(proposal => proposal.space.id))
     )
+
+  // building basic data structure 
+  const data: Array<HeatmapProps> = []  
+  spaces.forEach(space => (
+      spacesRange.map(number => {
+        const newItem = 
+        { x: String(number),
+          y: space,
+          value: 0
+        }
+        data.push(newItem)
+      }) 
+    ))
+
+  // filling in data points.
+  proposals.forEach(proposal => {    
+    const votesPerStep = proposal.votes / (proposal.end - proposal.start)
+
+    data.forEach(point => {
+      if (point.y === proposal.space.id && 
+          parseInt(point.x) > proposal.start && 
+          parseInt(point.x) < proposal.end) {
+            point.value = point.value + votesPerStep
+          } 
+    })
+  })
   
-  const data = spaces.map(space => (
-    spacesRange.map(number => (
-      { x: space,
-        y: number,
-        value: 0
-      }
-    )).flat()
-  ))
-
-  console.log("data for heatmap: ", data)
-
-  // proposals.forEach(proposal => {
-
-  //   const votesPerStep = proposal.totalVotes / (proposal.end - proposal.start)
-  //   const proposalRange = withinRange({
-  //     proposalStart: proposal.start,
-  //     proposalStop: proposal.end,
-  //     spacesRange: range({start, stop, nCol })
-  //   })
-
-  //   proposalRange.forEach(number => 
-  //     data.filter(data.y === number && data.x === proposal.space) {
-  //       data.value
-  //     }
-  //     )
-  // })
-
+  return data
 }
 
-
+// toNetworkGraph
 export const toNetworkGraph = (proposals: Proposal[]) => {
 
   const hasSharedVoters = (spaceSource: Array<string>, spaceTarget: Array<string>) => {
@@ -89,15 +90,17 @@ export const toNetworkGraph = (proposals: Proposal[]) => {
     
     const votesOfSpace: Vote[] = []
     proposalsOfSpace.map(proposal => 
-        votesOfSpace.push(...proposal.votes)
+        votesOfSpace.push(...proposal.votesDetails)
         )
     
-    const votersOfSpace = Array.from(new Set( 
+    const votersPerSpace = Array.from(new Set( 
       votesOfSpace.map(space => space.voter )
     )) 
 
-    return votersOfSpace
+    return votersPerSpace
   })
+
+  console.log("votersOfSpace: ", votersPerSpace)
 
   const links = votersPerSpace.map(spaceSource => 
     votersPerSpace.map(spaceTarget => 
@@ -106,7 +109,7 @@ export const toNetworkGraph = (proposals: Proposal[]) => {
   )
 
   const nodes: Node[] = spaces.map((space, i) => 
-    ({id: i, name: space})
+    ({id: space, group: "test"})
   )
 
   console.log(
@@ -116,4 +119,4 @@ export const toNetworkGraph = (proposals: Proposal[]) => {
   )
 }
 
-export default { toHeatmap, toNetworkGraph }; 
+export default { toHeatmapData, toNetworkGraph }; 

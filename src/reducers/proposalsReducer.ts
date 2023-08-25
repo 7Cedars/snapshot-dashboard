@@ -19,7 +19,7 @@ export const proposalsSlice = createSlice({
         const newProposal = {
           ...proposal,
           votesLoaded: false,
-          votes: [], 
+          votesDetails: [], 
           start: proposal.start * 1000, // multiply by thousand to align with standard Unix timestamp format
           end: proposal.end * 1000
         }
@@ -30,11 +30,11 @@ export const proposalsSlice = createSlice({
     },
     addVotes: (state, action: PayloadAction<Vote[]>) => {
       const proposals = state.proposals
-      const votes = action.payload
+      const votesDetails = action.payload
      
       const updatedProposals = proposals.map(proposal => {
         
-        const votesForProposal = votes.filter(vote => 
+        const votesForProposal = votesDetails.filter(vote => 
           vote.proposal.id === proposal.id) 
 
         return ( 
@@ -43,7 +43,7 @@ export const proposalsSlice = createSlice({
             :
             { ...proposal,
               votesLoaded: true,
-              votes: votesForProposal
+              votesDetails: votesForProposal
             }
         )
       })

@@ -1,9 +1,10 @@
 import { useMemo } from "react";
 import * as d3 from "d3";
 import { data } from './demoData'
+import { error } from "console";
 // this code is straight from https://www.react-graph-gallery.com/heatmap
 
-const MARGIN = { top: 10, right: 10, bottom: 30, left: 30 };
+const MARGIN = { top: 10, right: 10, bottom: 30, left: 130 };
 
 type HeatmapProps = {
   width: number;
@@ -19,8 +20,6 @@ export const Heatmap = ({ width, height, data }: HeatmapProps) => {
   // groups
   const allYGroups = useMemo(() => [...new Set(data.map((d) => d.y))], [data]);
   const allXGroups = useMemo(() => [...new Set(data.map((d) => d.x))], [data]);
-
-
 
   // x and y scales
   const xScale = useMemo(() => {
@@ -39,17 +38,30 @@ export const Heatmap = ({ width, height, data }: HeatmapProps) => {
       .padding(0.01);
   }, [data, height]);
 
+  
+
   const [min, max] = d3.extent(data.map((d) => d.value));
 
-  if (!min || !max) {
-    return null;
+  console.log("[min, max]:", [min, max])
+  console.log("TEST")
+  if (min === undefined || max === undefined) { 
+    // error/bug in example code. Report? (was: "(!min || !max)" which also triggers at 0 )
+    
+    return null;  
+    // throw new Error(`Incorrect or missing min and max calculated: Min: ${min} Max: ${max}`);
+    // there was no ERROR messaging. -- which made it hard to find.. 
   }
+
+  console.log("TEST")
 
   // Color scale
   const colorScale = d3
-    .scaleSequential()
-    .interpolator(d3.interpolateInferno)
+    .scaleSequentialSqrt()
+    .interpolator(d3.interpolateOranges )
     .domain([min, max]);
+
+  console.log("TEST")
+  console.log("xScale(d.x): ", xScale(data[3].x))
 
   // Build the rectangles
   const allRects = data.map((d, i) => {
@@ -68,6 +80,8 @@ export const Heatmap = ({ width, height, data }: HeatmapProps) => {
       />
     );
   });
+
+
 
   const xLabels = allXGroups.map((name, i) => {
     const xPos = xScale(name) ?? 0;

@@ -10,77 +10,29 @@ import { toSelectedProposals } from "../../utils/utils";
 import { useEffect, useState } from "react";
 import { data } from "./demoData";
 import { Heatmap } from "./Heatmap";
+import { toHeatmapData } from "../../utils/transposeData";
 
 const TimeRangeComponent = () => { 
 
   const dispatch = useAppDispatch()
-  // const [ proposalsFromSpaces ] = useLazyQuery(PROPOSALS_FROM_SPACES)
-  const { startDate, endDate } = useAppSelector(state => state.userInput)
-  // const proposals = useAppSelector(state => state.loadedProposals.proposals)
-  // const [selectedProposals, setSelectedProposals] = useState<Proposal[]>([])
+  const { selectedSpaces, startDate, endDate } = useAppSelector(state => state.userInput)
+  const { proposals } = useAppSelector(state => state.loadedProposals)
 
-  // console.log( { selectedSpaces, startDate, endDate } )
+  const selectedProposals = proposals.filter(proposal => {
+    return selectedSpaces.includes(proposal.space.id)
+  })
 
-  // useEffect(() => {
-  //   const selectedProposals = toSelectedProposals({ 
-  //     proposals,
-  //     selectedSpaces, 
-  //     startDate : null, 
-  //     endDate: null
-  //   })
-
-  //   setSelectedProposals(selectedProposals)
-    
-  // }, [ proposals, selectedSpaces ])
-
-  // const handleOnClick = async () => {
-  //   const loadedSpaces = selectedProposals.map(proposal => proposal.space.id)
-
-  //   const spacesToLoad = selectedSpaces.filter(spaceId => 
-  //     loadedSpaces.indexOf(spaceId) === -1
-  //   )
-
-  //   if (spacesToLoad.length > 0 ) {
-      
-  //     try {
-  //       let continueFetching = true;
-  //       let skip = 0;     
-  //       while (continueFetching === true) {
-
-  //         const { data } = await proposalsFromSpaces({
-  //           variables: { first: 1000, skip: skip, space_in: spacesToLoad} 
-  //         })
-
-  //         console.log("FETCHED PROPOSALS: ", data)
-  //         console.log("LENGTH Fetch: ", data.proposals.length)
-
-  //         dispatch(addProposals(data.proposals))
-
-  //         if (data.proposals.length !== 1000) {
-  //           continueFetching = false
-  //         } else {
-  //           skip = skip + 1000
-  //         }
-  //       }
-  //     } catch (e) {
-  //     console.log("ERROR: ", e)
-  //     }
-  //   }    
-  // }
+  const nCol = 45
+  const width = window.innerWidth * (4/7) 
+  const realData = toHeatmapData({proposals: selectedProposals, nCol}) 
+  console.log("data: ", data)
 
   return (
     <div> 
       <b> Time Range Component </b>
 
-      <Heatmap data={data} width={800} height={300} />
+      <Heatmap data={realData} width={width} height={(width - 120) / nCol * selectedSpaces.length } />
 
-      {/* <button 
-        type="submit"
-        className="font-medium text-white/[.8] px-5 hover:text-white sm:py-6"
-        onClick={handleOnClick}
-        >
-        LOAD DATA
-      </button>  */}
       <div> 
         Start date: 
       <input
@@ -94,11 +46,6 @@ const TimeRangeComponent = () => {
               type: 'startDate'
               })
             )}
-          // onChange={(date) => dispatch(
-          //   updateStartDate(
-          //     toTimestamp(date.target.value)
-          //     )
-            // )}
         />
      
         End date: 
@@ -113,11 +60,6 @@ const TimeRangeComponent = () => {
               type: 'endDate'
               })
             )}
-          // onChange={(date) => dispatch(
-          //   updateEndDate(
-          //     toTimestamp(date.target.value)
-          //     )
-          //   )}
         />
       </div>
     </div>

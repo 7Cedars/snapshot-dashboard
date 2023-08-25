@@ -12,7 +12,7 @@ const NetworkComponent = () => {
   const dispatch = useAppDispatch()
   const [ votersOnProposals ] = useLazyQuery(VOTERS_ON_PROPOSALS)
   const {selectedSpaces, startDate, endDate} = useAppSelector(state => state.userInput)
-  const proposals = useAppSelector(state => state.loadedProposals.proposals)
+  const { proposals } = useAppSelector(state => state.loadedProposals)
   const [selectedProposals, setSelectedProposals] = useState<Proposal[]>([])
 
   useEffect(() => {
@@ -26,6 +26,18 @@ const NetworkComponent = () => {
     setSelectedProposals(selectedProposals)
     
   }, [proposals, selectedSpaces, startDate, endDate ])
+
+  // console.log("selectedProposals at network Graph: ", selectedProposals)
+
+  // const loadedProposals = selectedProposals.filter(proposal => 
+  //   proposal.votesLoaded === true
+  // ) 
+  // console.log("loadedProposals at network Graph: ", loadedProposals)
+
+  const proposalsToLoad = selectedProposals.filter(proposal => 
+    proposal.votesLoaded === false
+  ) 
+  console.log("proposalsToLoad at network Graph: ", proposalsToLoad)
   
   const handleDataOnClick = async (event: SyntheticEvent) => {
     event.preventDefault
@@ -66,10 +78,10 @@ const NetworkComponent = () => {
 
   return (
     <div> 
-      <b> Network Component </b>
+       <b> Network Component </b>
       <button 
         type="submit"
-        className="font-medium text-white/[.8] px-5 hover:text-white sm:py-6"
+        className="font-medium text-black px-5 hover:text-gray-300 sm:py-6"
         onClick={handleDataOnClick}
         >
         LOAD DATA

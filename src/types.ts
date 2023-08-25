@@ -1,9 +1,9 @@
 export interface Proposal {
   id: string;
   space: OnlyNameSpace; 
-  totalVotes: number;
+  votes: number;
   votesLoaded: boolean;
-  votes: Vote[]; 
+  votesDetails: Vote[]; 
   start: number;
   end: number;
 }
@@ -30,14 +30,16 @@ export interface ProposalsInSpace {
   proposals: Proposal[];
 }
 
-export type Node = {
-  id: number;
+export interface Node extends d3.SimulationNodeDatum {
+  id: string;
   name: string;
 }
 
-export type Link = {
-  source: number; 
-  target: number;
+
+export interface Link extends d3.SimulationLinkDatum<Node> {
+  source: string; 
+  target: string;
+  value: number;
 }
 
 export type Notification = {
@@ -45,6 +47,11 @@ export type Notification = {
   message: string; 
   type: string;
 }
+
+export type Data = {
+  nodes: Node[];
+  links: Link[];
+};
 
 export type UrlDataPayload= {
   data: string;
