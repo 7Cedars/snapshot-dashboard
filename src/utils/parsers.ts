@@ -74,14 +74,19 @@ export const parseInputEntries = (object: unknown): UserInputState => {
     
     } else {
       const splitUrl = object.split('&&')
+      const modal: 'about' | 'settings' | 'savedSearches' | 'none' = 'none'
+      const settings: {darkMode: boolean; developerMode: boolean } = {
+        darkMode: false, developerMode: false } 
 
       // NB: These still need to be properly checked. 
 
       const inputState  = {
-        urlData: object, 
+        //urlData: object, 
         selectedSpaces: splitUrl[0].replace('sps:', '').split(';'),
         startDate: parseInt(splitUrl[1].replace('sd:', '')), 
-        endDate: parseInt(splitUrl[2].replace('ed:', ''))
+        endDate: parseInt(splitUrl[2].replace('ed:', '')), 
+        modal:  modal,
+        settings: settings
       }
 
       return inputState

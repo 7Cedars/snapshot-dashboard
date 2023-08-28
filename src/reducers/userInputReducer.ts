@@ -5,7 +5,12 @@ import { standardDateRange } from '../constants'
 const initialState: UserInputState = {
   selectedSpaces: [], 
   startDate: Date.now() - standardDateRange,
-  endDate: Date.now()
+  endDate: Date.now(),
+  modal: 'none', 
+  settings: {
+    darkMode: false, 
+    developerMode: false 
+  }
 }
 
 // HERE needs to go through parsers... right?! 
@@ -22,12 +27,25 @@ export const selectedSpacesSlice = createSlice({
     updateEndDate: (state, action: PayloadAction<number>) => {
       state.endDate = action.payload
     },
+    updateModal: (state, action: PayloadAction<'about' | 'settings' | 'savedSearches' | 'none'>) => {
+      state.modal = action.payload
+    },
+    setDarkMode: (state, action: PayloadAction<boolean | undefined>) => {
+      state.settings.darkMode = action.payload
+    },
+    setDeveloperMode: (state, action: PayloadAction<boolean | undefined>) => {
+      state.settings.developerMode = action.payload
+  },
   }
 })
 
 export const { 
   updateSelectedSpaces, 
   updateStartDate, 
-  updateEndDate } = selectedSpacesSlice.actions
+  updateEndDate, 
+  updateModal,
+  setDarkMode,
+  setDeveloperMode
+ } = selectedSpacesSlice.actions
 
 export default selectedSpacesSlice.reducer

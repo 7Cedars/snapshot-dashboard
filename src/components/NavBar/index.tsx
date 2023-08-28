@@ -6,8 +6,12 @@ import {
   BookmarkSquareIcon, 
   QuestionMarkCircleIcon
  } from '@heroicons/react/24/outline'
+ import { useAppDispatch } from "../../reducers/hooks";
+ import { updateModal } from "../../reducers/userInputReducer";
+
 
 const NavBar = () => {
+  const dispatch = useAppDispatch() 
 
   return (
     <header className="grid justify-items-center h-full flex flex-wrap w-full text-sm py-0">
@@ -36,7 +40,7 @@ const NavBar = () => {
             <button 
               className="text-black font-bold py-2 px-4"
               type="submit"
-              // onClick={handleOnClick}
+              onClick={() => dispatch(updateModal('settings'))}
               >
               <Cog6ToothIcon
                 className="h-7 w-7"
@@ -49,7 +53,7 @@ const NavBar = () => {
             <button 
               className="text-black font-bold py-2 px-4"
               type="submit"
-              // onClick={handleOnClick}
+              onClick={() => dispatch(updateModal('savedSearches'))}
               >
               <BookmarkSquareIcon
                 className="h-7 w-7"
@@ -62,7 +66,7 @@ const NavBar = () => {
             <button 
               className="text-black font-bold py-2 px-4"
               type="submit"
-              // onClick={handleOnClick}
+              onClick={() => dispatch(updateModal('about'))}
               >
               <QuestionMarkCircleIcon
                 className="h-7 w-7"

@@ -25,6 +25,11 @@ export interface UserInputState {
   selectedSpaces: string[];
   startDate: number; 
   endDate: number; 
+  modal: 'about' | 'settings' | 'savedSearches' | 'none'; 
+  settings: {
+    darkMode: boolean | undefined; 
+    developerMode: boolean | undefined; 
+  }
 }
 
 export interface ProposalsInSpace {
