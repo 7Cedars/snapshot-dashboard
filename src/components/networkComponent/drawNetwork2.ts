@@ -17,7 +17,6 @@ export const drawNetwork = (
   links.forEach((link) => {
 
     context.beginPath();
-    //
     context.moveTo(link.source.x, link.source.y);
     context.lineTo(link.target.x, link.target.y);
     context.stroke();

@@ -1,3 +1,5 @@
+import * as d3 from 'd3';
+
 export interface Proposal {
   id: string;
   space: OnlyNameSpace; 
@@ -35,11 +37,9 @@ export interface Node extends d3.SimulationNodeDatum {
   name: string;
 }
 
-
 export interface Link extends d3.SimulationLinkDatum<Node> {
-  source: string; 
-  target: string;
-  value: number;
+  source: Node | number | string; 
+  target: Node | number | string; 
 }
 
 export type Notification = {
@@ -58,10 +58,10 @@ export type UrlDataPayload= {
   type: 'space' | 'startDate' | 'endDate';
 }
 
-export interface NetworkGraph {
-  nodes: Node[];
-  links: Link[];
-}
+// export interface NetworkGraph {
+//   nodes: Node[];
+//   links: Link[];
+// }
 
 export interface ListSpacesGqlValues {
   first: number; 
