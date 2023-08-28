@@ -1,4 +1,4 @@
-import { NetworkGraph, Proposal, Node, Vote, Space } from "../types";
+import { Proposal, Node, Vote, Space } from "../types";
 import * as d3 from "d3";
 
 interface toHeatmapProps {
@@ -108,15 +108,15 @@ export const toNetworkGraph = (proposals: Proposal[]) => {
     )
   )
 
-  const nodes: Node[] = spaces.map((space, i) => 
-    ({id: space, group: "test"})
-  )
+  // const nodes: Node[] = spaces.map((space, i) => 
+  //   ({id: space, group: "test"})
+  // )
 
-  console.log(
-    "Nodes: ", nodes, 
-    "votersOfSpace: ", votersPerSpace, 
-    "links: ", links
-  )
+  // console.log(
+  //   "Nodes: ", nodes, 
+  //   "votersOfSpace: ", votersPerSpace, 
+  //   "links: ", links
+  // )
 }
 
 export default { toHeatmapData, toNetworkGraph }; 

@@ -1,4 +1,4 @@
-import { NetworkGraph, Proposal, Node, Vote, Space } from "../types";
+import { Proposal, Node, Vote, Space } from "../types";
 
 interface Props {
   proposals: Proposal[], 
