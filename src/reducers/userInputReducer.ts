@@ -27,7 +27,7 @@ export const selectedSpacesSlice = createSlice({
     updateEndDate: (state, action: PayloadAction<number>) => {
       state.endDate = action.payload
     },
-    updateModal: (state, action: PayloadAction<'about' | 'settings' | 'savedSearches' | 'none'>) => {
+    updateModal: (state, action: PayloadAction<'search' |'about' | 'settings' | 'savedSearches' | 'none'>) => {
       state.modal = action.payload
     },
     setDarkMode: (state, action: PayloadAction<boolean | undefined>) => {

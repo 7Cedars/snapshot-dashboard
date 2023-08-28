@@ -25,7 +25,7 @@ export interface UserInputState {
   selectedSpaces: string[];
   startDate: number; 
   endDate: number; 
-  modal: 'about' | 'settings' | 'savedSearches' | 'none'; 
+  modal: 'search' | 'about' | 'settings' | 'savedSearches' | 'none'; 
   settings: {
     darkMode: boolean | undefined; 
     developerMode: boolean | undefined; 

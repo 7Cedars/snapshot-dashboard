@@ -5,21 +5,18 @@ import TimeRangeComponent from "./components/timeRangeComponent";
 import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import { useAppSelector, useAppDispatch } from "./reducers/hooks";
-import { useState } from "react";
-import { updateModal } from "./reducers/userInputReducer";
 import AboutDialog from "./components/modals/AboutModal";
 import SettingsDialog from "./components/modals/SettingsModal";
 import SavedSearchesDialog from "./components/modals/SavedSearches";
+import SearchDialog from "./components/modals/SearchModal";
 
 const App = () => {
   const { urlData } = useAppSelector(state => state.urlData)
-  const dispatch = useAppDispatch()
 
   return (
-
     <Router>
-
-    <AboutDialog /> <SettingsDialog /> <SavedSearchesDialog /> 
+      
+    <AboutDialog /> <SettingsDialog /> <SavedSearchesDialog /> <SearchDialog /> 
       
       <Navigate to={urlData} /> 
       <NavBar />
@@ -39,8 +36,7 @@ const App = () => {
           </div>  
         </div>
       </div>
-      
-    </Router>
+     </Router>
 
   );
 }

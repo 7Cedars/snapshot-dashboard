@@ -2,7 +2,6 @@ import MySearchBar from "./SearchBar";
 import { 
   HomeIcon, 
   Cog6ToothIcon, 
-  AdjustmentsVerticalIcon, 
   BookmarkSquareIcon, 
   QuestionMarkCircleIcon
  } from '@heroicons/react/24/outline'
@@ -30,8 +29,9 @@ const NavBar = () => {
           />
         </button>
       </div>
-           
-    <MySearchBar />   {/* col-span-6 */}
+        
+      <div className="col-span-6 "> </div> 
+    {/* <MySearchBar />  // col-span-6 */}
 
     <div className="flex flex-row-reverse col-span-2 rounded-lg py-4 m-0">
           {/* <div className="flex grow h-10 items-center  sm:justify-end sm:gap-x-7  "> */}

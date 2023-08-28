@@ -65,8 +65,8 @@ export const SettingsDialog = () => {
                 <Switch
                   checked={settings.developerMode}
                   onChange={(change1) => dispatch(setDeveloperMode(change1))}
-                  className={`mx-2 ${settings.developerMode ? 'bg-blue-500' : 'bg-blue-800'}
-                    relative inline-flex h-[21px] w-[46px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                  className={`mx-2 ${settings.developerMode ? 'bg-blue-500' : 'bg-blue-200'}
+                    relative border border-blue-500 inline-flex h-[21px] w-[46px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                 >
                   <span className="sr-only">Use setting</span>
                   <span
@@ -82,8 +82,8 @@ export const SettingsDialog = () => {
                 <Switch
                   checked={settings.darkMode}
                   onChange={(change2) => dispatch(setDarkMode(change2))}
-                  className={`mx-2 ${settings.darkMode ? 'bg-blue-500' : 'bg-blue-800'}
-                    relative inline-flex h-[21px] w-[46px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
+                  className={`mx-2 ${settings.darkMode ? 'bg-blue-500' : 'bg-blue-200'}
+                    relative border border-blue-500 inline-flex h-[21px] w-[46px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}
                 >
                   <span className="sr-only">Use setting</span>
                   <span

@@ -15,6 +15,7 @@ const SpaceItem = ( {spaceId}: Props) => {
         <div className="col-span-2 flex items-center justify-center">
           
           <label className="text-blue border-blue hover:bg-blue flex h-14 w-14 flex-col items-center justify-center rounded-full border-2 border-yellow-400 bg-white shadow-lg hover:text-white">
+            {/* img: https://cdn.stamp.fyi/space/magicappstore.eth !! */ }
             <UserIcon
               className="h-8 w-8 text-gray-800"
               aria-hidden="true"

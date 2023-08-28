@@ -11,13 +11,16 @@ import { toSelectedProposals } from "../../utils/utils";
 import { PROPOSALS_FROM_SPACES } from "../../utils/queries";
 import { useLazyQuery } from "@apollo/client";
 import { toHeatmapData } from "../../utils/transposeData";
-
+import { updateModal } from "../../reducers/userInputReducer";
 
 
 const SelectComponent = () => {
-
   const dispatch = useAppDispatch()
-  const { data } = useParams();
+
+  // Data from url is parsed to redux store. 
+  // This has to happen in this component as it is the only one reading the route. 
+  // might change in the future.. 
+  const { data } = useParams(); 
 
   useEffect(() => {
     const {selectedSpaces, startDate, endDate}  = parseInputEntries(data)
@@ -26,7 +29,7 @@ const SelectComponent = () => {
     dispatch(updateSelectedSpaces(selectedSpaces))
   }, [data])
 
-  const {selectedSpaces, startDate, endDate} = useAppSelector(state => state.userInput)
+  const { selectedSpaces } = useAppSelector(state => state.userInput)
   const loadedProposals = useAppSelector(state => state.loadedProposals.proposals)
   const [ proposalsFromSpaces ] = useLazyQuery(PROPOSALS_FROM_SPACES)
   
@@ -54,7 +57,7 @@ const SelectComponent = () => {
     }
   }
 
-  useEffect(() => {
+  const handleOnClick = () => {
     const selectedProposals = toSelectedProposals({ 
       proposals: loadedProposals,
       selectedSpaces, 
@@ -72,24 +75,45 @@ const SelectComponent = () => {
 
     if (spacesToLoad.length > 0 ) {
       try {
-        // loadSpaces(spacesToLoad) 
+        loadSpaces(spacesToLoad) 
       } catch (e) {
         console.log("ERROR: ", e)
       }
     }    
-  }, [ loadedProposals, selectedSpaces ])
+  }
 
-  console.log(selectedSpaces)
+  console.log("selectedSpaces: ", selectedSpaces.length < 2)
 
   return (
-    <div className=""> 
-      {selectedSpaces.length > 0 ? 
+    <div className="p-2 grid grid-cols-1"> 
+      <button 
+        type="submit"
+        disabled={selectedSpaces.length < 2} 
+        className='border-blue-500 bg-blue-100 text-blue-900 border w-full rounded-lg font-medium p-2 enabled:hover:bg-blue-200 disabled:opacity-50'
+        onClick={handleOnClick}
+        >
+        Analyse
+      </button> 
+
+      {selectedSpaces.length > 1 ? 
       selectedSpaces.map(spaceId => (
         < SpaceItem key = {spaceId} spaceId = {spaceId}/> 
       ))
       :
-      <i> No DAO spaces selected. </i>
+      <i className="grid justify-items-center p-2 my-4 text-gray-500 "> No DAO spaces selected. </i>
       }
+
+      <form>
+        <input
+          className="w-full border border-blue-300 text-sm hover:border-blue-500 rounded-lg font-medium "
+          type="search"
+          id="mySearch"
+          name="q"
+          placeholder="Search and select DAOs…" 
+          onClick={() => dispatch(updateModal('search'))}
+          onChange={() => dispatch(updateModal('search'))}
+          />
+      </form>
 
     </div>
   );

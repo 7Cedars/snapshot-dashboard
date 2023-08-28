@@ -62,7 +62,7 @@ export const toSpaceEntry = (object: unknown): Space => {
 export const parseInputEntries = (object: unknown): UserInputState => { 
   console.log("parseInputEntries is called.")
   if (!isString(object)) {
-    throw new Error(`Incorrect or missing dataUrl: ${object}`);
+    throw new Error(`Incorrect or missing dataUrl at Parser: ${object}`);
   }
 
   if (
