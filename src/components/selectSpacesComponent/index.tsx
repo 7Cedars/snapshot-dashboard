@@ -19,7 +19,7 @@ const SelectComponent = () => {
 
   // Data from url is parsed to redux store. 
   // This has to happen in this component as it is the only one reading the route. 
-  // might change in the future.. 
+  // might change in the future with refactoring to next app.. 
   const { data } = useParams(); 
 
   useEffect(() => {
@@ -28,7 +28,9 @@ const SelectComponent = () => {
     dispatch(updateStartDate(startDate))
     dispatch(updateSelectedSpaces(selectedSpaces))
   }, [data])
+  //
 
+  // Here data is loaded for component. 
   const { selectedSpaces } = useAppSelector(state => state.userInput)
   const loadedProposals = useAppSelector(state => state.loadedProposals.proposals)
   const [ proposalsFromSpaces ] = useLazyQuery(PROPOSALS_FROM_SPACES)
@@ -82,10 +84,10 @@ const SelectComponent = () => {
     }    
   }
 
-  console.log("selectedSpaces: ", selectedSpaces.length < 2)
+  console.log("selectedSpaces: ", selectedSpaces)
 
   return (
-    <div className="p-2 grid grid-cols-1"> 
+    <div className="p-2 grid grid-cols-1 place-content-evenly"> 
       <button 
         type="submit"
         disabled={selectedSpaces.length < 2} 
@@ -95,13 +97,15 @@ const SelectComponent = () => {
         Analyse
       </button> 
 
-      {selectedSpaces.length > 1 ? 
-      selectedSpaces.map(spaceId => (
-        < SpaceItem key = {spaceId} spaceId = {spaceId}/> 
-      ))
-      :
-      <i className="grid justify-items-center p-2 my-4 text-gray-500 "> No DAO spaces selected. </i>
-      }
+      <div className="py-3">
+        {selectedSpaces.length === 1 ? 
+        <i className="grid justify-items-center p-2 my-4 text-gray-500 "> No DAO spaces selected. </i>
+        :
+        selectedSpaces.map(spaceId => (
+          < SpaceItem key = {spaceId} spaceId = {spaceId}/> 
+        ))        
+        }
+      </div>
 
       <form>
         <input
