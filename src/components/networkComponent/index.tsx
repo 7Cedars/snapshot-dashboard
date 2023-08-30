@@ -78,9 +78,9 @@ const NetworkComponent = () => {
   }
 
   return (
-    <div className=''> 
+    <div className='content-center'> 
        <b> Network Component </b>
-      <Slider min = {0} max = {10000} /> 
+      <Slider /> 
       <button 
         type="submit"
         className="font-medium text-black px-5 hover:text-gray-300 sm:py-6"

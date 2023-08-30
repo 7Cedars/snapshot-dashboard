@@ -87,7 +87,7 @@ const SelectComponent = () => {
   console.log("selectedSpaces: ", selectedSpaces)
 
   return (
-    <div className="p-2 grid grid-cols-1 place-content-evenly border border-gray-500 rounded-lg shadow-md mt-20"> 
+    <div className="p-2 grid grid-cols-1 place-content-start border border-gray-500 rounded-lg shadow-md mt-20"> 
       <button 
         type="submit"
         disabled={selectedSpaces.length < 2} 
