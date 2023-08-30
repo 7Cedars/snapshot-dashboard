@@ -29,7 +29,7 @@ export const ChartCanvas = ({
     // It has to be "relative". Note that it goes out of the article container if necessary!
 
       <div className="flex flex-col items-center justify-center">
-        <div className="w-full flex justify-center z-50 pointer-events-none">
+        <div className="w-full flex justify-center pointer-events-none">
           <div
             style={{ height, width: "100%", maxWidth }}
             ref={chartRef}

@@ -6,6 +6,7 @@ import * as d3 from "d3";
 import { useAppSelector } from "../../reducers/hooks";
 import { toHeatmapData } from "../../utils/transposeData";
 import { toDateFormat } from "../../utils/utils";
+import { toBeDisabled } from "@testing-library/jest-dom/matchers";
 
 
 const MARGIN = { top: 10, right: 10, bottom: 30, left: 10 };
@@ -86,7 +87,7 @@ export const Heatmap = ({ width = 500, height = 400}: HeatmapProps) => {
 
   const xLabels = allXGroups.map((timestamp, i) => {
     const xPos = xScale(timestamp) ?? 0;
-      if (!(i%4)) { 
+      if (!((i+3)%5)) { 
         return (
           <text
             key={i}
@@ -94,7 +95,7 @@ export const Heatmap = ({ width = 500, height = 400}: HeatmapProps) => {
             y={boundsHeight + 10}
             textAnchor="middle"
             dominantBaseline="middle"
-            fontSize={10}
+            fontSize={12}
           >
             {toDateFormat(parseInt(timestamp))}
           </text>
