@@ -1,4 +1,4 @@
-import { Proposal, Node, Vote, Space } from "../types";
+import { Proposal, Node, Vote, NetworkGraph, NetworkLink, NetworkNode } from "../types";
 import * as d3 from "d3";
 
 interface toHeatmapProps {
@@ -35,7 +35,7 @@ interface IntersectionProps {
 
 export const toHeatmapData = ({proposals, start, end, nCol}: toHeatmapProps): HeatmapProps[] => {
 
-  console.log("toHeatmapData called")
+  // console.log("toHeatmapData called")
   // adapted from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
   const range = ({start, end, nCol}: rangeProps ) =>
     Array.from({ length: nCol + 1 }, (_, i) => start + (i * ((end - start) / nCol) ));
@@ -89,7 +89,7 @@ export const toHeatmapData = ({proposals, start, end, nCol}: toHeatmapProps): He
     })
   })
 
-  console.log("DATA at Heatmap data: ", data)
+  // console.log("DATA at Heatmap data: ", data)
   
   return data
 }
@@ -121,23 +121,27 @@ export const toNetworkGraph = (proposals: Proposal[]) => {
     return votersPerSpace
   })
 
-  // console.log("votersOfSpace: ", votersPerSpace)
+  console.log("votersOfSpace: ", votersPerSpace)
 
   const links = votersPerSpace.map(spaceSource => 
-    votersPerSpace.map(spaceTarget => 
-      hasSharedVoters(spaceSource, spaceTarget)
+    votersPerSpace.map(spaceTarget => {
+      hasSharedVoters(spaceSource, spaceTarget) ? 
+      { source: "name", target: "name", value: 1  }
+      :  
+      null 
+      }
     )
   )
 
-  // const nodes: Node[] = spaces.map((space, i) => 
-  //   ({id: space, group: "test"})
-  // )
+  const nodes: NetworkNode[] = spaces.map((space, i) => 
+    ({id: space, group: "test"})
+  )
 
-  // console.log(
-  //   "Nodes: ", nodes, 
-  //   "votersOfSpace: ", votersPerSpace, 
-  //   "links: ", links
-  // )
+  console.log(
+    "Nodes: ", nodes, 
+    "votersOfSpace: ", votersPerSpace, 
+    "links: ", links
+  )
 }
 
 export default { toHeatmapData, toNetworkGraph }; 

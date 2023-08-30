@@ -1,4 +1,4 @@
-import { Link, Node } from './data';
+import { Link, Node } from '../NetworkDiagramBasicCanvas/data';
 
 export const RADIUS = 10;
 

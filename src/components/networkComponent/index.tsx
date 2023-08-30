@@ -9,7 +9,7 @@ import { toNetworkGraph } from '../../utils/transposeData';
 import { toSelectedProposals } from '../../utils/utils';
 import { ChartCanvas } from '../ui/ChartCanvas';
 import { Heatmap } from '../charts/Heatmap';
-import { NetworkDiagramBasicCanvasDemo } from '../NetworkDiagramBasicCanvas/NetworkDiagramBasicCanvasDemo';
+import { NetworkDiagram } from '../charts/NetworkDiagram';
 
 
 const NetworkComponent = () => {
@@ -92,7 +92,7 @@ const NetworkComponent = () => {
       </button> 
       <div>  
         <ChartCanvas
-          VizComponent={NetworkDiagramBasicCanvasDemo}
+          VizComponent={NetworkDiagram}
           vizName={"NetworkDiagram"}
           maxWidth={2000}
           height={300}

@@ -58,15 +58,26 @@ export type Data = {
   links: Link[];
 };
 
-export type UrlDataPayload= {
+export type UrlDataPayload = {
   data: string;
   type: 'space' | 'startDate' | 'endDate';
 }
 
-// export interface NetworkGraph {
-//   nodes: Node[];
-//   links: Link[];
-// }
+export type NetworkNode = {
+  id: string;
+  group: string
+}
+
+export type NetworkLink = {
+  source: string;
+  target: string; 
+  value: number; 
+}
+
+export interface NetworkGraph {
+  nodes: NetworkNode[];
+  links: NetworkLink[];
+}
 
 export interface ListSpacesGqlValues {
   first: number; 

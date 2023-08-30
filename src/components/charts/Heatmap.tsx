@@ -34,7 +34,7 @@ export const Heatmap = ({ width = 500, height = 400}: HeatmapProps) => {
   const allYGroups = useMemo(() => [...new Set(data.map((d) => d.y))], [data]);
   const allXGroups = useMemo(() => [...new Set(data.map((d) => d.x))], [data]);
 
-  console.log("data inside Heatmap: ", data)
+  // console.log("data inside Heatmap: ", data)
 
   // x and y scales
   const xScale = useMemo(() => {

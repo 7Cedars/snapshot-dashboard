@@ -1,19 +1,22 @@
 import * as d3 from 'd3';
 import { useEffect, useRef } from 'react';
 import { RADIUS, drawNetwork } from './drawNetwork';
-import { Data, Link, Node } from './data';
+import { Link, Node } from '../NetworkDiagramBasicCanvas/data';
+import { data } from '../NetworkDiagramBasicCanvas/data';
 
 type NetworkDiagramProps = {
   width: number;
   height: number;
-  data: Data;
 };
 
 export const NetworkDiagram = ({
-  width,
-  height,
-  data,
+  width = 700,
+  height = 300,
 }: NetworkDiagramProps) => {
+  if (width === 0) {
+    return null;
+  }
+
   // The force simulation mutates links and nodes, so create a copy first
   // Node positions are initialized by d3
   const links: Link[] = data.links.map((d) => ({ ...d }));
