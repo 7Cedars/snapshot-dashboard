@@ -15,25 +15,27 @@ const App = () => {
 
   return (
     <Router>
-      
-    <AboutDialog /> <SettingsDialog /> <SavedSearchesDialog /> <SearchDialog /> 
-      
-      <Navigate to={urlData} /> 
-      <NavBar />
+      <div className="max-h-screen grid grid-cols-1 relative">
+        <AboutDialog /> <SettingsDialog /> <SavedSearchesDialog /> <SearchDialog /> 
+        
+        <Navigate to={urlData} /> 
+        <div>
+          <NavBar />
+        </div>
+        <div className="flex flex-row w-full max-h-screen text-sm py-5 place-content-center px-2">
 
-      <div className="flex flex-row w-full text-sm py-0 place-content-evenly border-2 border-blue-600">
-          <div className="grid grid-cols-1 border border-gray rounded-lg border-1 border-blue-300">
-            <Routes>  
-              <Route path=":data" element={<SelectedSpacesComponent/>} />
-            </Routes>
-          </div>
-          <div className="grid grid-cols-1 w-3/5 border border-gray rounded-lg border-1 border-blue-300">
+          <Routes>  
+            <Route path=":data" element={<SelectedSpacesComponent/>} />
+          </Routes>
+            
+          <div className="grid grid-cols-1 w-3/5 border border-gray-500 rounded-lg shadow-md ml-4  mt-20">
             <div> <NetworkComponent />  </div>
             <div> <TimeRangeComponent />  </div>
             {/* <FetchSpaces /> */}
           </div>  
-          </div>
-     </Router>
+        </div>
+      </div>
+    </Router>
 
   );
 }

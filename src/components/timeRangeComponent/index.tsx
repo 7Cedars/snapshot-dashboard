@@ -7,10 +7,12 @@ import { useLazyQuery } from "@apollo/client";
 import { PROPOSALS_FROM_SPACES } from "../../utils/queries";
 import { addProposals } from "../../reducers/proposalsReducer";
 import { toSelectedProposals } from "../../utils/utils";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import { useDimensions } from "../../hooks/use-dimensions";
 import { data } from "./demoData";
-import { Heatmap } from "./Heatmap";
+import { Heatmap } from "../charts/HeatmapBasic/Heatmap";
 import { toHeatmapData } from "../../utils/transposeData";
+import { ChartCanvas } from "../ui/ChartCanvas";
 
 const TimeRangeComponent = () => { 
 
@@ -23,15 +25,23 @@ const TimeRangeComponent = () => {
   })
 
   const nCol = 45
-  const width = window.innerWidth * (4/7) 
+  const width = window.innerWidth * (6/7) 
   const realData = toHeatmapData({proposals: selectedProposals, nCol}) 
   console.log("data: ", data)
+  const chartRef = useRef<HTMLDivElement>(null);
+  const chartSize = useDimensions(chartRef);
+  console.log("chartSize: ", chartSize)
 
   return (
     <div> 
-      <b> Time Range Component </b>
-
-      <Heatmap data={realData} width={width} height={(width - 120) / nCol * selectedSpaces.length } />
+      <b> Time Range Component </b>    
+          <ChartCanvas
+            VizComponent={Heatmap}
+            vizName={"heatmap"}
+            maxWidth={2000}
+            height={500}
+            />
+      {/* // <Heatmap data={realData} width={width} height={(width) / nCol * selectedSpaces.length } /> */}
 
       <div> 
         Start date: 

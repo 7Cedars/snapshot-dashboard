@@ -13,7 +13,7 @@ const NavBar = () => {
   const dispatch = useAppDispatch() 
 
   return (
-    <header className="grid justify-items-center h-full flex flex-wrap w-full text-sm py-0">
+    <header className="absolute top-0 grid justify-items-center h-18 flex flex-wrap w-full text-sm py-0 border-b border-black shadow-md">
 
     <div className="grid grid-cols-10 gap-2 w-4/5 flex">
 

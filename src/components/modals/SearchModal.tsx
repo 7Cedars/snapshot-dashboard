@@ -180,11 +180,11 @@ export const SearchDialog = () => {
                     </div>
                   </div>
 
-                <div className='overflow-auto max-h-96 pl-4 mt-5'> 
+                <div className='overflow-auto max-h-96 pl-0 mt-5'> 
                   {filteredSpaces.map(space => (
                     <div key = {space.id} > 
                     <button 
-                      className='border border-blue-300 rounded-lg p-2 m-2 w-96 grid justify-items-start'
+                      className='border border-blue-300 rounded-lg p-2 mr-1 my-2 w-96 grid justify-items-start'
                       onClick={() => dispatch(updateUrl({data: space.id, type: 'space'}))}
                     > 
                       <div className={`block truncate font-medium`} >

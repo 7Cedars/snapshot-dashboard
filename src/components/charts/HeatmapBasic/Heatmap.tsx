@@ -1,18 +1,17 @@
+// Based on clone from https://github.com/holtzy/react-graph-gallery
+
 import { useMemo } from "react";
 import * as d3 from "d3";
-import { data } from './demoData'
-import { error } from "console";
-// this code is straight from https://www.react-graph-gallery.com/heatmap
+import { data } from "./data";   // data: { x: string; y: string; value: number }[];
 
-const MARGIN = { top: 10, right: 10, bottom: 30, left: 130 };
+const MARGIN = { top: 10, right: 10, bottom: 30, left: 10 };
 
 type HeatmapProps = {
   width: number;
   height: number;
-  data: { x: string; y: string; value: number }[];
 };
 
-export const Heatmap = ({ width, height, data }: HeatmapProps) => {
+export const Heatmap = ({ width = 500, height = 400 }: HeatmapProps) => {
   // bounds = area inside the axis
   const boundsWidth = width - MARGIN.right - MARGIN.left;
   const boundsHeight = height - MARGIN.top - MARGIN.bottom;
@@ -38,30 +37,17 @@ export const Heatmap = ({ width, height, data }: HeatmapProps) => {
       .padding(0.01);
   }, [data, height]);
 
-  
-
   const [min, max] = d3.extent(data.map((d) => d.value));
 
-  console.log("[min, max]:", [min, max])
-  console.log("TEST")
-  if (min === undefined || max === undefined) { 
-    // error/bug in example code. Report? (was: "(!min || !max)" which also triggers at 0 )
-    
-    return null;  
-    // throw new Error(`Incorrect or missing min and max calculated: Min: ${min} Max: ${max}`);
-    // there was no ERROR messaging. -- which made it hard to find.. 
+  if (!min || !max) {
+    return null;
   }
-
-  console.log("TEST")
 
   // Color scale
   const colorScale = d3
-    .scaleSequentialSqrt()
-    .interpolator(d3.interpolateOranges )
+    .scaleSequential()
+    .interpolator(d3.interpolateInferno)
     .domain([min, max]);
-
-  console.log("TEST")
-  console.log("xScale(d.x): ", xScale(data[3].x))
 
   // Build the rectangles
   const allRects = data.map((d, i) => {
@@ -80,8 +66,6 @@ export const Heatmap = ({ width, height, data }: HeatmapProps) => {
       />
     );
   });
-
-
 
   const xLabels = allXGroups.map((name, i) => {
     const xPos = xScale(name) ?? 0;
@@ -131,4 +115,3 @@ export const Heatmap = ({ width, height, data }: HeatmapProps) => {
     </div>
   );
 };
-

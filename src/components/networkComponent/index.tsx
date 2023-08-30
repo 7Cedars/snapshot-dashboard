@@ -7,6 +7,7 @@ import { useAppDispatch } from '../../reducers/hooks';
 import { addVotes } from '../../reducers/proposalsReducer'
 import { toNetworkGraph } from '../../utils/transposeData';
 import { toSelectedProposals } from '../../utils/utils';
+import { Slider } from '../ui/RangeSlider';
 
 const NetworkComponent = () => {
   const dispatch = useAppDispatch()
@@ -77,8 +78,9 @@ const NetworkComponent = () => {
   }
 
   return (
-    <div> 
+    <div className=''> 
        <b> Network Component </b>
+      <Slider min = {0} max = {10000} /> 
       <button 
         type="submit"
         className="font-medium text-black px-5 hover:text-gray-300 sm:py-6"

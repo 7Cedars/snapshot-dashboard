@@ -87,7 +87,7 @@ const SelectComponent = () => {
   console.log("selectedSpaces: ", selectedSpaces)
 
   return (
-    <div className="p-2 grid grid-cols-1 place-content-evenly"> 
+    <div className="p-2 grid grid-cols-1 place-content-evenly border border-gray-500 rounded-lg shadow-md mt-20"> 
       <button 
         type="submit"
         disabled={selectedSpaces.length < 2} 
@@ -97,7 +97,7 @@ const SelectComponent = () => {
         Analyse
       </button> 
 
-      <div className="py-3">
+      <div className="py-3 max-h-screen overflow-auto">
         {selectedSpaces.length === 1 ? 
         <i className="grid justify-items-center p-2 my-4 text-gray-500 "> No DAO spaces selected. </i>
         :
