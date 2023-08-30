@@ -8,7 +8,7 @@ interface toHeatmapProps {
 
 interface rangeProps {
   start: number; 
-  stop: number;
+  end: number;
   nCol: number;
 } 
 
@@ -24,25 +24,47 @@ interface HeatmapProps {
   value: number
 }
 
+interface IntersectionProps {
+  startProposal: number;
+  endProposal: number; 
+  startRange: number; 
+  endRange: number; 
+}
+
 export const toHeatmapData = ({proposals, nCol}: toHeatmapProps): HeatmapProps[] => {
 
+  console.log("toHeatmapData called")
   // adapted from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
-  const range = ({start, stop, nCol}: rangeProps ) =>
-    Array.from({ length: nCol + 1 }, (_, i) => start + (i * ((stop - start) / nCol) ));
+  const range = ({start, end, nCol}: rangeProps ) =>
+    Array.from({ length: nCol + 1 }, (_, i) => start + (i * ((end - start) / nCol) ));
 
   const start = Math.min(...proposals.map(
     proposal => proposal.start)
     )
-  const stop = Math.max(...proposals.map(
+  
+  const end = Math.max(...proposals.map(
     proposal => proposal.end)
     )
   const spacesRange = range(
-    {start, stop, nCol }
+    {start, end, nCol }
     )
-    console.log("spacesRange ", spacesRange)
+  const stepPerCol = (end - start) / nCol
+
   const spaces = Array.from( 
     new Set(proposals.map(proposal => proposal.space.id))
     )
+
+  const intersectionRangeProposal = ({startRange, endRange, startProposal, endProposal}: IntersectionProps): number => {
+
+    if (startProposal > endRange || startRange > endProposal ) {return 0} 
+    else {
+      const intervalLength = Math.min(endRange, endProposal) - Math.max(startRange, startProposal) 
+      const proposalLength = endProposal - startProposal
+
+      return intervalLength / proposalLength
+
+    }
+  }
 
   // building basic data structure 
   const data: Array<HeatmapProps> = []  
@@ -58,17 +80,21 @@ export const toHeatmapData = ({proposals, nCol}: toHeatmapProps): HeatmapProps[]
     ))
 
   // filling in data points.
-  proposals.forEach(proposal => {    
-    const votesPerStep = proposal.votes / (proposal.end - proposal.start)
-
+  proposals.forEach(proposal => {
     data.forEach(point => {
-      if (point.y === proposal.space.id && 
-          parseInt(point.x) > proposal.start && 
-          parseInt(point.x) < proposal.end) {
-            point.value = point.value + votesPerStep
+      if (point.y === proposal.space.id) {
+        point.value = point.value + proposal.votes * intersectionRangeProposal(
+          { startRange: parseInt(point.x),
+            endRange: parseInt(point.x) + stepPerCol,
+            startProposal: proposal.start,
+            endProposal: proposal.end
           } 
+        )
+      }
     })
   })
+
+  console.log("DATA at Heatmap data: ", data)
   
   return data
 }
@@ -100,7 +126,7 @@ export const toNetworkGraph = (proposals: Proposal[]) => {
     return votersPerSpace
   })
 
-  console.log("votersOfSpace: ", votersPerSpace)
+  // console.log("votersOfSpace: ", votersPerSpace)
 
   const links = votersPerSpace.map(spaceSource => 
     votersPerSpace.map(spaceTarget => 

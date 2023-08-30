@@ -23,7 +23,6 @@ export const ChartCanvas = ({
   // the chart / sandbox will fill the available space until maxWidth is reached
   const chartRef = useRef<HTMLDivElement>(null);
   const chartSize = useDimensions(chartRef);
-  console.log("ChartSize at ChartOrSandbox: ", chartSize)
 
   return (
     // Add a full screen width wrapper with grey background around everything.

@@ -2,7 +2,9 @@
 
 import { useMemo } from "react";
 import * as d3 from "d3";
-import { data } from "./data";   // data: { x: string; y: string; value: number }[];
+// import { data } from "../../data/dummyHeatmapData";   // data: { x: string; y: string; value: number }[];
+import { useAppSelector } from "../../reducers/hooks";
+import { toHeatmapData } from "../../utils/transposeData";
 
 const MARGIN = { top: 10, right: 10, bottom: 30, left: 10 };
 
@@ -11,7 +13,17 @@ type HeatmapProps = {
   height: number;
 };
 
-export const Heatmap = ({ width = 500, height = 400 }: HeatmapProps) => {
+export const Heatmap = ({ width = 500, height = 400}: HeatmapProps) => {
+  const { selectedSpaces } = useAppSelector(state => state.userInput)
+  const { proposals } = useAppSelector(state => state.loadedProposals) 
+  
+  const selectedProposals = proposals.filter(proposal => {
+    return selectedSpaces.includes(proposal.space.id)
+  })
+  const nCol =  Math.floor((width / height) * selectedSpaces.length)
+
+  const data = toHeatmapData({proposals: selectedProposals, nCol}) 
+  
   // bounds = area inside the axis
   const boundsWidth = width - MARGIN.right - MARGIN.left;
   const boundsHeight = height - MARGIN.top - MARGIN.bottom;
@@ -19,6 +31,8 @@ export const Heatmap = ({ width = 500, height = 400 }: HeatmapProps) => {
   // groups
   const allYGroups = useMemo(() => [...new Set(data.map((d) => d.y))], [data]);
   const allXGroups = useMemo(() => [...new Set(data.map((d) => d.x))], [data]);
+
+  console.log("data inside Heatmap: ", data)
 
   // x and y scales
   const xScale = useMemo(() => {
@@ -39,14 +53,15 @@ export const Heatmap = ({ width = 500, height = 400 }: HeatmapProps) => {
 
   const [min, max] = d3.extent(data.map((d) => d.value));
 
-  if (!min || !max) {
+  if (min === undefined || max === undefined) {
+    // throw new Error(`Incorrect data at Heatmap`);
     return null;
   }
 
   // Color scale
   const colorScale = d3
-    .scaleSequential()
-    .interpolator(d3.interpolateInferno)
+    .scaleSequentialSqrt()
+    .interpolator(d3.interpolateOranges)
     .domain([min, max]);
 
   // Build the rectangles
@@ -61,7 +76,7 @@ export const Heatmap = ({ width = 500, height = 400 }: HeatmapProps) => {
         height={yScale.bandwidth()}
         opacity={1}
         fill={colorScale(d.value)}
-        rx={5}
+        rx={3}
         stroke={"white"}
       />
     );
@@ -78,7 +93,7 @@ export const Heatmap = ({ width = 500, height = 400 }: HeatmapProps) => {
         dominantBaseline="middle"
         fontSize={10}
       >
-        {name}
+        {" "}
       </text>
     );
   });
@@ -94,7 +109,7 @@ export const Heatmap = ({ width = 500, height = 400 }: HeatmapProps) => {
         dominantBaseline="middle"
         fontSize={10}
       >
-        {name}
+        {" "}
       </text>
     );
   });
