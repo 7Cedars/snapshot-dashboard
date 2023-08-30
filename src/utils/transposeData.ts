@@ -3,6 +3,8 @@ import * as d3 from "d3";
 
 interface toHeatmapProps {
   proposals: Proposal[]; 
+  start: number;
+  end: number;
   nCol: number; 
 } 
 
@@ -31,20 +33,13 @@ interface IntersectionProps {
   endRange: number; 
 }
 
-export const toHeatmapData = ({proposals, nCol}: toHeatmapProps): HeatmapProps[] => {
+export const toHeatmapData = ({proposals, start, end, nCol}: toHeatmapProps): HeatmapProps[] => {
 
   console.log("toHeatmapData called")
   // adapted from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from
   const range = ({start, end, nCol}: rangeProps ) =>
     Array.from({ length: nCol + 1 }, (_, i) => start + (i * ((end - start) / nCol) ));
 
-  const start = Math.min(...proposals.map(
-    proposal => proposal.start)
-    )
-  
-  const end = Math.max(...proposals.map(
-    proposal => proposal.end)
-    )
   const spacesRange = range(
     {start, end, nCol }
     )

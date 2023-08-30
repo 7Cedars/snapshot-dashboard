@@ -80,7 +80,6 @@ const NetworkComponent = () => {
   return (
     <div className='content-center'> 
        <b> Network Component </b>
-      <Slider /> 
       <button 
         type="submit"
         className="font-medium text-black px-5 hover:text-gray-300 sm:py-6"

@@ -1,6 +1,6 @@
 // Based on clone from https://github.com/holtzy/react-graph-gallery
 
-import { ReactNode, useRef, useState } from "react";
+import { ReactNode, useRef } from "react";
 import { useDimensions } from "../../hooks/use-dimensions";
 
 type ChartCanvasProps = {

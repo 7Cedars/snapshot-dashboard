@@ -5,6 +5,8 @@ import * as d3 from "d3";
 // import { data } from "../../data/dummyHeatmapData";   // data: { x: string; y: string; value: number }[];
 import { useAppSelector } from "../../reducers/hooks";
 import { toHeatmapData } from "../../utils/transposeData";
+import { toDateFormat } from "../../utils/utils";
+
 
 const MARGIN = { top: 10, right: 10, bottom: 30, left: 10 };
 
@@ -14,7 +16,7 @@ type HeatmapProps = {
 };
 
 export const Heatmap = ({ width = 500, height = 400}: HeatmapProps) => {
-  const { selectedSpaces } = useAppSelector(state => state.userInput)
+  const { selectedSpaces, startDate, endDate } = useAppSelector(state => state.userInput)
   const { proposals } = useAppSelector(state => state.loadedProposals) 
   
   const selectedProposals = proposals.filter(proposal => {
@@ -22,7 +24,7 @@ export const Heatmap = ({ width = 500, height = 400}: HeatmapProps) => {
   })
   const nCol =  Math.floor((width / height) * selectedSpaces.length)
 
-  const data = toHeatmapData({proposals: selectedProposals, nCol}) 
+  const data = toHeatmapData({proposals: selectedProposals, start: startDate, end: endDate, nCol}) 
   
   // bounds = area inside the axis
   const boundsWidth = width - MARGIN.right - MARGIN.left;
@@ -82,20 +84,22 @@ export const Heatmap = ({ width = 500, height = 400}: HeatmapProps) => {
     );
   });
 
-  const xLabels = allXGroups.map((name, i) => {
-    const xPos = xScale(name) ?? 0;
-    return (
-      <text
-        key={i}
-        x={xPos + xScale.bandwidth() / 2}
-        y={boundsHeight + 10}
-        textAnchor="middle"
-        dominantBaseline="middle"
-        fontSize={10}
-      >
-        {" "}
-      </text>
-    );
+  const xLabels = allXGroups.map((timestamp, i) => {
+    const xPos = xScale(timestamp) ?? 0;
+      if (!(i%4)) { 
+        return (
+          <text
+            key={i}
+            x={xPos + xScale.bandwidth() / 2}
+            y={boundsHeight + 10}
+            textAnchor="middle"
+            dominantBaseline="middle"
+            fontSize={10}
+          >
+            {toDateFormat(parseInt(timestamp))}
+          </text>
+        );
+      }
   });
 
   const yLabels = allYGroups.map((name, i) => {
@@ -109,7 +113,7 @@ export const Heatmap = ({ width = 500, height = 400}: HeatmapProps) => {
         dominantBaseline="middle"
         fontSize={10}
       >
-        {" "}
+        {""}
       </text>
     );
   });
