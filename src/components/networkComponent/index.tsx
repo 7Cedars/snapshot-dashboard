@@ -7,7 +7,10 @@ import { useAppDispatch } from '../../reducers/hooks';
 import { addVotes } from '../../reducers/proposalsReducer'
 import { toNetworkGraph } from '../../utils/transposeData';
 import { toSelectedProposals } from '../../utils/utils';
-import { Slider } from '../ui/RangeSlider';
+import { ChartCanvas } from '../ui/ChartCanvas';
+import { Heatmap } from '../charts/Heatmap';
+import { NetworkDiagramBasicCanvasDemo } from '../NetworkDiagramBasicCanvas/NetworkDiagramBasicCanvasDemo';
+
 
 const NetworkComponent = () => {
   const dispatch = useAppDispatch()
@@ -87,6 +90,14 @@ const NetworkComponent = () => {
         >
         LOAD DATA
       </button> 
+      <div>  
+        <ChartCanvas
+          VizComponent={NetworkDiagramBasicCanvasDemo}
+          vizName={"NetworkDiagram"}
+          maxWidth={2000}
+          height={300}
+          />
+    </div>
     </div>
   );
 }

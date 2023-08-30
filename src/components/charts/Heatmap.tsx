@@ -6,7 +6,6 @@ import * as d3 from "d3";
 import { useAppSelector } from "../../reducers/hooks";
 import { toHeatmapData } from "../../utils/transposeData";
 import { toDateFormat } from "../../utils/utils";
-import { toBeDisabled } from "@testing-library/jest-dom/matchers";
 
 
 const MARGIN = { top: 10, right: 10, bottom: 30, left: 10 };
