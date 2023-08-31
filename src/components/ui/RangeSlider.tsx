@@ -4,14 +4,23 @@ import { updateUrl } from "../../reducers/urlReducer";
 import { standardDateRange } from "../../constants";
 import { toDateFormat } from "../../utils/utils";
 
-export const Slider = () => {
+export const RangeSlider = () => {
   const dispatch = useAppDispatch()
   const { proposals } = useAppSelector(state => state.loadedProposals)
 
-  const minVal = Math.min(...proposals.map( proposal => proposal.start) ) 
-  const maxVal = Math.max(...proposals.map( proposal => proposal.end) )
+  let minVal
+  let maxVal
 
-  const [valueA, setValueA] = useState(maxVal - standardDateRange);
+  if (proposals.length === 0) {
+    minVal = Date.now() - standardDateRange  
+    maxVal = Date.now()
+
+  } else {
+     minVal = Math.min(...proposals.map( proposal => proposal.start) ) 
+     maxVal = Math.max(...proposals.map( proposal => proposal.end) )
+  }
+
+  const [valueA, setValueA] = useState(minVal);
   const [valueB, setValueB] = useState(maxVal);
 
   const handleValueChange = (value: number) => {
@@ -42,7 +51,7 @@ export const Slider = () => {
       </label>
       <input
           id="sliderA"
-          className={`w-4/5 absolute inset-x-20   mt-7 h-2 mb-6 bg-gray-300 rounded-lg appearance-none cursor-pointer dark:bg-gray-700`}
+          className={`w-4/5 absolute inset-x-20 mt-7 h-2 mb-6 bg-gray-300 rounded-lg appearance-none cursor-pointer dark:bg-gray-700`}
           name="min"
           type="range"
           step="1"

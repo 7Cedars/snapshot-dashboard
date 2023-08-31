@@ -9,7 +9,7 @@ import AboutDialog from "./components/modals/AboutModal";
 import SettingsDialog from "./components/modals/SettingsModal";
 import SavedSearchesDialog from "./components/modals/SavedSearches";
 import SearchDialog from "./components/modals/SearchModal";
-import { Slider } from "./components/ui/RangeSlider";
+import { RangeSlider } from "./components/ui/RangeSlider";
 
 const App = () => {
   const { urlData } = useAppSelector(state => state.urlData)
@@ -32,7 +32,7 @@ const App = () => {
           <div className="grid grid-cols-1 w-3/5 border place-content-end border-gray-500 rounded-lg shadow-md ml-4  mt-20">
             <div> <NetworkComponent />  </div>
             <div> <TimeRangeComponent />  </div>
-            <div> <Slider />  </div>
+            <div> <RangeSlider />  </div>
             {/* <FetchSpaces /> */}
           </div>  
         </div>

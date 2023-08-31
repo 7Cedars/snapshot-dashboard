@@ -115,7 +115,7 @@ export const toNetworkGraph = (proposals: Proposal[]) => {
         )
     
     const votersPerSpace = Array.from(new Set( 
-      votesOfSpace.map(space => space.voter )
+      votesOfSpace.map( space => space.voter )
     )) 
 
     return votersPerSpace
@@ -125,19 +125,19 @@ export const toNetworkGraph = (proposals: Proposal[]) => {
 
   const links = votersPerSpace.map(spaceSource => 
     votersPerSpace.map(spaceTarget => {
-      hasSharedVoters(spaceSource, spaceTarget) ? 
-      { source: "name", target: "name", value: 1  }
-      :  
-      null 
-      }
-    )
-  )
+      if (hasSharedVoters(spaceSource, spaceTarget)) { 
+        return { source: spaceSource, target: spaceTarget, value: 1  } 
+      } 
+    }).flat()
+  ).flat()
+  .filter(item => item !== undefined) 
 
   const nodes: NetworkNode[] = spaces.map((space, i) => 
     ({id: space, group: "test"})
   )
 
   console.log(
+    "END RESULT", 
     "Nodes: ", nodes, 
     "votersOfSpace: ", votersPerSpace, 
     "links: ", links
