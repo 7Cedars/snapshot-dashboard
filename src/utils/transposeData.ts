@@ -57,7 +57,6 @@ export const toHeatmapData = ({proposals, start, end, nCol}: toHeatmapProps): He
       const proposalLength = endProposal - startProposal
 
       return intervalLength / proposalLength
-
     }
   }
 
@@ -97,6 +96,8 @@ export const toHeatmapData = ({proposals, start, end, nCol}: toHeatmapProps): He
 // toNetworkGraph
 export const toNetworkGraph = (proposals: Proposal[]) => {
 
+  // console.log("proposals at toNetworkGraph: ", proposals)
+
   const hasSharedVoters = (spaceSource: Array<string>, spaceTarget: Array<string>) => {
     return spaceSource.some((item: string) => spaceTarget.includes(item))
   }
@@ -104,7 +105,32 @@ export const toNetworkGraph = (proposals: Proposal[]) => {
   const spaces = Array.from(
     new Set(proposals.map(proposal => proposal.space.id))
   )
-  
+
+  const uniqueVotesSpace = new Set(
+      proposals.map(proposal => 
+        proposal.votesDetails.map(vote => 
+          `${vote.voter};${proposal.space.id}`)
+      ).flat()
+  )
+
+  const uniqueVotesSpaceArray = Array.from(uniqueVotesSpace).map(string => 
+    string.split(";")[0]
+    ).flat()
+
+  const votersInMultipleSpaces =  uniqueVotesSpaceArray.filter(
+    (item, index) => uniqueVotesSpaceArray.indexOf(item) !== index
+    ) 
+
+  const assessment = proposals.reduce((accumulator, proposal) => accumulator + proposal.votes, 0)
+
+  // const votesPerVoter = uniqueVoters.map(voter => 
+  //   votes.filter(vote => vote.voter === voter)
+  //   )
+  console.log("ASSESSMENT no votes: ", assessment, "TEST: ", votersInMultipleSpaces)
+
+  // const spacesPerVoter = votesPerVoter.map(voter => 
+  //   )
+
   const votersPerSpace = spaces.map(space => {
     const proposalsOfSpace = proposals
       .filter(proposal => proposal.space.id === space)

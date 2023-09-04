@@ -1,7 +1,7 @@
 // import FetchSpaces from "./components/FetchSpaces";
 import SelectedSpacesComponent from "./components/selectSpacesComponent";
 import NetworkComponent from "./components/networkComponent";
-import TimeRangeComponent from "./components/timeRangeComponent";
+import TimeRangeComponent from "./components/heatmapComponent";
 import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import { useAppSelector, useAppDispatch } from "./reducers/hooks";
