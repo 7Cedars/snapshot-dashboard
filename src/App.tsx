@@ -24,7 +24,7 @@ const App = () => {
       <div className="max-h-screen grid grid-cols-1 relative">
         <AboutDialog /> <SettingsDialog /> <SavedSearchesDialog /> 
         <Routes>
-          <Route path=":data" element={<SearchDialog /> } /> 
+          {/* <Route path=":data" element={<SearchDialog /> } />  */}
           <Route path=":data" element={<NavBar />} /> 
 
           <Route path=":data" element={
@@ -40,7 +40,7 @@ const App = () => {
             </>
           } />
 
-        <Route path=":data" element={<UpdateState />} />  
+        {/* <Route path=":data" element={<UpdateState />} />   */}
 
       </Routes>
       </div>

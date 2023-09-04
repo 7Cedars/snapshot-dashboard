@@ -13,7 +13,6 @@ const compareVotes = (a: Space, b: Space) => {
   return b.votesCount - a.votesCount
 }
 
-
 const listCategories = Array.from(
   new Set(
     spaces.map((space: Space) => space.categories.flat() ).flat()
@@ -21,17 +20,22 @@ const listCategories = Array.from(
   ) 
 listCategories.push('all')
 
-console.log("listCategories: ",listCategories ) 
+console.log("listCategories: ", listCategories ) 
 
 export const SearchDialog = () => {
   const dispatch = useAppDispatch()
   const { modal } = useAppSelector(state => state.userInput)
+  const [ selectedSpaces, setSelectedSpaces] = useState([''])
 
   const [selectedCategory, setSelectedCategory] = useState<string[]>(['all'])
   const [filteredSpaces, setFilteredSpaces ] = useState<Space[]>(spaces.sort(compareVotes))
   // const { selectedSpaces } = useAppSelector(state => state.userInput)
   const { data } = useParams(); 
-  const {selectedSpaces }  = parseUrlInput(data)
+  // const {selectedSpaces }  = parseUrlInput(data)
+  useEffect(() => {
+    const { selectedSpaces }  = parseUrlInput(data)
+    setSelectedSpaces(selectedSpaces)
+  }, [data])
 
   const [query, setQuery] = useState('')
 

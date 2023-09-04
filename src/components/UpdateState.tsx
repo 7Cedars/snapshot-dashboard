@@ -13,13 +13,12 @@ import { updateStopFetching } from "../reducers/userInputReducer";
 
 const UpdateState = () => {
   const dispatch = useAppDispatch()
-  const { data } = useParams(); 
-  const [ proposalsFromSpaces ] = useLazyQuery(PROPOSALS_FROM_SPACES) 
+  const { data } = useParams();
   const { stopFetching } = useAppSelector(state => state.userInput)
   const { proposals } = useAppSelector(state => state.loadedProposals)
 
   useEffect(() => {
-    const {selectedSpaces, startDate, endDate}  = parseUrlInput(data)
+    const {selectedSpaces }  = parseUrlInput(data)
 
     const loadedSpaces = Array.from(
       new Set(proposals.map(proposal => proposal.space.id))
@@ -29,6 +28,7 @@ const UpdateState = () => {
       spaceId => loadedSpaces.indexOf(spaceId) === -1
     )
     console.log("spacesToLoad: ",  spacesToLoad)
+    loadProposals(spacesToLoad)
     
   }, [data])
 

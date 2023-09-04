@@ -7,7 +7,6 @@ import { useLazyQuery } from "@apollo/client";
 const [ proposalsFromSpaces ] = useLazyQuery(PROPOSALS_FROM_SPACES) 
 const dispatch = useAppDispatch()
 const { stopFetching } = useAppSelector(state => state.userInput)
-const { proposals } = useAppSelector(state => state.loadedProposals)
 
 export const loadProposals = async (spacesToLoad: string[]) => {
 
