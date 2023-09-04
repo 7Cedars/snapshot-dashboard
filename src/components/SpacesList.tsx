@@ -1,20 +1,18 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 // import SelectSpacesForm from "../searchComponent/SelectSpacesForm (depricated)"
 import SpaceItem from "./SpaceItem";
 import { useParams } from "react-router-dom";
-import { parseInputEntries } from "../../utils/parsers";
-import { useAppDispatch, useAppSelector } from "../../reducers/hooks";
-import { updateEndDate, updateSelectedSpaces, updateStartDate } from "../../reducers/userInputReducer";
-import { addProposals } from "../../reducers/proposalsReducer";
-import { Proposal } from "../../types";
-import { toSelectedProposals } from "../../utils/utils";
-import { PROPOSALS_FROM_SPACES } from "../../utils/queries";
+import { parseInputEntries } from "../utils/parsers";
+import { useAppDispatch, useAppSelector } from "../reducers/hooks";
+import { updateEndDate, updateSelectedSpaces, updateStartDate } from "../reducers/userInputReducer";
+import { addProposals } from "../reducers/proposalsReducer";
+import { toSelectedProposals } from "../utils/utils";
+import { PROPOSALS_FROM_SPACES } from "../utils/queries";
 import { useLazyQuery } from "@apollo/client";
-import { toHeatmapData } from "../../utils/transposeData";
-import { updateModal } from "../../reducers/userInputReducer";
+import { updateModal } from "../reducers/userInputReducer";
 
 
-const SelectComponent = () => {
+const SpacesList = () => {
   const dispatch = useAppDispatch()
 
   // Data from url is parsed to redux store. 
@@ -59,43 +57,43 @@ const SelectComponent = () => {
     }
   }
 
-  const handleOnClick = () => {
-    const selectedProposals = toSelectedProposals({ 
-      proposals: loadedProposals,
-      selectedSpaces, 
-      startDate : null, 
-      endDate: null
-    })
+  // const handleOnClick = () => {
+  //   const selectedProposals = toSelectedProposals({ 
+  //     proposals: loadedProposals,
+  //     selectedSpaces, 
+  //     startDate : null, 
+  //     endDate: null
+  //   })
 
-    // naming has to be improved here - very confusing
-    const spacesSelected = selectedProposals.map(proposal => proposal.space.id)
-    const spacesToLoad = selectedSpaces.filter(spaceId => 
-      spacesSelected.indexOf(spaceId) === -1
-      )
+  //   // naming has to be improved here - very confusing
+  //   const spacesSelected = selectedProposals.map(proposal => proposal.space.id)
+  //   const spacesToLoad = selectedSpaces.filter(spaceId => 
+  //     spacesSelected.indexOf(spaceId) === -1
+  //     )
     
-    console.log("spacesToLoad: ", spacesToLoad)
+  //   console.log("spacesToLoad: ", spacesToLoad)
 
-    if (spacesToLoad.length > 0 ) {
-      try {
-        loadSpaces(spacesToLoad) 
-      } catch (e) {
-        console.log("ERROR: ", e)
-      }
-    }    
-  }
+  //   if (spacesToLoad.length > 0 ) {
+  //     try {
+  //       loadSpaces(spacesToLoad) 
+  //     } catch (e) {
+  //       console.log("ERROR: ", e)
+  //     }
+  //   }    
+  // }
 
   console.log("selectedSpaces: ", selectedSpaces)
 
   return (
     <div className="p-2 grid grid-cols-1 place-content-start border border-gray-500 rounded-lg shadow-md mt-20"> 
-      <button 
+      {/* <button 
         type="submit"
         disabled={selectedSpaces.length < 2} 
         className='border-blue-500 bg-blue-100 text-blue-900 border w-full rounded-lg font-medium p-2 enabled:hover:bg-blue-200 disabled:opacity-50'
         onClick={handleOnClick}
         >
         Analyse
-      </button> 
+      </button>  */}
 
       <div className="py-3 max-h-screen overflow-auto">
         {selectedSpaces.length === 1 ? 
@@ -123,4 +121,4 @@ const SelectComponent = () => {
   );
 }
 
-export default SelectComponent;
+export default SpacesList;

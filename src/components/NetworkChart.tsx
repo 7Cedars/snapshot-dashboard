@@ -1,18 +1,17 @@
 import { useLazyQuery } from '@apollo/client'
-import { VOTERS_ON_PROPOSALS } from '../../utils/queries'
+import { VOTERS_ON_PROPOSALS } from '../utils/queries'
 import { SyntheticEvent, useEffect, useState } from 'react'; 
-import { useAppSelector } from '../../reducers/hooks';
-import { Proposal } from '../../types';
-import { useAppDispatch } from '../../reducers/hooks';
-import { addVotes } from '../../reducers/proposalsReducer'
-import { toNetworkGraph } from '../../utils/transposeData';
-import { toSelectedProposals } from '../../utils/utils';
-import { ChartCanvas } from '../ui/ChartCanvas';
-import { Heatmap } from '../charts/Heatmap';
-import { NetworkDiagram } from '../charts/NetworkDiagram';
+import { useAppSelector } from '../reducers/hooks';
+import { Proposal } from '../types';
+import { useAppDispatch } from '../reducers/hooks';
+import { addVotes } from '../reducers/proposalsReducer'
+import { toNetworkGraph } from '../utils/transposeData';
+import { toSelectedProposals } from '../utils/utils';
+import { ChartCanvas } from './ui/ChartCanvas';
+import { NetworkDiagram } from './charts/NetworkDiagram';
 
 
-const NetworkComponent = () => {
+const NetworkChart = () => {
   const dispatch = useAppDispatch()
   const [ votersOnProposals ] = useLazyQuery(VOTERS_ON_PROPOSALS)
   const {selectedSpaces, startDate, endDate} = useAppSelector(state => state.userInput)
@@ -102,4 +101,4 @@ const NetworkComponent = () => {
   );
 }
 
-export default NetworkComponent;
+export default NetworkChart;

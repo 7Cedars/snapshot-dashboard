@@ -1,7 +1,7 @@
-import spaces from "../../data/spacesList"
+import spaces from "../data/spacesList"
 import { MinusCircleIcon, UserIcon } from '@heroicons/react/24/outline'
-import { useAppDispatch } from "../../reducers/hooks";
-import { updateUrl } from "../../reducers/urlReducer";
+import { useAppDispatch } from "../reducers/hooks";
+import { updateUrl } from "../reducers/urlReducer";
 
 interface Props {
   key: string; 

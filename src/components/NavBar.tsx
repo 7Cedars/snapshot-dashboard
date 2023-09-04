@@ -1,12 +1,11 @@
-import MySearchBar from "./SearchBar";
 import { 
   HomeIcon, 
   Cog6ToothIcon, 
   BookmarkSquareIcon, 
   QuestionMarkCircleIcon
  } from '@heroicons/react/24/outline'
- import { useAppDispatch } from "../../reducers/hooks";
- import { updateModal } from "../../reducers/userInputReducer";
+ import { useAppDispatch } from "../reducers/hooks";
+ import { updateModal } from "../reducers/userInputReducer";
 
 
 const NavBar = () => {

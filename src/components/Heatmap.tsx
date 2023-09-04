@@ -1,7 +1,7 @@
-import { Heatmap } from "../charts/Heatmap";
-import { ChartCanvas } from "../ui/ChartCanvas";
+import { Heatmap } from "./charts/Heatmap";
+import { ChartCanvas } from "./ui/ChartCanvas";
 
-const TimeRangeComponent = () => { 
+const HeatMap = () => { 
 
   return (
     <div> 
@@ -16,4 +16,4 @@ const TimeRangeComponent = () => {
   );
 }
 
-export default TimeRangeComponent;
+export default HeatMap;
