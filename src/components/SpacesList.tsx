@@ -1,10 +1,16 @@
 import SpaceItem from "./SpaceItem";
 import { useAppDispatch, useAppSelector } from "../reducers/hooks";
 import { updateModal } from "../reducers/userInputReducer";
+import loadProposals from "../services/loadProposals";
+import { useEffect } from "react";
+import { parseUrlInput } from "../utils/parsers";
+import { useParams } from "react-router-dom";
 
 const SpacesList = () => {
   const dispatch = useAppDispatch()
-  const { selectedSpaces } = useAppSelector(state => state.userInput)
+  // const { selectedSpaces } = useAppSelector(state => state.userInput)
+  const { data } = useParams(); 
+  const { selectedSpaces }  = parseUrlInput(data)
 
   return (
     <div className="p-2 grid grid-cols-1 place-content-start border border-gray-500 rounded-lg shadow-md mt-20"> 

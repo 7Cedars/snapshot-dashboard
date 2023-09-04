@@ -19,24 +19,30 @@ const App = () => {
 
   return (
     <Router>
+       <Navigate to={urlData} /> 
+
       <div className="max-h-screen grid grid-cols-1 relative">
-        <AboutDialog /> <SettingsDialog /> <SavedSearchesDialog /> <SearchDialog /> 
-        <Navigate to={urlData} /> 
-        <NavBar />
+        <AboutDialog /> <SettingsDialog /> <SavedSearchesDialog /> 
+        <Routes>
+          <Route path=":data" element={<SearchDialog /> } /> 
+          <Route path=":data" element={<NavBar />} /> 
 
-        <div className="flex flex-row w-full max-h-screen text-sm py-5 place-content-center px-2">
-          <SpacesList/>
-          <div className="grid grid-cols-1 w-3/5 border place-content-end border-gray-500 rounded-lg shadow-md ml-4  mt-20">
-            {/* <NetworkComponent />  */}
-            <HeatMap />  
-            <RangeSlider />  
-          </div>  
-        </div>
+          <Route path=":data" element={
+            <> 
+            <div className="flex flex-row w-full max-h-screen text-sm py-5 place-content-center px-2">
+              <div> 
+                <SpacesList/>
+              </div>
+              <NetworkComponent />
+              <HeatMap />
+              <RangeSlider /> 
+            </div> 
+            </>
+          } />
 
-        <Routes>  
-          <Route path=":data" element={<UpdateState />} />  
-        </Routes>
+        <Route path=":data" element={<UpdateState />} />  
 
+      </Routes>
       </div>
     </Router>
   );

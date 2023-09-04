@@ -14,21 +14,21 @@ import { NetworkDiagram } from './charts/NetworkDiagram';
 const NetworkChart = () => {
   const dispatch = useAppDispatch()
   const [ votersOnProposals ] = useLazyQuery(VOTERS_ON_PROPOSALS)
-  const {selectedSpaces, startDate, endDate} = useAppSelector(state => state.userInput)
+  // const {selectedSpaces, startDate, endDate} = useAppSelector(state => state.userInput)
   const { proposals } = useAppSelector(state => state.loadedProposals)
   const [selectedProposals, setSelectedProposals] = useState<Proposal[]>([])
 
-  useEffect(() => {
-    const selectedProposals = toSelectedProposals({ 
-      proposals,
-      selectedSpaces, 
-      startDate, 
-      endDate
-    })
+  // useEffect(() => {
+  //   const selectedProposals = toSelectedProposals({ 
+  //     proposals,
+  //     selectedSpaces, 
+  //     startDate, 
+  //     endDate
+  //   })
 
-    setSelectedProposals(selectedProposals)
+  //   setSelectedProposals(selectedProposals)
     
-  }, [proposals, selectedSpaces, startDate, endDate ])
+  // }, [proposals, selectedSpaces, startDate, endDate ])
 
   // console.log("selectedProposals at network Graph: ", selectedProposals)
 

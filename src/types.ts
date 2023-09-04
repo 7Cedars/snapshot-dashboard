@@ -22,9 +22,9 @@ export interface Vote {
   created: number;
 }
 export interface UserInputState {
-  selectedSpaces: string[];
-  startDate: number; 
-  endDate: number; 
+  // selectedSpaces: string[];
+  // startDate: number; 
+  // endDate: number; 
   modal: 'search' | 'about' | 'settings' | 'savedSearches' | 'none'; 
   stopFetching: boolean;
   settings: {
@@ -32,6 +32,25 @@ export interface UserInputState {
     developerMode: boolean | undefined; 
   }
 }
+
+export interface UrlInput {
+  selectedSpaces: string[];
+  startDate: number; 
+  endDate: number;
+}
+
+// export interface UserInputStateU {
+//   selectedSpacesU: string[];
+//   startDateU: number; 
+//   endDateU: number; 
+//   modal: 'search' | 'about' | 'settings' | 'savedSearches' | 'none'; 
+//   stopFetching: boolean;
+//   settings: {
+//     darkMode: boolean | undefined; 
+//     developerMode: boolean | undefined; 
+//   }
+// }
+
 
 export interface ProposalsInSpace {
   spaceId: string;

@@ -6,6 +6,8 @@ import { XMarkIcon, ChevronDownIcon, CheckIcon , TagIcon} from '@heroicons/react
 import spaces from '../../data/spacesList'
 import { Space } from '../../types'
 import { updateUrl } from '../../reducers/urlReducer'
+import { useParams } from 'react-router-dom'
+import { parseUrlInput } from '../../utils/parsers'
 
 const compareVotes = (a: Space, b: Space) => {
   return b.votesCount - a.votesCount
@@ -27,7 +29,10 @@ export const SearchDialog = () => {
 
   const [selectedCategory, setSelectedCategory] = useState<string[]>(['all'])
   const [filteredSpaces, setFilteredSpaces ] = useState<Space[]>(spaces.sort(compareVotes))
-  const { selectedSpaces } = useAppSelector(state => state.userInput)
+  // const { selectedSpaces } = useAppSelector(state => state.userInput)
+  const { data } = useParams(); 
+  const {selectedSpaces }  = parseUrlInput(data)
+
   const [query, setQuery] = useState('')
 
   useEffect (() => {

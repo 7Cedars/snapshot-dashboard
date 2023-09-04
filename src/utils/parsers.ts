@@ -1,4 +1,4 @@
-import { Space, UserInputState} from "../types";
+import { Space, UrlInput} from "../types";
 
 const isString = (text: unknown): text is string => {
   return typeof text === 'string' || text instanceof String;
@@ -59,7 +59,7 @@ export const toSpaceEntry = (object: unknown): Space => {
 // Never ever trust anything you receive from an outside source... 
 
 // NB: still WIP: see below.  
-export const parseInputEntries = (object: unknown): UserInputState => { 
+export const parseUrlInput = (object: unknown): UrlInput => { 
   console.log("parseInputEntries is called.")
   if (!isString(object)) {
     throw new Error(`Incorrect or missing dataUrl at Parser: ${object}`);
@@ -74,10 +74,10 @@ export const parseInputEntries = (object: unknown): UserInputState => {
     
     } else {
       const splitUrl = object.split('&&')
-      const modal: 'about' | 'settings' | 'savedSearches' | 'none' = 'none'
-      const stopFetching = false
-      const settings: {darkMode: boolean; developerMode: boolean } = {
-        darkMode: false, developerMode: false } 
+      // const modal: 'about' | 'settings' | 'savedSearches' | 'none' = 'none'
+      // const stopFetching = false
+      // const settings: {darkMode: boolean; developerMode: boolean } = {
+      //   darkMode: false, developerMode: false } 
 
       // NB: These still need to be properly checked. 
 
@@ -86,9 +86,9 @@ export const parseInputEntries = (object: unknown): UserInputState => {
         selectedSpaces: splitUrl[0].replace('sps:', '').split(';'),
         startDate: parseInt(splitUrl[1].replace('sd:', '')), 
         endDate: parseInt(splitUrl[2].replace('ed:', '')), 
-        modal: modal,
-        stopFetching: stopFetching, 
-        settings: settings
+        // modal: modal,
+        // stopFetching: stopFetching, 
+        // settings: settings
       }
 
       return inputState

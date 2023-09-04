@@ -4,13 +4,14 @@ import { addProposals } from "../reducers/proposalsReducer";
 import { PROPOSALS_FROM_SPACES } from "../utils/queries";
 import { useLazyQuery } from "@apollo/client";
 
+const [ proposalsFromSpaces ] = useLazyQuery(PROPOSALS_FROM_SPACES) 
+const dispatch = useAppDispatch()
+const { stopFetching } = useAppSelector(state => state.userInput)
+const { proposals } = useAppSelector(state => state.loadedProposals)
 
 export const loadProposals = async (spacesToLoad: string[]) => {
-  const dispatch = useAppDispatch()
-  const { stopFetching } = useAppSelector(state => state.userInput)
-  const [ proposalsFromSpaces ] = useLazyQuery(PROPOSALS_FROM_SPACES)
 
-  console.log("loadSpaces is called") 
+  console.log("loadProposal is called") 
   let fetchProposals = true;
   let skip = 0; 
   while (stopFetching === false && fetchProposals === true) {
