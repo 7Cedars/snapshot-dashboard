@@ -45,9 +45,9 @@ export const SearchDialog = () => {
     if (query.length > 0) {
       const thirdFilter = secondFilter.filter((space:Space) => 
         space.id.includes(query))
-      setFilteredSpaces(thirdFilter)
+      setFilteredSpaces(thirdFilter.slice(0, 50)) 
     } else {
-      setFilteredSpaces(secondFilter)
+      setFilteredSpaces(secondFilter.slice(0, 50))
     }
 
   }, [selectedCategory, query, selectedSpaces])

@@ -6,11 +6,13 @@ const initialState: UserInputState = {
   selectedSpaces: [], 
   startDate: Date.now() - standardDateRange,
   endDate: Date.now(),
-  modal: 'none', 
+  modal: 'none',
+  stopFetching: false, 
   settings: {
     darkMode: false, 
     developerMode: false 
   }
+
 }
 
 // HERE needs to go through parsers... right?! 
@@ -30,6 +32,9 @@ export const selectedSpacesSlice = createSlice({
     updateModal: (state, action: PayloadAction<'search' |'about' | 'settings' | 'savedSearches' | 'none'>) => {
       state.modal = action.payload
     },
+    updateStopFetching: (state, action: PayloadAction<boolean>) => {
+      state.stopFetching = action.payload
+    },
     setDarkMode: (state, action: PayloadAction<boolean | undefined>) => {
       state.settings.darkMode = action.payload
     },
@@ -44,6 +49,7 @@ export const {
   updateStartDate, 
   updateEndDate, 
   updateModal,
+  updateStopFetching, 
   setDarkMode,
   setDeveloperMode
  } = selectedSpacesSlice.actions

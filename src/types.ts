@@ -26,6 +26,7 @@ export interface UserInputState {
   startDate: number; 
   endDate: number; 
   modal: 'search' | 'about' | 'settings' | 'savedSearches' | 'none'; 
+  stopFetching: boolean;
   settings: {
     darkMode: boolean | undefined; 
     developerMode: boolean | undefined; 
@@ -61,7 +62,7 @@ export type Data = {
 export type UrlDataPayload = {
   data: string;
   type: 'space' | 'startDate' | 'endDate';
-}
+};
 
 export type NetworkNode = {
   id: string;
